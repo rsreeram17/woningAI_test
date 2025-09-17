@@ -1,0 +1,1362 @@
+[
+  {
+    "timestamp": "2025-09-17T08:08:48.501249",
+    "session_id": "DSO_Search_Test_20250917_080848",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_Search",
+      "endpoint": "/activiteiten/_zoek",
+      "success": true,
+      "duration_seconds": 0.193,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "8ff09959",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": {
+        "zoekterm": "dakkapel",
+        "sortering": "besteMatch"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758089328.307691
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Wed, 17 Sep 2025 06:08:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "access-control-expose-headers": "",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-dso-instance": "8c86804542077b0e46f5f484617aae89",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,Authorization",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-security-policy": "default-src 'none'; require-trusted-types-for 'script'; frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "data": {
+        "_embedded": {
+          "activiteiten": [
+            {
+              "urn": "nl.imow-gm0777.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0777.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0268.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001479179000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0268.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0268.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001479179000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0268.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0222.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202789000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0222.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0222.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202789000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0222.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0363.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/Conclusienl.imow-gm0363.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002564440000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0363.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0363.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002564440000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0363.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0798.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001172694000/id/concept/Conclusienl.imow-gm0798.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001172694000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0798.ambtsgebied.004000000000000000000798"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0798.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001172694000/id/concept/IndieningsvereistenVergunningnl.imow-gm0798.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001172694000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0798.ambtsgebied.004000000000000000000798"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/Conclusienl.imow-gm0717.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/IndieningsvereistenVergunningnl.imow-gm0717.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0402.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001941914000/id/concept/Conclusienl.imow-gm0402.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001941914000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0402.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0402.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001941914000/id/concept/IndieningsvereistenVergunningnl.imow-gm0402.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001941914000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0402.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/Conclusienl.imow-gm1621.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/IndieningsvereistenVergunningnl.imow-gm1621.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/Conclusienl.imow-gm0275.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/IndieningsvereistenVergunningnl.imow-gm0275.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/Conclusienl.imow-gm0448.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/IndieningsvereistenVergunningnl.imow-gm0448.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            }
+          ]
+        },
+        "_links": {
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=2&pageSize=20"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=3&pageSize=20"
+          }
+        },
+        "aggregaties": {
+          "toestemmingen": [
+            {
+              "toestemming": "Vergunning",
+              "aantal": 23
+            }
+          ],
+          "bestuurslagen": [
+            {
+              "bestuurslaag": "gemeente",
+              "aantal": 47
+            }
+          ],
+          "bestuursorganenPerBestuurslaag": [
+            {
+              "bestuurslaag": "gemeente",
+              "bestuursorganen": [
+                {
+                  "oin": "00000001001903664000",
+                  "aantal": 4
+                },
+                {
+                  "oin": "00000001001172694000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202637000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202789000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001299918000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001299967000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001326004000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001479179000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001584169000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001825112000",
+                  "aantal": 2
+                }
+              ]
+            }
+          ]
+        },
+        "page": {
+          "size": 20,
+          "totalElements": 47,
+          "totalPages": 3,
+          "number": 1
+        }
+      }
+    },
+    "response_size_kb": 10.93
+  },
+  {
+    "timestamp": "2025-09-17T08:08:48.680841",
+    "session_id": "DSO_Search_Test_20250917_080848",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_Search",
+      "endpoint": "/activiteiten/_zoek",
+      "success": true,
+      "duration_seconds": 0.177,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "0433c932",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": {
+        "zoekterm": "dakkapel",
+        "sortering": "besteMatch"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758089328.5042372
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Wed, 17 Sep 2025 06:08:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "access-control-expose-headers": "",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-dso-instance": "fb5b8ff87389955afcbab386328cedb6",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,Authorization",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-security-policy": "default-src 'none'; require-trusted-types-for 'script'; frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "data": {
+        "_embedded": {
+          "activiteiten": [
+            {
+              "urn": "nl.imow-gm0777.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0777.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0268.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001479179000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0268.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0268.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001479179000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0268.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0222.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202789000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0222.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0222.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202789000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0222.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0363.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/Conclusienl.imow-gm0363.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002564440000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0363.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0363.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002564440000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0363.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/Conclusienl.imow-gm0717.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/IndieningsvereistenVergunningnl.imow-gm0717.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0402.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001941914000/id/concept/Conclusienl.imow-gm0402.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001941914000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0402.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0402.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001941914000/id/concept/IndieningsvereistenVergunningnl.imow-gm0402.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001941914000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0402.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0798.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001172694000/id/concept/Conclusienl.imow-gm0798.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001172694000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0798.ambtsgebied.004000000000000000000798"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0798.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001172694000/id/concept/IndieningsvereistenVergunningnl.imow-gm0798.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001172694000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0798.ambtsgebied.004000000000000000000798"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/Conclusienl.imow-gm0448.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/IndieningsvereistenVergunningnl.imow-gm0448.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/Conclusienl.imow-gm1621.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/IndieningsvereistenVergunningnl.imow-gm1621.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/Conclusienl.imow-gm0275.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.Dakkapel",
+              "type": "Overige",
+              "omschrijving": "Dakkapel bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/IndieningsvereistenVergunningnl.imow-gm0275.activiteit.Dakkapel",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            }
+          ]
+        },
+        "_links": {
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=2&pageSize=20"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=3&pageSize=20"
+          }
+        },
+        "aggregaties": {
+          "toestemmingen": [
+            {
+              "toestemming": "Vergunning",
+              "aantal": 23
+            }
+          ],
+          "bestuurslagen": [
+            {
+              "bestuurslaag": "gemeente",
+              "aantal": 47
+            }
+          ],
+          "bestuursorganenPerBestuurslaag": [
+            {
+              "bestuurslaag": "gemeente",
+              "bestuursorganen": [
+                {
+                  "oin": "00000001001903664000",
+                  "aantal": 4
+                },
+                {
+                  "oin": "00000001001172694000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202637000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202789000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001299918000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001299967000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001326004000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001479179000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001584169000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001825112000",
+                  "aantal": 2
+                }
+              ]
+            }
+          ]
+        },
+        "page": {
+          "size": 20,
+          "totalElements": 47,
+          "totalPages": 3,
+          "number": 1
+        }
+      }
+    },
+    "response_size_kb": 10.93
+  },
+  {
+    "timestamp": "2025-09-17T08:08:48.862201",
+    "session_id": "DSO_Search_Test_20250917_080848",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_Search",
+      "endpoint": "/activiteiten/_zoek",
+      "success": true,
+      "duration_seconds": 0.178,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "888eb0c5",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": {
+        "zoekterm": "dakraam",
+        "sortering": "besteMatch"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758089328.683618
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Wed, 17 Sep 2025 06:08:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "access-control-expose-headers": "",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-dso-instance": "aaad41b7832b043a6bff0433f10c98dc",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,Authorization",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-security-policy": "default-src 'none'; require-trusted-types-for 'script'; frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "data": {
+        "_embedded": {
+          "activiteiten": [
+            {
+              "urn": "nl.imow-gm1876.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001813647290000/id/concept/Conclusienl.imow-gm1876.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001813647290000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm1876.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1876.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001813647290000/id/concept/IndieningsvereistenVergunningnl.imow-gm1876.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001813647290000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm1876.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0498.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001815096288000/id/concept/Conclusienl.imow-gm0498.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001815096288000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0498.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0498.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001815096288000/id/concept/IndieningsvereistenVergunningnl.imow-gm0498.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001815096288000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0498.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/Conclusienl.imow-gm1621.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1621.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001817291295000/id/concept/IndieningsvereistenVergunningnl.imow-gm1621.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001817291295000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm1621.ambtsgebied.004000000000000000001621"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/Conclusienl.imow-gm0717.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0717.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001805307631000/id/concept/IndieningsvereistenVergunningnl.imow-gm0717.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001805307631000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0717.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/Conclusienl.imow-gm0275.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0275.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202637000/id/concept/IndieningsvereistenVergunningnl.imow-gm0275.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001202637000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0275.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/Conclusienl.imow-gm0448.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0448.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002000155000/id/concept/IndieningsvereistenVergunningnl.imow-gm0448.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001002000155000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0448.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1940.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001823770151000/id/concept/Conclusienl.imow-gm1940.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001823770151000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm1940.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm1940.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001823770151000/id/concept/IndieningsvereistenVergunningnl.imow-gm1940.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001823770151000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm1940.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0777.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0777.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001326004000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0777.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0226.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202546000/id/concept/Conclusienl.imow-gm0226.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001202546000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0226.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0285.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001299967000/id/concept/Conclusienl.imow-gm0285.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001299967000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0285.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0285.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001299967000/id/concept/IndieningsvereistenVergunningnl.imow-gm0285.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001001299967000",
+                "bestuurslaag": "gemeente"
+              },
+              "toestemming": "Vergunning",
+              "locaties": [
+                "nl.imow-gm0285.ambtsgebied.9999999999"
+              ]
+            },
+            {
+              "urn": "nl.imow-gm0148.activiteit.DakraamAndereLichtvoorz",
+              "type": "Overige",
+              "omschrijving": "Dakraam, daklicht, lichtstraat of soortgelijke daglichtvoorziening bouwen, in stand houden of gebruiken",
+              "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001809249108000/id/concept/Conclusienl.imow-gm0148.activiteit.DakraamAndereLichtvoorz",
+              "bestuursorgaan": {
+                "oin": "00000001809249108000",
+                "bestuurslaag": "gemeente"
+              },
+              "locaties": [
+                "nl.imow-gm0148.ambtsgebied.9999999999"
+              ]
+            }
+          ]
+        },
+        "_links": {
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=2&pageSize=20"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=3&pageSize=20"
+          }
+        },
+        "aggregaties": {
+          "toestemmingen": [
+            {
+              "toestemming": "Vergunning",
+              "aantal": 21
+            }
+          ],
+          "bestuurslagen": [
+            {
+              "bestuurslaag": "gemeente",
+              "aantal": 43
+            }
+          ],
+          "bestuursorganenPerBestuurslaag": [
+            {
+              "bestuurslaag": "gemeente",
+              "bestuursorganen": [
+                {
+                  "oin": "00000001001903664000",
+                  "aantal": 4
+                },
+                {
+                  "oin": "00000001001172694000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202637000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001202789000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001299967000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001326004000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001479179000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001825112000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001900651000",
+                  "aantal": 2
+                },
+                {
+                  "oin": "00000001001902763000",
+                  "aantal": 2
+                }
+              ]
+            }
+          ]
+        },
+        "page": {
+          "size": 20,
+          "totalElements": 43,
+          "totalPages": 3,
+          "number": 1
+        }
+      }
+    },
+    "response_size_kb": 12.57
+  },
+  {
+    "timestamp": "2025-09-17T08:08:48.961146",
+    "session_id": "DSO_Search_Test_20250917_080848",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_Search",
+      "endpoint": "/activiteiten/_zoek",
+      "success": true,
+      "duration_seconds": 0.096,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "1e403260",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": {
+        "zoekterm": "dormer window",
+        "sortering": "besteMatch"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758089328.865352
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Wed, 17 Sep 2025 06:08:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "access-control-expose-headers": "",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-dso-instance": "1645d62f75c66ab1070abd50ca24d486",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,Authorization",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-security-policy": "default-src 'none'; require-trusted-types-for 'script'; frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "data": {
+        "_links": {
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek?page=1&pageSize=20"
+          }
+        },
+        "aggregaties": {
+          "toestemmingen": [],
+          "bestuurslagen": [],
+          "bestuursorganenPerBestuurslaag": []
+        },
+        "page": {
+          "size": 0,
+          "totalElements": 0,
+          "totalPages": 1,
+          "number": 1
+        }
+      }
+    },
+    "response_size_kb": 1.42
+  },
+  {
+    "timestamp": "2025-09-17T08:08:49.066880",
+    "session_id": "DSO_Search_Test_20250917_080848",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_Search",
+      "endpoint": "/activiteiten/_suggereer",
+      "success": true,
+      "duration_seconds": 0.102,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "c33e8945",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_suggereer",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": {
+        "zoekterm": "dakk"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758089328.9646258
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Wed, 17 Sep 2025 06:08:49 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "access-control-expose-headers": "",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-dso-instance": "4cbaef9d4478491b6ca1e83d53860510",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,Authorization",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-security-policy": "default-src 'none'; require-trusted-types-for 'script'; frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding",
+        "x-envoy-decorator-operation": "apigw_with_payload",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "data": {
+        "suggesties": [
+          "dakkapel"
+        ]
+      }
+    },
+    "response_size_kb": 0.88
+  }
+]

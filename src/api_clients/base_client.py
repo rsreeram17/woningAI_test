@@ -101,14 +101,16 @@ class BaseAPIClient:
             headers.update(kwargs['headers'])
         kwargs['headers'] = headers
 
-        # Prepare request summary for logging
+        # Prepare request summary for logging - FULL DETAILS for transparency
         request_summary = {
             "request_id": request_id,
             "method": method,
             "url": url,
             "headers": self._sanitize_headers(headers),
-            "payload": kwargs.get('json', kwargs.get('data')),
-            "params": kwargs.get('params')
+            "payload": kwargs.get('json', kwargs.get('data')),  # Full payload for logs
+            "params": kwargs.get('params'),  # Full params for logs
+            "timeout": self.timeout,
+            "timestamp": time.time()
         }
 
         # Create request summary string

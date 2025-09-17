@@ -95,9 +95,7 @@ class BAGAPIClient(BaseAPIClient):
         # Process response
         response_data = result['data']
 
-        # Debug: Log the actual response structure
-        if self.house_logger:
-            self.house_logger.log_general(f"BAG API Response Structure: {type(response_data)} - Keys: {list(response_data.keys()) if isinstance(response_data, dict) else 'Not a dict'}")
+        # Debug: Log the actual response structure (removed for production)
 
         # Handle different response structures from BAG API
         addresses = None
@@ -199,9 +197,7 @@ class BAGAPIClient(BaseAPIClient):
         # Process response
         response_data = result['data']
 
-        # Debug: Log the actual response structure
-        if self.house_logger:
-            self.house_logger.log_general(f"BAG Extended API Response Structure: {type(response_data)} - Keys: {list(response_data.keys()) if isinstance(response_data, dict) else 'Not a dict'}")
+        # Debug: Log the actual response structure (removed for production)
 
         # Handle different response structures from BAG API
         addresses = None
@@ -255,12 +251,7 @@ class BAGAPIClient(BaseAPIClient):
     def _process_extended_address(self, address_data: Dict[str, Any]) -> Dict[str, Any]:
         """Process extended address data and extract key information."""
 
-        # Debug: Log the address data structure
-        if self.house_logger:
-            self.house_logger.log_general(f"Extended Address Data Keys: {list(address_data.keys())}")
-            if 'adresseerbaarObject' in address_data:
-                ao_keys = list(address_data['adresseerbaarObject'].keys())
-                self.house_logger.log_general(f"AdresseerbaarObject Keys: {ao_keys}")
+        # Debug: Log the address data structure (removed for production)
 
         # Extract basic address info
         address_info = {

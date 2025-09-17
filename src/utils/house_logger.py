@@ -67,7 +67,7 @@ class HouseSpecificLogger:
                 "http_status": response.get("status_code") if isinstance(response, dict) else None
             },
             "request_data": self._sanitize_request(request),
-            "response_data": self._truncate_response(response),
+            "response_data": response,  # Keep FULL response for complete transparency
             "response_size_kb": round(len(str(response)) / 1024, 2) if response else 0
         }
 
@@ -97,8 +97,8 @@ class HouseSpecificLogger:
 
         return sanitized
 
-    def _truncate_response(self, response: Any, max_size: int = 5000) -> Any:
-        """Truncate large responses for logging."""
+    def _truncate_response(self, response: Any, max_size: int = 50000) -> Any:
+        """Truncate large responses for logging - generous limit to preserve activity data."""
         if not response:
             return response
 
@@ -107,11 +107,19 @@ class HouseSpecificLogger:
             if isinstance(response, dict):
                 truncated = {"_truncated": True, "_original_size": len(response_str)}
 
-                # Keep important fields
-                important_fields = ['success', 'error', 'status_code', '_embedded', '_links', 'message']
+                # Keep ALL important fields - especially for DSO activity data
+                important_fields = [
+                    'success', 'error', 'status_code', 'data',
+                    '_embedded', '_links', 'message', 'headers',
+                    'activiteiten', 'suggesties'  # DSO specific fields
+                ]
                 for field in important_fields:
                     if field in response:
-                        truncated[field] = response[field]
+                        # For data field and _embedded, don't truncate - keep full structure
+                        if field in ['data', '_embedded'] and isinstance(response[field], dict):
+                            truncated[field] = response[field]  # Keep full data structure
+                        else:
+                            truncated[field] = response[field]
 
                 return truncated
             else:

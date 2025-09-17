@@ -51,12 +51,24 @@ test_addresses:
   - postcode: "YOUR_POSTCODE"
     huisnummer: YOUR_NUMBER
     huisletter: "LETTER_IF_ANY"  # optional
+    huisnummertoevoeging: "ADDITION_IF_ANY"  # optional, e.g., "2" for 43-2
     house_name: "Descriptive Name"
     description: "Brief description"
     priority: "high"  # high, medium, low
 ```
 
-### 3. Run Tests
+### 3. Individual API Testing (NEW!)
+```bash
+# Test individual APIs one by one
+python tools/test_bag_api.py "1082GB 43-2"
+python tools/test_dso_search.py "1082GB 43-2" "dakkapel"
+python tools/test_dso_interactive.py "1082GB 43-2" "dakkapel"
+
+# Test all APIs at once
+python tools/test_all_apis.py "1082GB 43-2" "dakkapel"
+```
+
+### 4. Full Integration Testing
 ```bash
 # Full test suite (all houses × all renovation types)
 python run_tests.py
@@ -98,6 +110,21 @@ house_1012JS_1/
 
 ## 🛠️ Tools & Commands
 
+### Individual API Testing (Recommended for Development)
+```bash
+# Test BAG API only (address lookup and building data)
+python tools/test_bag_api.py "1082GB 43-2"
+
+# Test DSO Search API only (find applicable rules)
+python tools/test_dso_search.py "1082GB 43-2" "dakkapel"
+
+# Test DSO Interactive API only (permit checks)
+python tools/test_dso_interactive.py "1082GB 43-2" "dakkapel"
+
+# Test all APIs in sequence
+python tools/test_all_apis.py "1082GB 43-2" "dakkapel"
+```
+
 ### Interactive House Viewer
 ```bash
 python tools/house_viewer.py
@@ -107,7 +134,7 @@ python tools/house_viewer.py "1012JS 1"
 
 ### Quick Testing
 ```bash
-# Test single scenario
+# Test single scenario (full integration)
 python tools/quick_test.py "2631CR 15C" "uitbouw"
 ```
 
