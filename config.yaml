@@ -1,0 +1,124 @@
+apis:
+  bag:
+    base_url: "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2"
+    timeout: 30
+    rate_limit:
+      requests_per_second: 45  # Buffer under 50 limit
+      requests_per_day: 48000  # Buffer under 50,000 limit
+
+  dso:
+    production_url: "https://service.omgevingswet.overheid.nl/publiek"
+    preproduction_url: "https://service.pre.omgevingswet.overheid.nl/publiek"
+    timeout: 30
+    rate_limit:
+      requests_per_second: 50
+
+# Your 10 test houses - Replace with your actual addresses
+test_addresses:
+  - postcode: "1012JS"
+    huisnummer: 1
+    house_name: "Amsterdam Canal House"
+    description: "Historic Amsterdam center property"
+    priority: "high"
+  - postcode: "2631CR"
+    huisnummer: 15
+    huisletter: "C"
+    house_name: "Nootdorp Family Home"
+    description: "Modern suburban house"
+    priority: "high"
+  - postcode: "1082GB"
+    huisnummer: 43
+    huisnummertoevoeging: "2"
+    house_name: "Amsterdam House 43-2"
+    description: "House with toevoeging number"
+    priority: "high"
+  - postcode: "3011AD"
+    huisnummer: 20
+    house_name: "Rotterdam Center Apartment"
+    description: "City center apartment"
+    priority: "medium"
+  - postcode: "2514AN"
+    huisnummer: 5
+    house_name: "The Hague Townhouse"
+    description: "Government district townhouse"
+    priority: "medium"
+  - postcode: "3512JA"
+    huisnummer: 100
+    house_name: "Utrecht Historic Building"
+    description: "Medieval city center building"
+    priority: "medium"
+  - postcode: "2000AA"
+    huisnummer: 1
+    house_name: "Haarlem Market Square"
+    description: "Market square property"
+    priority: "low"
+  - postcode: "1000AA"
+    huisnummer: 12
+    house_name: "Test Address 7"
+    description: "Sample address for testing"
+    priority: "low"
+  - postcode: "1001AB"
+    huisnummer: 25
+    house_name: "Test Address 8"
+    description: "Sample address for testing"
+    priority: "low"
+  - postcode: "1002BC"
+    huisnummer: 38
+    house_name: "Test Address 9"
+    description: "Sample address for testing"
+    priority: "low"
+  - postcode: "1003CD"
+    huisnummer: 50
+    house_name: "Test Address 10"
+    description: "Sample address for testing"
+    priority: "low"
+
+renovation_scenarios:
+  - type: "dakkapel"
+    search_terms: ["dakkapel", "dakraam", "dormer window"]
+    complexity: "simple"
+    description: "Adding dormer window to roof"
+  - type: "uitbouw"
+    search_terms: ["uitbouw", "aanbouw", "extension"]
+    complexity: "complex"
+    description: "House extension or addition"
+  - type: "badkamer_verbouwen"
+    search_terms: ["badkamer verbouwen", "sanitair", "bathroom renovation"]
+    complexity: "medium"
+    description: "Bathroom renovation"
+  - type: "extra_verdieping"
+    search_terms: ["extra verdieping", "optopping", "additional floor"]
+    complexity: "complex"
+    description: "Adding extra floor/level"
+  - type: "garage_bouwen"
+    search_terms: ["garage bouwen", "bijgebouw", "building garage"]
+    complexity: "medium"
+    description: "Building garage or outbuilding"
+  - type: "keuken_verbouwen"
+    search_terms: ["keuken verbouwen", "kitchen renovation"]
+    complexity: "medium"
+    description: "Kitchen renovation"
+
+# Logging configuration
+logging:
+  house_specific:
+    create_individual_folders: true
+    save_raw_api_calls: true
+    generate_formatted_outputs: true
+    create_house_dashboards: true
+
+  retention:
+    keep_logs_days: 30
+    archive_old_tests: true
+
+  console:
+    show_progress: true
+    show_api_calls: true
+    use_colors: true
+
+# Testing configuration
+testing:
+  run_parallel: false
+  delay_between_tests: 1.0  # seconds
+  retry_failed_calls: 3
+  timeout_tolerance: 30.0  # seconds
