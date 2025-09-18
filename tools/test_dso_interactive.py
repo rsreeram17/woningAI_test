@@ -4,6 +4,7 @@
 import os
 import sys
 import argparse
+from datetime import datetime
 
 # Add project root to path for imports
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -13,6 +14,7 @@ from src.config import load_config
 from src.api_clients.dso_search_api import DSOSearchAPI
 from src.api_clients.dso_interactive_api import DSOInteractiveAPI
 from src.api_clients.bag_client import BAGAPIClient
+from src.utils.house_logger import HouseSpecificLogger
 
 def test_dso_interactive(address: str, renovation_type: str):
     """Test DSO Interactive API with specific address and renovation type.
@@ -36,11 +38,15 @@ def test_dso_interactive(address: str, renovation_type: str):
         print(f"   DSO API Key: {dso_config['api_key'][:10]}...")
         print(f"   BAG API Key: {bag_config['api_key'][:10]}...")
 
-        # Initialize clients
-        search_client = DSOSearchAPI(dso_config)
-        interactive_client = DSOInteractiveAPI(dso_config)
-        bag_client = BAGAPIClient(bag_config)
-        print("✅ API Clients initialized")
+        # Initialize house logger for file output
+        house_logger = HouseSpecificLogger(address, f"DSO_Interactive_Test_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
+        print(f"📁 Created house-specific folder: {house_logger.house_folder}")
+
+        # Initialize clients with house logger
+        search_client = DSOSearchAPI(dso_config, house_logger=house_logger)
+        interactive_client = DSOInteractiveAPI(dso_config, house_logger=house_logger)
+        bag_client = BAGAPIClient(bag_config, house_logger=house_logger)
+        print("✅ API Clients initialized with logging")
 
         print(f"\n" + "=" * 50)
         print("🚀 GETTING REQUIRED DATA")
@@ -262,8 +268,35 @@ def test_dso_interactive(address: str, renovation_type: str):
                 filing_analysis = filing_result['data']['filing_analysis']
                 print(f"   📄 Documents needed: {filing_analysis['total_requirements']}")
 
+        # Save test summary to files
+        test_summary = {
+            "address": address,
+            "renovation_type": renovation_type,
+            "test_timestamp": datetime.now().isoformat(),
+            "results": {
+                "permit_check": permit_result.get('success', False),
+                "filing_requirements": filing_result.get('success', False),
+                "compliance_measures": compliance_result.get('success', False),
+                "complete_flow": flow_result.get('success', False)
+            },
+            "coordinates": coordinates_result.get('coordinates', []) if coordinates_result.get('success') else [],
+            "functional_references": functional_refs,
+            "permit_analysis": permit_result.get('data', {}).get('permit_analysis', {}) if permit_result.get('success') else {},
+            "filing_analysis": filing_result.get('data', {}).get('filing_analysis', {}) if filing_result.get('success') else {},
+            "compliance_analysis": compliance_result.get('data', {}).get('compliance_analysis', {}) if compliance_result.get('success') else {},
+            "success_rate": success_rate
+        }
+
+        # Save to house-specific folder
+        house_logger.save_renovation_test_results("dso_interactive_test", test_summary)
+
+        print(f"\n📁 Results saved to:")
+        print(f"   • House folder: {house_logger.house_folder}")
+        print(f"   • Output folder: {house_logger.output_folder}")
+
         print(f"\n📁 Next steps:")
         print(f"   • Test DSO Routing: python tools/test_dso_routing.py '{address}' {renovation_type}")
+        print(f"   • View saved results: ls {house_logger.house_folder}")
         print(f"   • Test full integration: python run_tests.py")
 
     except Exception as e:

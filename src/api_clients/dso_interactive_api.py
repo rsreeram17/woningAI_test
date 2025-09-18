@@ -9,8 +9,9 @@ class DSOInteractiveAPI(BaseAPIClient):
     def __init__(self, config: Dict[str, Any], house_logger=None):
         """Initialize DSO Interactive Services API client."""
         # Set specific endpoint for interactive API
+        # NOTE: Based on testing, the working URL structure is different from documentation
         interactive_config = config.copy()
-        interactive_config['base_url'] = f"{config['base_url']}/toepasbare-regels/api/uitvoerenservices/v2"
+        interactive_config['base_url'] = f"{config['base_url']}/toepasbareregelsuitvoerenservices/v2"
 
         super().__init__(interactive_config, "DSO_Interactive", house_logger)
 

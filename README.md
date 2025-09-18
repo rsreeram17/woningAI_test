@@ -57,12 +57,15 @@ test_addresses:
     priority: "high"  # high, medium, low
 ```
 
-### 3. Individual API Testing (NEW!)
+### 3. Individual API Testing (Complete Suite!)
 ```bash
-# Test individual APIs one by one
+# Test individual APIs one by one (in recommended order)
 python tools/test_bag_api.py "1082GB 43-2"
 python tools/test_dso_search.py "1082GB 43-2" "dakkapel"
+python tools/test_dso_detailed_query.py "1082GB 43-2" "dakkapel"  # NEW!
 python tools/test_dso_interactive.py "1082GB 43-2" "dakkapel"
+python tools/test_dso_routing.py "1082GB 43-2" "dakkapel"        # NEW!
+python tools/test_dso_catalog.py "1082GB 43-2" "dakkapel"        # NEW!
 
 # Test all APIs at once
 python tools/test_all_apis.py "1082GB 43-2" "dakkapel"
@@ -86,9 +89,12 @@ python tools/house_viewer.py "1012JS 1"
 ```
 house_1012JS_1/
 ├── raw_api_calls/          # Complete API request/response logs
-│   ├── bag_requests.json
-│   ├── dso_search_requests.json
-│   └── dso_interactive_requests.json
+│   ├── BAG_requests.json
+│   ├── DSO_Search_requests.json
+│   ├── DSO_DetailedQuery_requests.json  # NEW!
+│   ├── DSO_Interactive_requests.json
+│   ├── DSO_Routing_requests.json        # NEW!
+│   └── DSO_Catalog_requests.json        # NEW!
 ├── formatted_outputs/      # Human-readable test results
 │   ├── dakkapel_test_results.md
 │   ├── uitbouw_test_results.md

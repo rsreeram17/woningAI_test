@@ -922,3 +922,207 @@
 ```
 
 ---
+
+## DSO_Search API Call - 05:29:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_052958
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.351s
+
+### Request Summary:
+```json
+{
+  "request_id": "c86c8f7a",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758166198.8444312
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 05:29:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_052958
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.223s
+
+### Request Summary:
+```json
+{
+  "request_id": "befaa31d",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758166199.197825
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 05:29:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_052958
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.103s
+
+### Request Summary:
+```json
+{
+  "request_id": "9d4ea8a8",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakraam",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758166199.425162
+}
+```
+
+### Response Summary:
+- **Size:** 12.62 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 05:29:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_052958
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.174s
+
+### Request Summary:
+```json
+{
+  "request_id": "b417110e",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dormer window",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758166199.533779
+}
+```
+
+### Response Summary:
+- **Size:** 1.42 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 05:29:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_052958
+**Endpoint:** `/activiteiten/_suggereer`
+**Status:** ✅ SUCCESS
+**Duration:** 0.08s
+
+### Request Summary:
+```json
+{
+  "request_id": "5ac9ba54",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_suggereer",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakk"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758166199.7134132
+}
+```
+
+### Response Summary:
+- **Size:** 0.88 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
