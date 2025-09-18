@@ -1,0 +1,3040 @@
+[
+  {
+    "timestamp": "2025-09-18T05:53:18.743821",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteitidentificaties/_zoek",
+      "success": true,
+      "duration_seconds": 0.521,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "5f8ff920",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geometrie": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                119869.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482151.0
+              ]
+            ]
+          ]
+        },
+        "spatialOperator": "intersects"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167598.222552
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:20 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "d9e82721d3e4d8648787388ea8ab4882",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "vary": "Origin, Accept-Encoding",
+        "expires": "0",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": [
+        "nl.imow-gm0363.activiteit.210147b990fe4bd1a6ef125d61a9b447",
+        "nl.imow-gm0363.activiteit.23839eedb05148378730b9430162e357",
+        "nl.imow-gm0363.activiteit.239030110a234f33a6147f181ffc6df4",
+        "nl.imow-gm0363.activiteit.487a4dbbf3b341e8b00f23e451d14725",
+        "nl.imow-gm0363.activiteit.496a0c3a615a4d40910bff8b8b229483",
+        "nl.imow-gm0363.activiteit.51647430ed224bc4a4c131e1f81d32da",
+        "nl.imow-gm0363.activiteit.583791aa1b3c41ccbc100010cf03c695",
+        "nl.imow-gm0363.activiteit.68ec247c6a854f19a7910b51e3eefcf6",
+        "nl.imow-gm0363.activiteit.941f3432fdfb43c79c40e050cee276c6",
+        "nl.imow-gm0363.activiteit.AanvraagOpBouwwerken",
+        "nl.imow-gm0363.activiteit.AcculaderInWerkingHebben",
+        "nl.imow-gm0363.activiteit.ActBetrGemMonument",
+        "nl.imow-gm0363.activiteit.ActInOmgevingsplanGem",
+        "nl.imow-gm0363.activiteit.ActOpLocatieHistBodemVeront",
+        "nl.imow-gm0363.activiteit.AfscheidingDakterras",
+        "nl.imow-gm0363.activiteit.AlarminstallatieHebben",
+        "nl.imow-gm0363.activiteit.AnderBouwwerkBouwen",
+        "nl.imow-gm0363.activiteit.AntenneBouwen",
+        "nl.imow-gm0363.activiteit.AntihagelkanonHebben",
+        "nl.imow-gm0363.activiteit.BetonUitwassen",
+        "nl.imow-gm0363.activiteit.BijbehorendBouwwerk",
+        "nl.imow-gm0363.activiteit.BouwkeetBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkAgrarischBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkGebruiken",
+        "nl.imow-gm0363.activiteit.BouwwerkInfrastruct",
+        "nl.imow-gm0363.activiteit.BouwwerkSlopen",
+        "nl.imow-gm0363.activiteit.BouwwerkVeranderen",
+        "nl.imow-gm0363.activiteit.BuisleidingBouwen",
+        "nl.imow-gm0363.activiteit.ce65218222e143b9b37dad263f368c1b",
+        "nl.imow-gm0363.activiteit.ceeb28c184304e478b60490f8aca84ec",
+        "nl.imow-gm0363.activiteit.ConstrTerreinhoogte",
+        "nl.imow-gm0363.activiteit.Dakkapel",
+        "nl.imow-gm0363.activiteit.DakraamAndereLichtvoorz",
+        "nl.imow-gm0363.activiteit.dc10e2936ecb42d9b7bad7362832e0c8",
+        "nl.imow-gm0363.activiteit.dcbb0a5fe7044b0e83c0a58f425d1a73",
+        "nl.imow-gm0363.activiteit.DierenSlachten",
+        "nl.imow-gm0363.activiteit.DierlijkeMestOpslaan",
+        "nl.imow-gm0363.activiteit.e5c49faa16b448ceaa061a853a13de42",
+        "nl.imow-gm0363.activiteit.ElektrWindturbine",
+        "nl.imow-gm0363.activiteit.Energiebesparing",
+        "nl.imow-gm0363.activiteit.Erfafscheiding",
+        "nl.imow-gm0363.activiteit.fd509fabdc2e4c3faaf0d11b9808b321",
+        "nl.imow-gm0363.activiteit.FokkenLandbHuisdieren",
+        "nl.imow-gm0363.activiteit.FotoMateriaalOntw",
+        "nl.imow-gm0363.activiteit.GeluidProdAct",
+        "nl.imow-gm0363.activiteit.GeluidProdAndereAct",
+        "nl.imow-gm0363.activiteit.GeluidProdSchietbaan",
+        "nl.imow-gm0363.activiteit.GeluidProdWindturbine",
+        "nl.imow-gm0363.activiteit.GenetischGemOrganGebr",
+        "nl.imow-gm0363.activiteit.GeslotenBodemenergInst",
+        "nl.imow-gm0363.activiteit.GeurProdAndereAct",
+        "nl.imow-gm0363.activiteit.GeurProdDierenverblijven",
+        "nl.imow-gm0363.activiteit.GeurProdDoorAct",
+        "nl.imow-gm0363.activiteit.GeurProdZuiveringtwerk",
+        "nl.imow-gm0363.activiteit.GewoonOnderhoud",
+        "nl.imow-gm0363.activiteit.GrondwLozenSanering",
+        "nl.imow-gm0363.activiteit.HoutopstandVellen",
+        "nl.imow-gm0363.activiteit.HuishAfvalwLozen",
+        "nl.imow-gm0363.activiteit.KleinschaligGravenBovenInt",
+        "nl.imow-gm0363.activiteit.KoelwaterLozen",
+        "nl.imow-gm0363.activiteit.KozijnBouwen",
+        "nl.imow-gm0363.activiteit.KuilvoerOpslaan",
+        "nl.imow-gm0363.activiteit.LaboratoriumBiolAgens",
+        "nl.imow-gm0363.activiteit.LozenCalamiteitOef",
+        "nl.imow-gm0363.activiteit.LozenGemVoorzInzamelAfvalw",
+        "nl.imow-gm0363.activiteit.LozenHemelwater",
+        "nl.imow-gm0363.activiteit.LozenMakenBetonmortel",
+        "nl.imow-gm0363.activiteit.LozenOpInBodem",
+        "nl.imow-gm0363.activiteit.LozenOpslaanGoederen",
+        "nl.imow-gm0363.activiteit.LozenReinigenBouww",
+        "nl.imow-gm0363.activiteit.LozenSchoonmDrinkwleid",
+        "nl.imow-gm0363.activiteit.LozenSchoonwRiool",
+        "nl.imow-gm0363.activiteit.LozenTelenGewassen",
+        "nl.imow-gm0363.activiteit.LPGTanken",
+        "nl.imow-gm0363.activiteit.MadenVliegInsectKweken",
+        "nl.imow-gm0363.activiteit.MakenHandelsreclame",
+        "nl.imow-gm0363.activiteit.MilieubelastendeAct",
+        "nl.imow-gm0363.activiteit.MotorvoertuigWassen",
+        "nl.imow-gm0363.activiteit.NazorgNaSaneren",
+        "nl.imow-gm0363.activiteit.NietIndVoedselbereid",
+        "nl.imow-gm0363.activiteit.OngewoonVoorvalMBAOP",
+        "nl.imow-gm0363.activiteit.OverigeAct",
+        "nl.imow-gm0363.activiteit.Parkeergarage",
+        "nl.imow-gm0363.activiteit.PolyesterharsVerw",
+        "nl.imow-gm0363.activiteit.PropaanOpslaan",
+        "nl.imow-gm0363.activiteit.RecreatiefNachtverblijfBouw",
+        "nl.imow-gm0363.activiteit.RecrVisvijver",
+        "nl.imow-gm0363.activiteit.RoerendeZakenOpslaan",
+        "nl.imow-gm0363.activiteit.SlopenBeschStadsgezicht",
+        "nl.imow-gm0363.activiteit.SportBuitenlucht",
+        "nl.imow-gm0363.activiteit.SportSpeeltBouwen",
+        "nl.imow-gm0363.activiteit.TraditioneelSchieten",
+        "nl.imow-gm0363.activiteit.Trillingen",
+        "nl.imow-gm0363.activiteit.TuinmeubilairBouwen",
+        "nl.imow-gm0363.activiteit.UitwegMakenHebbenVeranderen",
+        "nl.imow-gm0363.activiteit.VlaggenmastBouwen",
+        "nl.imow-gm0363.activiteit.VoedingsmidIndustr",
+        "nl.imow-gm0363.activiteit.WegSpoorwegAanleggenWijz",
+        "nl.imow-gm0363.activiteit.WerkzaamheidUitv",
+        "nl.imow-gm0363.activiteit.Zonnecollector",
+        "nl.imow-gm0363.activiteit.ZonweringBouwen",
+        "nl.imow-gm0363.activiteit.ZwembadBouwen",
+        "nl.imow-gm0363.activiteit.Zwerfaval",
+        "nl.imow-mnre1034.activiteit.AanbrengenLagenMetalen",
+        "nl.imow-mnre1034.activiteit.AanmakenGewasbeschermingLandbouw",
+        "nl.imow-mnre1034.activiteit.AanmakenTransportGewasbLeidingen",
+        "nl.imow-mnre1034.activiteit.AanvraagGelijkwNietWater",
+        "nl.imow-mnre1034.activiteit.AanvraagGelijkwWateract",
+        "nl.imow-mnre1034.activiteit.AanvullenWabo",
+        "nl.imow-mnre1034.activiteit.AanvullenWaterwet",
+        "nl.imow-mnre1034.activiteit.ActGevolgNatuur",
+        "nl.imow-mnre1034.activiteit.ActInOmgevingsplan",
+        "nl.imow-mnre1034.activiteit.ActInWaterschapsverordening",
+        "nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed",
+        "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+        "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+        "nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver",
+        "nl.imow-mnre1034.activiteit.ActPerronsBijzSpoor",
+        "nl.imow-mnre1034.activiteit.ActPerronsHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.AfscheidingBalkonBouwen",
+        "nl.imow-mnre1034.activiteit.AfvalbeheerIPPC",
+        "nl.imow-mnre1034.activiteit.Afvalverbrandingsinstal",
+        "nl.imow-mnre1034.activiteit.AfvangenKooldioxide",
+        "nl.imow-mnre1034.activiteit.AgrarischLoonwerkbedrijf",
+        "nl.imow-mnre1034.activiteit.AircoWarmtepompBouwen",
+        "nl.imow-mnre1034.activiteit.AndereActBijzSpoor",
+        "nl.imow-mnre1034.activiteit.AndereActHoofdOfBijSpoor",
+        "nl.imow-mnre1034.activiteit.AndereBedrijfstak",
+        "nl.imow-mnre1034.activiteit.AndereIndustrie",
+        "nl.imow-mnre1034.activiteit.AndereLozingenNietNoordzee",
+        "nl.imow-mnre1034.activiteit.AndereLozingenNoordzee",
+        "nl.imow-mnre1034.activiteit.AntenneBouwen",
+        "nl.imow-mnre1034.activiteit.ArcheoWaarnToeval",
+        "nl.imow-mnre1034.activiteit.Asfaltcentrale",
+        "nl.imow-mnre1034.activiteit.Assimilatiebelichting",
+        "nl.imow-mnre1034.activiteit.ATActiviteitTestAansluit",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslg",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslp",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslw",
+        "nl.imow-mnre1034.activiteit.Autobergingsbedrijf",
+        "nl.imow-mnre1034.activiteit.Autodemontagebedrijf",
+        "nl.imow-mnre1034.activiteit.Autosport",
+        "nl.imow-mnre1034.activiteit.Basischemie",
+        "nl.imow-mnre1034.activiteit.Basismetaal",
+        "nl.imow-mnre1034.activiteit.BedrijfMestbehandeling",
+        "nl.imow-mnre1034.activiteit.BedrijfTeeltWaterplanten",
+        "nl.imow-mnre1034.activiteit.BehandelenGeoogsteGewassem",
+        "nl.imow-mnre1034.activiteit.BepActHoofdBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk",
+        "nl.imow-mnre1034.activiteit.BeperkingengebiedactWegRijk",
+        "nl.imow-mnre1034.activiteit.BepGebActInstallatieNietNoordzee",
+        "nl.imow-mnre1034.activiteit.BepGebActLuchthaven",
+        "nl.imow-mnre1034.activiteit.BepGebActMijnbInstallatieNZ",
+        "nl.imow-mnre1034.activiteit.BepGebActSpoorweg",
+        "nl.imow-mnre1034.activiteit.BepgebactWaterstaatswRijkNietNZ",
+        "nl.imow-mnre1034.activiteit.BepgebiedactWaterstaatswerkNZ",
+        "nl.imow-mnre1034.activiteit.BepgebiedactWaterstaatswerkRijk",
+        "nl.imow-mnre1034.activiteit.BepLokaalSpoor",
+        "nl.imow-mnre1034.activiteit.BereidenDrinkwaterLandbouwhuisd",
+        "nl.imow-mnre1034.activiteit.BereidenGietwater",
+        "nl.imow-mnre1034.activiteit.BestrijdingSchadelijkeDieren",
+        "nl.imow-mnre1034.activiteit.Betoncentrale",
+        "nl.imow-mnre1034.activiteit.BijbehorendBouwwerkBouwen",
+        "nl.imow-mnre1034.activiteit.Binnenschietbaan",
+        "nl.imow-mnre1034.activiteit.Bodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.Bodemsanering",
+        "nl.imow-mnre1034.activiteit.Bouwactiviteit",
+        "nl.imow-mnre1034.activiteit.BouwactiviteitOmgevingsplanBbl",
+        "nl.imow-mnre1034.activiteit.BouwbedrijfInstallatiebedrijf",
+        "nl.imow-mnre1034.activiteit.BouwBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BouwHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BouwkeetBouwen",
+        "nl.imow-mnre1034.activiteit.BouwwerkNutsvoorziening",
+        "nl.imow-mnre1034.activiteit.BrandstofhandelTankopslagbedrijf",
+        "nl.imow-mnre1034.activiteit.BrugBouwen",
+        "nl.imow-mnre1034.activiteit.BuisleidingGevaarlijkeStoffen",
+        "nl.imow-mnre1034.activiteit.BuisleidingWarmteKoudenet",
+        "nl.imow-mnre1034.activiteit.BuitenplansOmgevPlAct",
+        "nl.imow-mnre1034.activiteit.Buitenschietbaan",
+        "nl.imow-mnre1034.activiteit.BunkerstationsTankplaatsSchepen",
+        "nl.imow-mnre1034.activiteit.ChemischeProductenIndustrie",
+        "nl.imow-mnre1034.activiteit.ChemischeWasserij",
+        "nl.imow-mnre1034.activiteit.ChemReinigenTextiel",
+        "nl.imow-mnre1034.activiteit.Clausinstallatie",
+        "nl.imow-mnre1034.activiteit.ComplexeMineraleIndustrie",
+        "nl.imow-mnre1034.activiteit.ComplexePapierHoutTextielIndust",
+        "nl.imow-mnre1034.activiteit.ComposterenOpslaanGroenafval",
+        "nl.imow-mnre1034.activiteit.ConstructieTerreinhoogteBouwen",
+        "nl.imow-mnre1034.activiteit.Crematorium",
+        "nl.imow-mnre1034.activiteit.CultureelErfgoedRijk",
+        "nl.imow-mnre1034.activiteit.DakkapelBouwen",
+        "nl.imow-mnre1034.activiteit.DakraamBouwen",
+        "nl.imow-mnre1034.activiteit.Datacentrum",
+        "nl.imow-mnre1034.activiteit.DierenverblijvenReinigenVeewagen",
+        "nl.imow-mnre1034.activiteit.DrainagewaterGrondgebTeeltKas",
+        "nl.imow-mnre1034.activiteit.DrainwaterSubstraatteeltKas",
+        "nl.imow-mnre1034.activiteit.Drinkwaterbedrijf",
+        "nl.imow-mnre1034.activiteit.EnergiegebruikAndereBedrijfstak",
+        "nl.imow-mnre1034.activiteit.ErfafscheidingBouwen",
+        "nl.imow-mnre1034.activiteit.EtsenBeitsenMetalen",
+        "nl.imow-mnre1034.activiteit.ExploiterenBenzineterminal",
+        "nl.imow-mnre1034.activiteit.FloraFaunaRijk",
+        "nl.imow-mnre1034.activiteit.Garagebedrijf",
+        "nl.imow-mnre1034.activiteit.GasdrukRegelMeetStation",
+        "nl.imow-mnre1034.activiteit.GebruikBouwwerken",
+        "nl.imow-mnre1034.activiteit.GebruikBouwwerkenRijk",
+        "nl.imow-mnre1034.activiteit.GebruikenGewasbeschMestLandbouw",
+        "nl.imow-mnre1034.activiteit.GebruikOntplofbareStofMilitair",
+        "nl.imow-mnre1034.activiteit.GeenBedrijf",
+        "nl.imow-mnre1034.activiteit.GelegenheidZwemmen",
+        "nl.imow-mnre1034.activiteit.GelijkwaardigheidMBA",
+        "nl.imow-mnre1034.activiteit.GeslotenBodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.GevelpaneelBouwen",
+        "nl.imow-mnre1034.activiteit.GezuiverdStedAfvalwProduceren",
+        "nl.imow-mnre1034.activiteit.Glastuinbouwbedrijf",
+        "nl.imow-mnre1034.activiteit.GrafischeIndustrie",
+        "nl.imow-mnre1034.activiteit.GrafischeProcessen",
+        "nl.imow-mnre1034.activiteit.GravenBovenInterW",
+        "nl.imow-mnre1034.activiteit.GravenOnderInterW",
+        "nl.imow-mnre1034.activiteit.Grondbank",
+        "nl.imow-mnre1034.activiteit.GrondwOntrekIndustrieDrinkwater",
+        "nl.imow-mnre1034.activiteit.GrootschaligeEnergieopwekking",
+        "nl.imow-mnre1034.activiteit.GrootschaligeMestverwerking",
+        "nl.imow-mnre1034.activiteit.GrootschaligTanken",
+        "nl.imow-mnre1034.activiteit.GrootschaligTankenVaartuigen",
+        "nl.imow-mnre1034.activiteit.GroteStookinstallatie",
+        "nl.imow-mnre1034.activiteit.InformerenOverdrachtNietWaterAct",
+        "nl.imow-mnre1034.activiteit.InformerenOverdrachtWaterAct",
+        "nl.imow-mnre1034.activiteit.IngeperktGebruikGenetGemodOrg",
+        "nl.imow-mnre1034.activiteit.InStandHoudenBouwwerken",
+        "nl.imow-mnre1034.activiteit.Jachthaven",
+        "nl.imow-mnre1034.activiteit.KabelBijzSpoor",
+        "nl.imow-mnre1034.activiteit.KabelHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.KadaversDierlijkAfval",
+        "nl.imow-mnre1034.activiteit.Kleiduivenbaan",
+        "nl.imow-mnre1034.activiteit.KleinMiddelStookStandBrand",
+        "nl.imow-mnre1034.activiteit.KleinschaligTanken",
+        "nl.imow-mnre1034.activiteit.KleinschaligTankenVaartuigen",
+        "nl.imow-mnre1034.activiteit.KoelinstalKooldioKoolwstAmmo",
+        "nl.imow-mnre1034.activiteit.KozijnBouwen",
+        "nl.imow-mnre1034.activiteit.KringloopReparatieGebruikteProd",
+        "nl.imow-mnre1034.activiteit.Laboratorium",
+        "nl.imow-mnre1034.activiteit.LadenLossenSchepen",
+        "nl.imow-mnre1034.activiteit.Landbouwmechanisatiebedrijf",
+        "nl.imow-mnre1034.activiteit.LassenMetalen",
+        "nl.imow-mnre1034.activiteit.LozenAfkomstTelenKwekenNietNZ",
+        "nl.imow-mnre1034.activiteit.LozenAfkomstTelenKwekenNZ",
+        "nl.imow-mnre1034.activiteit.LozenAfkZuiveringtechnW",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwOpslagKuilvoer",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwOpslGebrSubstr",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwReinigenVerpakBiol",
+        "nl.imow-mnre1034.activiteit.LozenBijBouwenNietNoordzee",
+        "nl.imow-mnre1034.activiteit.LozenBijBouwenNoordzee",
+        "nl.imow-mnre1034.activiteit.LozenBijMakenBetonMortel",
+        "nl.imow-mnre1034.activiteit.LozenBijVormgevenBetonP",
+        "nl.imow-mnre1034.activiteit.LozenGrondbankGrondreiniging",
+        "nl.imow-mnre1034.activiteit.LozenHemelCondensKas",
+        "nl.imow-mnre1034.activiteit.LozenHuishAfvalwPleziervaar",
+        "nl.imow-mnre1034.activiteit.LozenHuishoudelijkAfvalwaterNZ",
+        "nl.imow-mnre1034.activiteit.LozenHuishoudelijkAfvalwNietNZ",
+        "nl.imow-mnre1034.activiteit.LozenKoelwater",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterAndereIndustrie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterDatacentrum",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterGrafischeIndustrie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterKoelinstallatie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterMetaalproductenind",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterOppwaterl",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterStookinstallatie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwRubberKunststofrecycl",
+        "nl.imow-mnre1034.activiteit.LozenNietOppwTelenGewassenGebouw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterBedrijfMestbehandel",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterBedrijfTeeltWaterpl",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterChemischeProductInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterComplexeMineraleInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterComplexePapierind",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterDrinkwaterbedrijf",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterExploiterenSeveso",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterGebruikGewasbesch",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterGrootschEnergieopw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterKadavDierlijkAfval",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlGrootschMestverwer",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamAfvalbeheer",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamBasischemie",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamBasismetaal",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamMakenCokes",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamRaffinaderij",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMetaalprodIndIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMilitaireZeehaven",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMineraleProdInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOefenenBrandbestr",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpenBodemenergiesys",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOppvlaktebehOplosm",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpslagtankVloeistof",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpslagTransportbedr",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterPapierindustrie",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterRubberKunststofIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterScheepswerven",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterStortplWinningsvoor",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterTankautoreiniging",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterTelenGewassenGebouw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerbAfvalstNietIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerbrandAfvalstIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVergassenSteenkool",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerwBedrGevAfvalst",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVoedingsmidIndIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterZelfstAfvalwatrzuiv",
+        "nl.imow-mnre1034.activiteit.LozenOppWStortBuitenStortplaats",
+        "nl.imow-mnre1034.activiteit.LozenOpslaanZevenGrondBagger",
+        "nl.imow-mnre1034.activiteit.LozenOpZuiveringtechnischWerk",
+        "nl.imow-mnre1034.activiteit.LozenStofAfvalwBeroepsvaart",
+        "nl.imow-mnre1034.activiteit.LozingenOntplofbStofMilitairObj",
+        "nl.imow-mnre1034.activiteit.LozingOppervlaktewaterRijkNietNZ",
+        "nl.imow-mnre1034.activiteit.LozingOppwaterZuivertechWerkRijk",
+        "nl.imow-mnre1034.activiteit.LozingOppwatZuivertechWerkVanMBA",
+        "nl.imow-mnre1034.activiteit.LozingsactiviteitenInNoordzee",
+        "nl.imow-mnre1034.activiteit.LZAAfvalwSchepBinnenwater",
+        "nl.imow-mnre1034.activiteit.MaatwerkNietWaterAct",
+        "nl.imow-mnre1034.activiteit.MaatwerkWateract",
+        "nl.imow-mnre1034.activiteit.MagazijnstellingBouwen",
+        "nl.imow-mnre1034.activiteit.MakenCokes",
+        "nl.imow-mnre1034.activiteit.MechanischBewDiverseMaterialen",
+        "nl.imow-mnre1034.activiteit.MechanischBewerkenSteen",
+        "nl.imow-mnre1034.activiteit.MechanischeThermischBewMetalen",
+        "nl.imow-mnre1034.activiteit.MededelingMerBeoordeling",
+        "nl.imow-mnre1034.activiteit.MededelingMerBeoordelingWsRijk",
+        "nl.imow-mnre1034.activiteit.Mestbehandelingsinstallatie",
+        "nl.imow-mnre1034.activiteit.Mestvergistingsinstallatie",
+        "nl.imow-mnre1034.activiteit.Metaalproductenindustrie",
+        "nl.imow-mnre1034.activiteit.Metaalrecyclingbedrijf",
+        "nl.imow-mnre1034.activiteit.MiddelgroteStookinstallatie",
+        "nl.imow-mnre1034.activiteit.Mijnbouw",
+        "nl.imow-mnre1034.activiteit.MijnbouwlocatieactiviteitRijk",
+        "nl.imow-mnre1034.activiteit.MilieubelastendeActiviteitRijk",
+        "nl.imow-mnre1034.activiteit.Milieustraat",
+        "nl.imow-mnre1034.activiteit.MilitaireKazerne",
+        "nl.imow-mnre1034.activiteit.MilitaireLuchthaven",
+        "nl.imow-mnre1034.activiteit.MilitaireOefenOpMilitaireObjTerr",
+        "nl.imow-mnre1034.activiteit.MilitaireSchietbaan",
+        "nl.imow-mnre1034.activiteit.MilitaireZeehaven",
+        "nl.imow-mnre1034.activiteit.MineraleProductenIndustrie",
+        "nl.imow-mnre1034.activiteit.MobielBrekenBouwSloopafval",
+        "nl.imow-mnre1034.activiteit.Motorrevisiebedrijf",
+        "nl.imow-mnre1034.activiteit.NatteKoeltoren",
+        "nl.imow-mnre1034.activiteit.Natura2000Rijk",
+        "nl.imow-mnre1034.activiteit.ObjectBepBurgerLuchthavenRegio",
+        "nl.imow-mnre1034.activiteit.ObjectBepGebLuchthaven",
+        "nl.imow-mnre1034.activiteit.ObjectBepLuchtMili",
+        "nl.imow-mnre1034.activiteit.Omgevingsplanactiviteit",
+        "nl.imow-mnre1034.activiteit.OnderhoudApparatVoertuigVaartuig",
+        "nl.imow-mnre1034.activiteit.OnderhoudOpenbareRuimte",
+        "nl.imow-mnre1034.activiteit.OnderhoudswerkplaatsVliegtuigen",
+        "nl.imow-mnre1034.activiteit.OnderhWerkplBusTreinTramMetro",
+        "nl.imow-mnre1034.activiteit.OngewoonVoorvalMBA",
+        "nl.imow-mnre1034.activiteit.OngewoonVoorvalNatura2000",
+        "nl.imow-mnre1034.activiteit.OngVoorvalBepLokaalSpoor",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZABijMBA",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZABinnenw",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZANietNZ",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZANZ",
+        "nl.imow-mnre1034.activiteit.OngVoorvalMijnbouwinstWater",
+        "nl.imow-mnre1034.activiteit.OngVoorvalStortZee",
+        "nl.imow-mnre1034.activiteit.OngVoorvalVellenHout",
+        "nl.imow-mnre1034.activiteit.OngVoorvalWaterontAmvb",
+        "nl.imow-mnre1034.activiteit.OngVoorvalZwemBaden",
+        "nl.imow-mnre1034.activiteit.OngVoorvBepSpoorHoofdBijz",
+        "nl.imow-mnre1034.activiteit.OngVoorvFlora",
+        "nl.imow-mnre1034.activiteit.OntgrondingsactiviteitRijk",
+        "nl.imow-mnre1034.activiteit.OntgrondOpLandRegionWaterWinterb",
+        "nl.imow-mnre1034.activiteit.OntvangenAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.OpenBodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.OpInBodemBedrGevAfvalNietStortpl",
+        "nl.imow-mnre1034.activiteit.OpInBodemMest",
+        "nl.imow-mnre1034.activiteit.OpInBodemZuiveringsslib",
+        "nl.imow-mnre1034.activiteit.Oplosmiddeleninstallatie",
+        "nl.imow-mnre1034.activiteit.OppervlaktebehandelMetOplosmIPPC",
+        "nl.imow-mnre1034.activiteit.OpslaanAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.OpslaanAutowrakken",
+        "nl.imow-mnre1034.activiteit.OpslaanBedrGevAfvalVoorafgInzam",
+        "nl.imow-mnre1034.activiteit.OpslaanBrandstoffenBunkerstation",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselBovengrondseOpslag",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselOndergrondseOpslag",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselTankcontAlsOpslagta",
+        "nl.imow-mnre1034.activiteit.OpslaanDrijfmestInMestbassin",
+        "nl.imow-mnre1034.activiteit.OpslaanGebruiktSubstraatmat",
+        "nl.imow-mnre1034.activiteit.OpslaanGevaarlijkeStofInVerpakk",
+        "nl.imow-mnre1034.activiteit.OpslaanGevStofNietOrgPerInVerpak",
+        "nl.imow-mnre1034.activiteit.OpslaanGoederen",
+        "nl.imow-mnre1034.activiteit.OpslaanKuilvoerVasteBijvoedermid",
+        "nl.imow-mnre1034.activiteit.OpslaanOntplofbareStoffenCiviel",
+        "nl.imow-mnre1034.activiteit.OpslaanOntplofbStofMilitaireObj",
+        "nl.imow-mnre1034.activiteit.OpslaanOrganischePeroxiden",
+        "nl.imow-mnre1034.activiteit.OpslaanOxidVerstikCryogGasOpslta",
+        "nl.imow-mnre1034.activiteit.OpslaanPropaanPropeenOpslagtanks",
+        "nl.imow-mnre1034.activiteit.OpslaanVasteMestChampDikkeFract",
+        "nl.imow-mnre1034.activiteit.OpslaanVasteMinerAnorgMeststof",
+        "nl.imow-mnre1034.activiteit.OpslaanVerwijderdAsbest",
+        "nl.imow-mnre1034.activiteit.OpslaanVloeistoffenOpslagtank",
+        "nl.imow-mnre1034.activiteit.OpslaanVuurwPyroArtikelenTheater",
+        "nl.imow-mnre1034.activiteit.OpslagGrondBagger",
+        "nl.imow-mnre1034.activiteit.OpslagHerbrGrondBagInOppwater",
+        "nl.imow-mnre1034.activiteit.OpslagHerbruikbareGrondBagger",
+        "nl.imow-mnre1034.activiteit.OpslagtankVoorGassen",
+        "nl.imow-mnre1034.activiteit.OpslagTransportbedrijf",
+        "nl.imow-mnre1034.activiteit.OpslBrandVloeisNietDieselBovengr",
+        "nl.imow-mnre1034.activiteit.OpslBrandVloeisNietDieselOndergr",
+        "nl.imow-mnre1034.activiteit.OpstellenVoertuigGevaarlStoffen",
+        "nl.imow-mnre1034.activiteit.OverigAfvalwaterKassen",
+        "nl.imow-mnre1034.activiteit.OverigBouwwerkBouwen",
+        "nl.imow-mnre1034.activiteit.OverigeVeranderingenBouwwerk",
+        "nl.imow-mnre1034.activiteit.OverigFloraFauna",
+        "nl.imow-mnre1034.activiteit.OverschrijdenLegionella",
+        "nl.imow-mnre1034.activiteit.PapierHoutTextielLeerIndustrie",
+        "nl.imow-mnre1034.activiteit.ProefdraaienVerbrandingsmotoren",
+        "nl.imow-mnre1034.activiteit.Raffinaderij",
+        "nl.imow-mnre1034.activiteit.RecyclingbedrPapierKartonTextiel",
+        "nl.imow-mnre1034.activiteit.ReinigenCoatenDiverseMaterialen",
+        "nl.imow-mnre1034.activiteit.ReinigenVerpakkingenBiolGewassen",
+        "nl.imow-mnre1034.activiteit.ReinigenVerpakkingenNietBioGewas",
+        "nl.imow-mnre1034.activiteit.ReinigenVoertuigAgrActiviteiten",
+        "nl.imow-mnre1034.activiteit.ReinigOpslagVerpakGevaarlijkStof",
+        "nl.imow-mnre1034.activiteit.ReparerenVerhurenGemotoWerktuig",
+        "nl.imow-mnre1034.activiteit.RijkmonMonument",
+        "nl.imow-mnre1034.activiteit.RijksmonArchMonument",
+        "nl.imow-mnre1034.activiteit.Rijksmonumentenactiviteit",
+        "nl.imow-mnre1034.activiteit.RubberKunsstofRecyclingbedrijf",
+        "nl.imow-mnre1034.activiteit.RubberKunststofIndustrie",
+        "nl.imow-mnre1034.activiteit.Scheepswerven",
+        "nl.imow-mnre1034.activiteit.Schietbaan",
+        "nl.imow-mnre1034.activiteit.SchoonbrandenMetalen",
+        "nl.imow-mnre1034.activiteit.SchoonmakenPleziervaartuigen",
+        "nl.imow-mnre1034.activiteit.SevesoInrichting",
+        "nl.imow-mnre1034.activiteit.ShredderAutowrak",
+        "nl.imow-mnre1034.activiteit.Sloopactiviteit",
+        "nl.imow-mnre1034.activiteit.SlopenBouwwerk",
+        "nl.imow-mnre1034.activiteit.SmeltenGietenMetalen",
+        "nl.imow-mnre1034.activiteit.SneeuwIJsbaan",
+        "nl.imow-mnre1034.activiteit.SolderenMetalen",
+        "nl.imow-mnre1034.activiteit.Soortenbescherming",
+        "nl.imow-mnre1034.activiteit.SorterenBiologischGeteeldFruit",
+        "nl.imow-mnre1034.activiteit.SorterenNietBioGeteeldFruit",
+        "nl.imow-mnre1034.activiteit.SpoelenBiologischGeteeldeGewas",
+        "nl.imow-mnre1034.activiteit.SpoelenGewassen",
+        "nl.imow-mnre1034.activiteit.SpoelenNietBioGeteeldBloemBollen",
+        "nl.imow-mnre1034.activiteit.Spoorwegemplacementen",
+        "nl.imow-mnre1034.activiteit.SportSpeeltoestelBouwen",
+        "nl.imow-mnre1034.activiteit.StikstofBijBouwSloop",
+        "nl.imow-mnre1034.activiteit.Stookinstallatie",
+        "nl.imow-mnre1034.activiteit.StortingsactiviteitOpZee",
+        "nl.imow-mnre1034.activiteit.StortplaatOfWinningsafvalvoorz",
+        "nl.imow-mnre1034.activiteit.StortZee",
+        "nl.imow-mnre1034.activiteit.StralenMetalen",
+        "nl.imow-mnre1034.activiteit.SubstraatteeltGewassenOpenLucht",
+        "nl.imow-mnre1034.activiteit.SubstTeeltGewasStellingOpenLucht",
+        "nl.imow-mnre1034.activiteit.TankenCNG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanLNG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanLPG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanWaterstof",
+        "nl.imow-mnre1034.activiteit.Tankstation",
+        "nl.imow-mnre1034.activiteit.TelenGewassenInGebouw",
+        "nl.imow-mnre1034.activiteit.TelenGewassenInOpenlucht",
+        "nl.imow-mnre1034.activiteit.TitaandioxideInstallatie",
+        "nl.imow-mnre1034.activiteit.ToepassenBouwstoffen",
+        "nl.imow-mnre1034.activiteit.ToepassenBouwstoffenInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenGrondBagger",
+        "nl.imow-mnre1034.activiteit.ToepassenGrondBaggerInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenMijnsteenLimbInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenMijnsteenLimburg",
+        "nl.imow-mnre1034.activiteit.Traumahelikopter",
+        "nl.imow-mnre1034.activiteit.TuinmeubilairBouwen",
+        "nl.imow-mnre1034.activiteit.Veehouderij",
+        "nl.imow-mnre1034.activiteit.VeiligheidBijBouwSloop",
+        "nl.imow-mnre1034.activiteit.VellenBeherenHoutopstandAMVB",
+        "nl.imow-mnre1034.activiteit.VellenBeherenHoutopstanden",
+        "nl.imow-mnre1034.activiteit.VerbrandenAfvalstoffenIPPC",
+        "nl.imow-mnre1034.activiteit.VerbrandenAfvalstoffenNietIPPC",
+        "nl.imow-mnre1034.activiteit.VergassenVloeibaarMakenSteenkool",
+        "nl.imow-mnre1034.activiteit.VernietigenZodeGras",
+        "nl.imow-mnre1034.activiteit.VerwerkenGevaarlijkeAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.VerwerkenPolyesterhars",
+        "nl.imow-mnre1034.activiteit.VerwerkenRubbercompounds",
+        "nl.imow-mnre1034.activiteit.VerwerkenThermoplastischKunstst",
+        "nl.imow-mnre1034.activiteit.VerwijderenGraffiti",
+        "nl.imow-mnre1034.activiteit.VlaggenmastBouwen",
+        "nl.imow-mnre1034.activiteit.Voedingsmiddelenindustrie",
+        "nl.imow-mnre1034.activiteit.VoorzieningOefenBrandbestrijding",
+        "nl.imow-mnre1034.activiteit.VormgevenBetonproducten",
+        "nl.imow-mnre1034.activiteit.VullenGasflessenPropaanButaan",
+        "nl.imow-mnre1034.activiteit.WasstraatWasplaats",
+        "nl.imow-mnre1034.activiteit.Wateronttrekkingsactiviteit",
+        "nl.imow-mnre1034.activiteit.WerkzaamhedenVerplaatsbMijnbouw",
+        "nl.imow-mnre1034.activiteit.Windturbine",
+        "nl.imow-mnre1034.activiteit.ZelfstandigeAfvalwaterzuivering",
+        "nl.imow-mnre1034.activiteit.Zendmasten",
+        "nl.imow-mnre1034.activiteit.Ziekenhuis",
+        "nl.imow-mnre1034.activiteit.ZonnecollectorBouwen",
+        "nl.imow-mnre1034.activiteit.ZonweringBouwen",
+        "nl.imow-mnre1034.activiteit.ZuiveringtechnischWerk",
+        "nl.imow-mnre1034.activiteit.Zwembad",
+        "nl.imow-mnre1034.activiteit.ZwemBadBadwaterbassin",
+        "nl.imow-mnre1034.activiteit.ZwembadBouwen",
+        "nl.imow-mnre1034.activiteit.ZwemBassinDesinfect",
+        "nl.imow-mnre1034.activiteit.ZwemBassinEenmalig",
+        "nl.imow-mnre1034.activiteit.ZwemOverigBassin",
+        "nl.imow-mnre1034.activiteit.ZwemZwemvijver",
+        "nl.imow-pv27.activiteit.003000000000000000000039",
+        "nl.imow-pv27.activiteit.003000000000000000000049",
+        "nl.imow-pv27.activiteit.992700000000000000000001",
+        "nl.imow-pv27.activiteit.gm0363actNH2022",
+        "nl.imow-pv27.activiteit.gm0363actNH2022geiten",
+        "nl.imow-pv27.activiteit.gm0363actNH2022windturb",
+        "nl.imow-ws0155.activiteit.0cde1ab5b9264f1f980bf33417668314",
+        "nl.imow-ws0155.activiteit.10f604ae99394c20bb1789c53bf3c35f",
+        "nl.imow-ws0155.activiteit.15ced500578546f9a4ece8d97e42478d",
+        "nl.imow-ws0155.activiteit.1d35a85d806c4724956f487700c0c77d",
+        "nl.imow-ws0155.activiteit.25d354fd5abe4c9f9580d71dda102970",
+        "nl.imow-ws0155.activiteit.2796c08bf8904c8d9e016898135997f9",
+        "nl.imow-ws0155.activiteit.2f83b490245b42a38c217111f7d599b2",
+        "nl.imow-ws0155.activiteit.2fc61457cb774735868859bd9e828e6c",
+        "nl.imow-ws0155.activiteit.362a34f444ae4e0d97169da2670e0df8",
+        "nl.imow-ws0155.activiteit.3758a34c595e4363a2fe22696116c3d1",
+        "nl.imow-ws0155.activiteit.38866f7f0b4d442c888bda0a910949a2",
+        "nl.imow-ws0155.activiteit.56d53d5d6f6a40318214f0647ac0b4d6",
+        "nl.imow-ws0155.activiteit.57f7d709c8084c0183a5da8cb42281ef",
+        "nl.imow-ws0155.activiteit.5adf1eeb39fb431cb7a3b6744f69d776",
+        "nl.imow-ws0155.activiteit.5f183929f8794dee9abdabb6b6286803",
+        "nl.imow-ws0155.activiteit.6ac54f54587048b5a7f06920e7930f6d",
+        "nl.imow-ws0155.activiteit.6db3707724f641dc99656a77e14113ed",
+        "nl.imow-ws0155.activiteit.73ba371df3e0477fb2d4001364e4a475",
+        "nl.imow-ws0155.activiteit.73bfb06e2af3491b8152519623ba9717",
+        "nl.imow-ws0155.activiteit.74ddcd5fc8044705ba34d6e3b78d01d2",
+        "nl.imow-ws0155.activiteit.78fe4e161be94f41b116939500c2a682",
+        "nl.imow-ws0155.activiteit.8322aa8ee5804cecb1a1c4810ee449f9",
+        "nl.imow-ws0155.activiteit.84119d559e17407fa9cff996d7206015",
+        "nl.imow-ws0155.activiteit.8c3436319e2342888b25bd8f61d540fa",
+        "nl.imow-ws0155.activiteit.91721cea47ad445094ec3684e5617db4",
+        "nl.imow-ws0155.activiteit.91c86b405b324ea7ae4ef986734b4bab",
+        "nl.imow-ws0155.activiteit.9206080dd4b745f2a0b71d94a8bc37b2",
+        "nl.imow-ws0155.activiteit.98f2d1cae0704bfcbf8787d1cd3c52e2",
+        "nl.imow-ws0155.activiteit.9e0d7afdace446f3ad71d107dd1bf302",
+        "nl.imow-ws0155.activiteit.9ec558a8982b49c09d0772f2e1ab50f1",
+        "nl.imow-ws0155.activiteit.a08df763a95f414a9bb38a3104737efb",
+        "nl.imow-ws0155.activiteit.a3a2bafa4b354f32999d2a545db685c7",
+        "nl.imow-ws0155.activiteit.a426d0f3aee241fe918dc4008b00df9a",
+        "nl.imow-ws0155.activiteit.a952a87e85634f09880cc609bbe7de50",
+        "nl.imow-ws0155.activiteit.a9f2b61e946f4e579f2152297d4334f2",
+        "nl.imow-ws0155.activiteit.ActInWaterschapsVerordWs",
+        "nl.imow-ws0155.activiteit.b14b09f1b4d74b14a5cd88415289e628",
+        "nl.imow-ws0155.activiteit.b236d863c344499981de756ee319644d",
+        "nl.imow-ws0155.activiteit.bb3cd68cd3544395ac3f47633478eeea",
+        "nl.imow-ws0155.activiteit.bcbb7489e0da486cabe94eef0c1f96cd",
+        "nl.imow-ws0155.activiteit.bd4cf03daf804b05884c6aba5515bac7",
+        "nl.imow-ws0155.activiteit.BepgebWtswerkBeheerWaterschap",
+        "nl.imow-ws0155.activiteit.c2f61660235446a3815d0fdd5d90bc31",
+        "nl.imow-ws0155.activiteit.c46b47fa2a0946ec94db1466fde72ff1",
+        "nl.imow-ws0155.activiteit.d92ffaaf19274783b8acdb9338a23f68",
+        "nl.imow-ws0155.activiteit.e31c42f19d9047b3a9c4ac09ae09456b",
+        "nl.imow-ws0155.activiteit.e3bbd13d372c48aaa26f842a072a5477",
+        "nl.imow-ws0155.activiteit.e9178140c14b44359d0bec03a6140da6",
+        "nl.imow-ws0155.activiteit.f69a3de4301341c891eb0e51d6b2ebd1",
+        "nl.imow-ws0155.activiteit.fd73a054fca645a0b8b9b2aec97093c5",
+        "nl.imow-ws0155.activiteit.LozenOppwaterZuivertBeheerWs",
+        "nl.imow-ws0155.activiteit.Wateronttrekkingsact"
+      ]
+    },
+    "response_size_kb": 31.16
+  },
+  {
+    "timestamp": "2025-09-18T05:53:18.905570",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/locatieidentificaties/_zoek",
+      "success": false,
+      "duration_seconds": 0.159,
+      "http_status": 400
+    },
+    "request_data": {
+      "request_id": "c80449d0",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geometrie": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                119869.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482151.0
+              ]
+            ]
+          ]
+        },
+        "spatialOperator": "intersects"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167598.7462862
+    },
+    "response_data": {
+      "status_code": 400,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:20 GMT",
+        "Content-Type": "application/problem+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "02238b6731174cea6cc8fc3cb141538d",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "vary": "Origin",
+        "expires": "0",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "type": "about:blank",
+        "title": "Ongeldige request body",
+        "status": 400,
+        "detail": "De post body moet gevuld zijn met of een geometrie, of een lijst van locatie identificaties",
+        "instance": "/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+        "timestamp": "2025-09-18T03:53:20.922505554Z"
+      }
+    },
+    "response_size_kb": 1.19
+  },
+  {
+    "timestamp": "2025-09-18T05:53:19.369867",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/locaties/_zoek",
+      "success": true,
+      "duration_seconds": 0.461,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "cff501a4",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geo": {
+          "geometrie": {
+            "type": "Point",
+            "coordinates": [
+              119879.0,
+              482161.0
+            ]
+          },
+          "spatialOperator": "intersects"
+        }
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167598.9091341
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:21 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "81b0d5346569f652547484a89fae88b7",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "x-pagination-count": "3",
+        "x-pagination-limit": "20",
+        "vary": "Origin",
+        "expires": "0",
+        "x-pagination-page": "0",
+        "x-total-count": "43",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "_links": {
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=0&size=20"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=0&size=20"
+          },
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=1&size=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=2&size=20"
+          }
+        },
+        "_embedded": {
+          "locaties": [
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.LND6030A?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030A",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2020-08-01",
+                "beginGeldigheid": "2020-08-01",
+                "tijdstipRegistratie": "2021-11-17T14:43:15.981086",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland inclusief territoriale wateren",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.LND6030B?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2020-08-01",
+                "beginGeldigheid": "2020-08-01",
+                "tijdstipRegistratie": "2021-11-17T14:43:15.981086",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland inclusief territoriale wateren en de exclusieve economische zone",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.202300001?geldigOp=2021-02-23&inwerkingOp=2021-02-23&beschikbaarOp=2023-03-03T14:02:09Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.202300001",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2021-02-23",
+                "beginGeldigheid": "2021-02-23",
+                "tijdstipRegistratie": "2023-03-03T14:02:09.580660",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland + EEZ",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.gebied.6d3afc592x73e3ce3e6x86xc?geldigOp=2023-12-31&inwerkingOp=2023-12-31&beschikbaarOp=2023-06-27T15:26:01Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.gebied.6d3afc592x73e3ce3e6x86xc",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2023-12-31",
+                "beginGeldigheid": "2023-12-31",
+                "tijdstipRegistratie": "2023-06-27T15:26:01.579258",
+                "subType": "Gebied"
+              },
+              "noemer": "radarverstoringsgebied bouwwerken- radarstation Schiphol Tar West ",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.gebied.axb553be3cc98fxaeea88332?geldigOp=2023-12-31&inwerkingOp=2023-12-31&beschikbaarOp=2023-06-27T15:26:01Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.gebied.axb553be3cc98fxaeea88332",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2023-12-31",
+                "beginGeldigheid": "2023-12-31",
+                "tijdstipRegistratie": "2023-06-27T15:26:01.579258",
+                "subType": "Gebied"
+              },
+              "noemer": "radarverstoringsgebied bouwwerken- radarstation Schiphol",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.ambtsgebied.63000ee16f32496ab4c144d866489fd5?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.ambtsgebied.63000ee16f32496ab4c144d866489fd5",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Ambtsgebied Waterschap Amstel, Gooi en Vecht",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.110b206267184094a98ff4dac47ec1c8?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.110b206267184094a98ff4dac47ec1c8",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de hogere gronden en op hogere gronden binnen Natura-2000 gebieden en een zone van 100 meter daaromheen",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.39b03c77e988490c90d612cb469eb53f?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.39b03c77e988490c90d612cb469eb53f",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "beheergebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.4325dd87baa24a79a1ba03b14e40d178?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.4325dd87baa24a79a1ba03b14e40d178",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de kernzone en beschermingszone van een waterkerend dijklichaam, buiten de kernzone en beschermingszone van een half-verholen waterkering en buiten een waterkerende constructie",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.762ebb12854540d6889cda7d86efc038?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.762ebb12854540d6889cda7d86efc038",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "stedelijk en glastuinbouwgebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.beb5c381fc264369ac9aea921d0ba36e?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.beb5c381fc264369ac9aea921d0ba36e",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "hogere gronden buiten Natura-2000 gebieden en een zone van 100 meter daaromheen",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.c336afbbbcda45bd95b088cce3eddae6?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.c336afbbbcda45bd95b088cce3eddae6",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten een peilafwijkingengebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.e4652beed33d402ca2fe6e25e48a3676?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.e4652beed33d402ca2fe6e25e48a3676",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "500 meter vanuit de teen van een direct waterkerend dijklichaam",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.f59605f12f724b74a93d23b270bb8b65?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.f59605f12f724b74a93d23b270bb8b65",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de kernzone of beschermingszone van een waterkerend dijklichaam, buiten de kernzone en beschermingszone van een half-verholen waterkering",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000588e366656?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000588e366656",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000588?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000588",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "LIB 5 zone Schiphol",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000781?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000781",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "Regionale verdringingsreeks Amstel Gooi en Vecht",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000783?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000783",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "Datacenter clustering toegestaan",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000781e477130?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000781e477130",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000783e469935?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000783e469935",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            }
+          ]
+        },
+        "page": {
+          "size": 20,
+          "totalElements": 43,
+          "totalPages": 3,
+          "number": 0
+        }
+      }
+    },
+    "response_size_kb": 13.55
+  },
+  {
+    "timestamp": "2025-09-18T05:53:23.193546",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteitengeaggregeerd/levenscyclus",
+      "success": true,
+      "duration_seconds": 3.82,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "fb3e0efc",
+      "method": "GET",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": null,
+      "params": {
+        "page": 0,
+        "size": 5
+      },
+      "timeout": 30,
+      "timestamp": 1758167599.373751
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "199c2a630a2cdb3e091dd2ef37bcfa8e",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "x-pagination-count": "7093",
+        "x-pagination-limit": "5",
+        "vary": "Origin",
+        "expires": "0",
+        "x-pagination-page": "0",
+        "x-total-count": "35463",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "_links": {
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=0&size=5&sort=vId,asc"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=0&size=5&sort=vId,asc"
+          },
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=1&size=5&sort=vId,asc"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=7092&size=5&sort=vId,asc"
+          }
+        },
+        "_embedded": {
+          "activiteiten": [
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActGevolgNatuur/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActGevolgNatuur/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActGevolgNatuur/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActGevolgNatuur",
+              "naam": "Activiteit met mogelijke gevolgen voor Natura 2000-gebieden of bijzondere nationale natuurgebieden",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActInOmgevingsplan",
+              "naam": "Activiteit gereguleerd in het omgevingsplan",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActInWaterschapsverordening",
+              "naam": "Activiteit gereguleerd in de waterschapsverordening",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "naam": "Activiteit met gevolgen voor de fysieke leefomgeving",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2023-06-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "naam": "Activiteit gereguleerd bij AMvB",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "page": {
+          "size": 5,
+          "totalElements": 35463,
+          "totalPages": 7093,
+          "number": 0
+        }
+      }
+    },
+    "response_size_kb": 8.43
+  },
+  {
+    "timestamp": "2025-09-18T05:53:23.630298",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteitidentificaties/_zoek",
+      "success": true,
+      "duration_seconds": 0.431,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "503ff379",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geometrie": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                119869.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482151.0
+              ]
+            ]
+          ]
+        },
+        "spatialOperator": "intersects"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167603.1991181
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "06bbb958ff1a2731c8ef25b58bdc8d36",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "vary": "Origin, Accept-Encoding",
+        "expires": "0",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "content-encoding": "gzip",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": [
+        "nl.imow-gm0363.activiteit.210147b990fe4bd1a6ef125d61a9b447",
+        "nl.imow-gm0363.activiteit.23839eedb05148378730b9430162e357",
+        "nl.imow-gm0363.activiteit.239030110a234f33a6147f181ffc6df4",
+        "nl.imow-gm0363.activiteit.487a4dbbf3b341e8b00f23e451d14725",
+        "nl.imow-gm0363.activiteit.496a0c3a615a4d40910bff8b8b229483",
+        "nl.imow-gm0363.activiteit.51647430ed224bc4a4c131e1f81d32da",
+        "nl.imow-gm0363.activiteit.583791aa1b3c41ccbc100010cf03c695",
+        "nl.imow-gm0363.activiteit.68ec247c6a854f19a7910b51e3eefcf6",
+        "nl.imow-gm0363.activiteit.941f3432fdfb43c79c40e050cee276c6",
+        "nl.imow-gm0363.activiteit.AanvraagOpBouwwerken",
+        "nl.imow-gm0363.activiteit.AcculaderInWerkingHebben",
+        "nl.imow-gm0363.activiteit.ActBetrGemMonument",
+        "nl.imow-gm0363.activiteit.ActInOmgevingsplanGem",
+        "nl.imow-gm0363.activiteit.ActOpLocatieHistBodemVeront",
+        "nl.imow-gm0363.activiteit.AfscheidingDakterras",
+        "nl.imow-gm0363.activiteit.AlarminstallatieHebben",
+        "nl.imow-gm0363.activiteit.AnderBouwwerkBouwen",
+        "nl.imow-gm0363.activiteit.AntenneBouwen",
+        "nl.imow-gm0363.activiteit.AntihagelkanonHebben",
+        "nl.imow-gm0363.activiteit.BetonUitwassen",
+        "nl.imow-gm0363.activiteit.BijbehorendBouwwerk",
+        "nl.imow-gm0363.activiteit.BouwkeetBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkAgrarischBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkBouwen",
+        "nl.imow-gm0363.activiteit.BouwwerkGebruiken",
+        "nl.imow-gm0363.activiteit.BouwwerkInfrastruct",
+        "nl.imow-gm0363.activiteit.BouwwerkSlopen",
+        "nl.imow-gm0363.activiteit.BouwwerkVeranderen",
+        "nl.imow-gm0363.activiteit.BuisleidingBouwen",
+        "nl.imow-gm0363.activiteit.ce65218222e143b9b37dad263f368c1b",
+        "nl.imow-gm0363.activiteit.ceeb28c184304e478b60490f8aca84ec",
+        "nl.imow-gm0363.activiteit.ConstrTerreinhoogte",
+        "nl.imow-gm0363.activiteit.Dakkapel",
+        "nl.imow-gm0363.activiteit.DakraamAndereLichtvoorz",
+        "nl.imow-gm0363.activiteit.dc10e2936ecb42d9b7bad7362832e0c8",
+        "nl.imow-gm0363.activiteit.dcbb0a5fe7044b0e83c0a58f425d1a73",
+        "nl.imow-gm0363.activiteit.DierenSlachten",
+        "nl.imow-gm0363.activiteit.DierlijkeMestOpslaan",
+        "nl.imow-gm0363.activiteit.e5c49faa16b448ceaa061a853a13de42",
+        "nl.imow-gm0363.activiteit.ElektrWindturbine",
+        "nl.imow-gm0363.activiteit.Energiebesparing",
+        "nl.imow-gm0363.activiteit.Erfafscheiding",
+        "nl.imow-gm0363.activiteit.fd509fabdc2e4c3faaf0d11b9808b321",
+        "nl.imow-gm0363.activiteit.FokkenLandbHuisdieren",
+        "nl.imow-gm0363.activiteit.FotoMateriaalOntw",
+        "nl.imow-gm0363.activiteit.GeluidProdAct",
+        "nl.imow-gm0363.activiteit.GeluidProdAndereAct",
+        "nl.imow-gm0363.activiteit.GeluidProdSchietbaan",
+        "nl.imow-gm0363.activiteit.GeluidProdWindturbine",
+        "nl.imow-gm0363.activiteit.GenetischGemOrganGebr",
+        "nl.imow-gm0363.activiteit.GeslotenBodemenergInst",
+        "nl.imow-gm0363.activiteit.GeurProdAndereAct",
+        "nl.imow-gm0363.activiteit.GeurProdDierenverblijven",
+        "nl.imow-gm0363.activiteit.GeurProdDoorAct",
+        "nl.imow-gm0363.activiteit.GeurProdZuiveringtwerk",
+        "nl.imow-gm0363.activiteit.GewoonOnderhoud",
+        "nl.imow-gm0363.activiteit.GrondwLozenSanering",
+        "nl.imow-gm0363.activiteit.HoutopstandVellen",
+        "nl.imow-gm0363.activiteit.HuishAfvalwLozen",
+        "nl.imow-gm0363.activiteit.KleinschaligGravenBovenInt",
+        "nl.imow-gm0363.activiteit.KoelwaterLozen",
+        "nl.imow-gm0363.activiteit.KozijnBouwen",
+        "nl.imow-gm0363.activiteit.KuilvoerOpslaan",
+        "nl.imow-gm0363.activiteit.LaboratoriumBiolAgens",
+        "nl.imow-gm0363.activiteit.LozenCalamiteitOef",
+        "nl.imow-gm0363.activiteit.LozenGemVoorzInzamelAfvalw",
+        "nl.imow-gm0363.activiteit.LozenHemelwater",
+        "nl.imow-gm0363.activiteit.LozenMakenBetonmortel",
+        "nl.imow-gm0363.activiteit.LozenOpInBodem",
+        "nl.imow-gm0363.activiteit.LozenOpslaanGoederen",
+        "nl.imow-gm0363.activiteit.LozenReinigenBouww",
+        "nl.imow-gm0363.activiteit.LozenSchoonmDrinkwleid",
+        "nl.imow-gm0363.activiteit.LozenSchoonwRiool",
+        "nl.imow-gm0363.activiteit.LozenTelenGewassen",
+        "nl.imow-gm0363.activiteit.LPGTanken",
+        "nl.imow-gm0363.activiteit.MadenVliegInsectKweken",
+        "nl.imow-gm0363.activiteit.MakenHandelsreclame",
+        "nl.imow-gm0363.activiteit.MilieubelastendeAct",
+        "nl.imow-gm0363.activiteit.MotorvoertuigWassen",
+        "nl.imow-gm0363.activiteit.NazorgNaSaneren",
+        "nl.imow-gm0363.activiteit.NietIndVoedselbereid",
+        "nl.imow-gm0363.activiteit.OngewoonVoorvalMBAOP",
+        "nl.imow-gm0363.activiteit.OverigeAct",
+        "nl.imow-gm0363.activiteit.Parkeergarage",
+        "nl.imow-gm0363.activiteit.PolyesterharsVerw",
+        "nl.imow-gm0363.activiteit.PropaanOpslaan",
+        "nl.imow-gm0363.activiteit.RecreatiefNachtverblijfBouw",
+        "nl.imow-gm0363.activiteit.RecrVisvijver",
+        "nl.imow-gm0363.activiteit.RoerendeZakenOpslaan",
+        "nl.imow-gm0363.activiteit.SlopenBeschStadsgezicht",
+        "nl.imow-gm0363.activiteit.SportBuitenlucht",
+        "nl.imow-gm0363.activiteit.SportSpeeltBouwen",
+        "nl.imow-gm0363.activiteit.TraditioneelSchieten",
+        "nl.imow-gm0363.activiteit.Trillingen",
+        "nl.imow-gm0363.activiteit.TuinmeubilairBouwen",
+        "nl.imow-gm0363.activiteit.UitwegMakenHebbenVeranderen",
+        "nl.imow-gm0363.activiteit.VlaggenmastBouwen",
+        "nl.imow-gm0363.activiteit.VoedingsmidIndustr",
+        "nl.imow-gm0363.activiteit.WegSpoorwegAanleggenWijz",
+        "nl.imow-gm0363.activiteit.WerkzaamheidUitv",
+        "nl.imow-gm0363.activiteit.Zonnecollector",
+        "nl.imow-gm0363.activiteit.ZonweringBouwen",
+        "nl.imow-gm0363.activiteit.ZwembadBouwen",
+        "nl.imow-gm0363.activiteit.Zwerfaval",
+        "nl.imow-mnre1034.activiteit.AanbrengenLagenMetalen",
+        "nl.imow-mnre1034.activiteit.AanmakenGewasbeschermingLandbouw",
+        "nl.imow-mnre1034.activiteit.AanmakenTransportGewasbLeidingen",
+        "nl.imow-mnre1034.activiteit.AanvraagGelijkwNietWater",
+        "nl.imow-mnre1034.activiteit.AanvraagGelijkwWateract",
+        "nl.imow-mnre1034.activiteit.AanvullenWabo",
+        "nl.imow-mnre1034.activiteit.AanvullenWaterwet",
+        "nl.imow-mnre1034.activiteit.ActGevolgNatuur",
+        "nl.imow-mnre1034.activiteit.ActInOmgevingsplan",
+        "nl.imow-mnre1034.activiteit.ActInWaterschapsverordening",
+        "nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed",
+        "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+        "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+        "nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver",
+        "nl.imow-mnre1034.activiteit.ActPerronsBijzSpoor",
+        "nl.imow-mnre1034.activiteit.ActPerronsHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.AfscheidingBalkonBouwen",
+        "nl.imow-mnre1034.activiteit.AfvalbeheerIPPC",
+        "nl.imow-mnre1034.activiteit.Afvalverbrandingsinstal",
+        "nl.imow-mnre1034.activiteit.AfvangenKooldioxide",
+        "nl.imow-mnre1034.activiteit.AgrarischLoonwerkbedrijf",
+        "nl.imow-mnre1034.activiteit.AircoWarmtepompBouwen",
+        "nl.imow-mnre1034.activiteit.AndereActBijzSpoor",
+        "nl.imow-mnre1034.activiteit.AndereActHoofdOfBijSpoor",
+        "nl.imow-mnre1034.activiteit.AndereBedrijfstak",
+        "nl.imow-mnre1034.activiteit.AndereIndustrie",
+        "nl.imow-mnre1034.activiteit.AndereLozingenNietNoordzee",
+        "nl.imow-mnre1034.activiteit.AndereLozingenNoordzee",
+        "nl.imow-mnre1034.activiteit.AntenneBouwen",
+        "nl.imow-mnre1034.activiteit.ArcheoWaarnToeval",
+        "nl.imow-mnre1034.activiteit.Asfaltcentrale",
+        "nl.imow-mnre1034.activiteit.Assimilatiebelichting",
+        "nl.imow-mnre1034.activiteit.ATActiviteitTestAansluit",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslg",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslp",
+        "nl.imow-mnre1034.activiteit.ATActTestAanslw",
+        "nl.imow-mnre1034.activiteit.Autobergingsbedrijf",
+        "nl.imow-mnre1034.activiteit.Autodemontagebedrijf",
+        "nl.imow-mnre1034.activiteit.Autosport",
+        "nl.imow-mnre1034.activiteit.Basischemie",
+        "nl.imow-mnre1034.activiteit.Basismetaal",
+        "nl.imow-mnre1034.activiteit.BedrijfMestbehandeling",
+        "nl.imow-mnre1034.activiteit.BedrijfTeeltWaterplanten",
+        "nl.imow-mnre1034.activiteit.BehandelenGeoogsteGewassem",
+        "nl.imow-mnre1034.activiteit.BepActHoofdBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk",
+        "nl.imow-mnre1034.activiteit.BeperkingengebiedactWegRijk",
+        "nl.imow-mnre1034.activiteit.BepGebActInstallatieNietNoordzee",
+        "nl.imow-mnre1034.activiteit.BepGebActLuchthaven",
+        "nl.imow-mnre1034.activiteit.BepGebActMijnbInstallatieNZ",
+        "nl.imow-mnre1034.activiteit.BepGebActSpoorweg",
+        "nl.imow-mnre1034.activiteit.BepgebactWaterstaatswRijkNietNZ",
+        "nl.imow-mnre1034.activiteit.BepgebiedactWaterstaatswerkNZ",
+        "nl.imow-mnre1034.activiteit.BepgebiedactWaterstaatswerkRijk",
+        "nl.imow-mnre1034.activiteit.BepLokaalSpoor",
+        "nl.imow-mnre1034.activiteit.BereidenDrinkwaterLandbouwhuisd",
+        "nl.imow-mnre1034.activiteit.BereidenGietwater",
+        "nl.imow-mnre1034.activiteit.BestrijdingSchadelijkeDieren",
+        "nl.imow-mnre1034.activiteit.Betoncentrale",
+        "nl.imow-mnre1034.activiteit.BijbehorendBouwwerkBouwen",
+        "nl.imow-mnre1034.activiteit.Binnenschietbaan",
+        "nl.imow-mnre1034.activiteit.Bodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.Bodemsanering",
+        "nl.imow-mnre1034.activiteit.Bouwactiviteit",
+        "nl.imow-mnre1034.activiteit.BouwactiviteitOmgevingsplanBbl",
+        "nl.imow-mnre1034.activiteit.BouwbedrijfInstallatiebedrijf",
+        "nl.imow-mnre1034.activiteit.BouwBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BouwHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.BouwkeetBouwen",
+        "nl.imow-mnre1034.activiteit.BouwwerkNutsvoorziening",
+        "nl.imow-mnre1034.activiteit.BrandstofhandelTankopslagbedrijf",
+        "nl.imow-mnre1034.activiteit.BrugBouwen",
+        "nl.imow-mnre1034.activiteit.BuisleidingGevaarlijkeStoffen",
+        "nl.imow-mnre1034.activiteit.BuisleidingWarmteKoudenet",
+        "nl.imow-mnre1034.activiteit.BuitenplansOmgevPlAct",
+        "nl.imow-mnre1034.activiteit.Buitenschietbaan",
+        "nl.imow-mnre1034.activiteit.BunkerstationsTankplaatsSchepen",
+        "nl.imow-mnre1034.activiteit.ChemischeProductenIndustrie",
+        "nl.imow-mnre1034.activiteit.ChemischeWasserij",
+        "nl.imow-mnre1034.activiteit.ChemReinigenTextiel",
+        "nl.imow-mnre1034.activiteit.Clausinstallatie",
+        "nl.imow-mnre1034.activiteit.ComplexeMineraleIndustrie",
+        "nl.imow-mnre1034.activiteit.ComplexePapierHoutTextielIndust",
+        "nl.imow-mnre1034.activiteit.ComposterenOpslaanGroenafval",
+        "nl.imow-mnre1034.activiteit.ConstructieTerreinhoogteBouwen",
+        "nl.imow-mnre1034.activiteit.Crematorium",
+        "nl.imow-mnre1034.activiteit.CultureelErfgoedRijk",
+        "nl.imow-mnre1034.activiteit.DakkapelBouwen",
+        "nl.imow-mnre1034.activiteit.DakraamBouwen",
+        "nl.imow-mnre1034.activiteit.Datacentrum",
+        "nl.imow-mnre1034.activiteit.DierenverblijvenReinigenVeewagen",
+        "nl.imow-mnre1034.activiteit.DrainagewaterGrondgebTeeltKas",
+        "nl.imow-mnre1034.activiteit.DrainwaterSubstraatteeltKas",
+        "nl.imow-mnre1034.activiteit.Drinkwaterbedrijf",
+        "nl.imow-mnre1034.activiteit.EnergiegebruikAndereBedrijfstak",
+        "nl.imow-mnre1034.activiteit.ErfafscheidingBouwen",
+        "nl.imow-mnre1034.activiteit.EtsenBeitsenMetalen",
+        "nl.imow-mnre1034.activiteit.ExploiterenBenzineterminal",
+        "nl.imow-mnre1034.activiteit.FloraFaunaRijk",
+        "nl.imow-mnre1034.activiteit.Garagebedrijf",
+        "nl.imow-mnre1034.activiteit.GasdrukRegelMeetStation",
+        "nl.imow-mnre1034.activiteit.GebruikBouwwerken",
+        "nl.imow-mnre1034.activiteit.GebruikBouwwerkenRijk",
+        "nl.imow-mnre1034.activiteit.GebruikenGewasbeschMestLandbouw",
+        "nl.imow-mnre1034.activiteit.GebruikOntplofbareStofMilitair",
+        "nl.imow-mnre1034.activiteit.GeenBedrijf",
+        "nl.imow-mnre1034.activiteit.GelegenheidZwemmen",
+        "nl.imow-mnre1034.activiteit.GelijkwaardigheidMBA",
+        "nl.imow-mnre1034.activiteit.GeslotenBodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.GevelpaneelBouwen",
+        "nl.imow-mnre1034.activiteit.GezuiverdStedAfvalwProduceren",
+        "nl.imow-mnre1034.activiteit.Glastuinbouwbedrijf",
+        "nl.imow-mnre1034.activiteit.GrafischeIndustrie",
+        "nl.imow-mnre1034.activiteit.GrafischeProcessen",
+        "nl.imow-mnre1034.activiteit.GravenBovenInterW",
+        "nl.imow-mnre1034.activiteit.GravenOnderInterW",
+        "nl.imow-mnre1034.activiteit.Grondbank",
+        "nl.imow-mnre1034.activiteit.GrondwOntrekIndustrieDrinkwater",
+        "nl.imow-mnre1034.activiteit.GrootschaligeEnergieopwekking",
+        "nl.imow-mnre1034.activiteit.GrootschaligeMestverwerking",
+        "nl.imow-mnre1034.activiteit.GrootschaligTanken",
+        "nl.imow-mnre1034.activiteit.GrootschaligTankenVaartuigen",
+        "nl.imow-mnre1034.activiteit.GroteStookinstallatie",
+        "nl.imow-mnre1034.activiteit.InformerenOverdrachtNietWaterAct",
+        "nl.imow-mnre1034.activiteit.InformerenOverdrachtWaterAct",
+        "nl.imow-mnre1034.activiteit.IngeperktGebruikGenetGemodOrg",
+        "nl.imow-mnre1034.activiteit.InStandHoudenBouwwerken",
+        "nl.imow-mnre1034.activiteit.Jachthaven",
+        "nl.imow-mnre1034.activiteit.KabelBijzSpoor",
+        "nl.imow-mnre1034.activiteit.KabelHoofdOfBijzSpoor",
+        "nl.imow-mnre1034.activiteit.KadaversDierlijkAfval",
+        "nl.imow-mnre1034.activiteit.Kleiduivenbaan",
+        "nl.imow-mnre1034.activiteit.KleinMiddelStookStandBrand",
+        "nl.imow-mnre1034.activiteit.KleinschaligTanken",
+        "nl.imow-mnre1034.activiteit.KleinschaligTankenVaartuigen",
+        "nl.imow-mnre1034.activiteit.KoelinstalKooldioKoolwstAmmo",
+        "nl.imow-mnre1034.activiteit.KozijnBouwen",
+        "nl.imow-mnre1034.activiteit.KringloopReparatieGebruikteProd",
+        "nl.imow-mnre1034.activiteit.Laboratorium",
+        "nl.imow-mnre1034.activiteit.LadenLossenSchepen",
+        "nl.imow-mnre1034.activiteit.Landbouwmechanisatiebedrijf",
+        "nl.imow-mnre1034.activiteit.LassenMetalen",
+        "nl.imow-mnre1034.activiteit.LozenAfkomstTelenKwekenNietNZ",
+        "nl.imow-mnre1034.activiteit.LozenAfkomstTelenKwekenNZ",
+        "nl.imow-mnre1034.activiteit.LozenAfkZuiveringtechnW",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwOpslagKuilvoer",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwOpslGebrSubstr",
+        "nl.imow-mnre1034.activiteit.LozenAfvalwReinigenVerpakBiol",
+        "nl.imow-mnre1034.activiteit.LozenBijBouwenNietNoordzee",
+        "nl.imow-mnre1034.activiteit.LozenBijBouwenNoordzee",
+        "nl.imow-mnre1034.activiteit.LozenBijMakenBetonMortel",
+        "nl.imow-mnre1034.activiteit.LozenBijVormgevenBetonP",
+        "nl.imow-mnre1034.activiteit.LozenGrondbankGrondreiniging",
+        "nl.imow-mnre1034.activiteit.LozenHemelCondensKas",
+        "nl.imow-mnre1034.activiteit.LozenHuishAfvalwPleziervaar",
+        "nl.imow-mnre1034.activiteit.LozenHuishoudelijkAfvalwaterNZ",
+        "nl.imow-mnre1034.activiteit.LozenHuishoudelijkAfvalwNietNZ",
+        "nl.imow-mnre1034.activiteit.LozenKoelwater",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterAndereIndustrie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterDatacentrum",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterGrafischeIndustrie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterKoelinstallatie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterMetaalproductenind",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterOppwaterl",
+        "nl.imow-mnre1034.activiteit.LozenKoelwaterStookinstallatie",
+        "nl.imow-mnre1034.activiteit.LozenKoelwRubberKunststofrecycl",
+        "nl.imow-mnre1034.activiteit.LozenNietOppwTelenGewassenGebouw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterBedrijfMestbehandel",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterBedrijfTeeltWaterpl",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterChemischeProductInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterComplexeMineraleInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterComplexePapierind",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterDrinkwaterbedrijf",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterExploiterenSeveso",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterGebruikGewasbesch",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterGrootschEnergieopw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterKadavDierlijkAfval",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlGrootschMestverwer",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamAfvalbeheer",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamBasischemie",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamBasismetaal",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamMakenCokes",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterlichaamRaffinaderij",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMetaalprodIndIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMilitaireZeehaven",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterMineraleProdInd",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOefenenBrandbestr",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpenBodemenergiesys",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOppvlaktebehOplosm",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpslagtankVloeistof",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterOpslagTransportbedr",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterPapierindustrie",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterRubberKunststofIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterScheepswerven",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterStortplWinningsvoor",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterTankautoreiniging",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterTelenGewassenGebouw",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerbAfvalstNietIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerbrandAfvalstIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVergassenSteenkool",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVerwBedrGevAfvalst",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterVoedingsmidIndIPPC",
+        "nl.imow-mnre1034.activiteit.LozenOppwaterZelfstAfvalwatrzuiv",
+        "nl.imow-mnre1034.activiteit.LozenOppWStortBuitenStortplaats",
+        "nl.imow-mnre1034.activiteit.LozenOpslaanZevenGrondBagger",
+        "nl.imow-mnre1034.activiteit.LozenOpZuiveringtechnischWerk",
+        "nl.imow-mnre1034.activiteit.LozenStofAfvalwBeroepsvaart",
+        "nl.imow-mnre1034.activiteit.LozingenOntplofbStofMilitairObj",
+        "nl.imow-mnre1034.activiteit.LozingOppervlaktewaterRijkNietNZ",
+        "nl.imow-mnre1034.activiteit.LozingOppwaterZuivertechWerkRijk",
+        "nl.imow-mnre1034.activiteit.LozingOppwatZuivertechWerkVanMBA",
+        "nl.imow-mnre1034.activiteit.LozingsactiviteitenInNoordzee",
+        "nl.imow-mnre1034.activiteit.LZAAfvalwSchepBinnenwater",
+        "nl.imow-mnre1034.activiteit.MaatwerkNietWaterAct",
+        "nl.imow-mnre1034.activiteit.MaatwerkWateract",
+        "nl.imow-mnre1034.activiteit.MagazijnstellingBouwen",
+        "nl.imow-mnre1034.activiteit.MakenCokes",
+        "nl.imow-mnre1034.activiteit.MechanischBewDiverseMaterialen",
+        "nl.imow-mnre1034.activiteit.MechanischBewerkenSteen",
+        "nl.imow-mnre1034.activiteit.MechanischeThermischBewMetalen",
+        "nl.imow-mnre1034.activiteit.MededelingMerBeoordeling",
+        "nl.imow-mnre1034.activiteit.MededelingMerBeoordelingWsRijk",
+        "nl.imow-mnre1034.activiteit.Mestbehandelingsinstallatie",
+        "nl.imow-mnre1034.activiteit.Mestvergistingsinstallatie",
+        "nl.imow-mnre1034.activiteit.Metaalproductenindustrie",
+        "nl.imow-mnre1034.activiteit.Metaalrecyclingbedrijf",
+        "nl.imow-mnre1034.activiteit.MiddelgroteStookinstallatie",
+        "nl.imow-mnre1034.activiteit.Mijnbouw",
+        "nl.imow-mnre1034.activiteit.MijnbouwlocatieactiviteitRijk",
+        "nl.imow-mnre1034.activiteit.MilieubelastendeActiviteitRijk",
+        "nl.imow-mnre1034.activiteit.Milieustraat",
+        "nl.imow-mnre1034.activiteit.MilitaireKazerne",
+        "nl.imow-mnre1034.activiteit.MilitaireLuchthaven",
+        "nl.imow-mnre1034.activiteit.MilitaireOefenOpMilitaireObjTerr",
+        "nl.imow-mnre1034.activiteit.MilitaireSchietbaan",
+        "nl.imow-mnre1034.activiteit.MilitaireZeehaven",
+        "nl.imow-mnre1034.activiteit.MineraleProductenIndustrie",
+        "nl.imow-mnre1034.activiteit.MobielBrekenBouwSloopafval",
+        "nl.imow-mnre1034.activiteit.Motorrevisiebedrijf",
+        "nl.imow-mnre1034.activiteit.NatteKoeltoren",
+        "nl.imow-mnre1034.activiteit.Natura2000Rijk",
+        "nl.imow-mnre1034.activiteit.ObjectBepBurgerLuchthavenRegio",
+        "nl.imow-mnre1034.activiteit.ObjectBepGebLuchthaven",
+        "nl.imow-mnre1034.activiteit.ObjectBepLuchtMili",
+        "nl.imow-mnre1034.activiteit.Omgevingsplanactiviteit",
+        "nl.imow-mnre1034.activiteit.OnderhoudApparatVoertuigVaartuig",
+        "nl.imow-mnre1034.activiteit.OnderhoudOpenbareRuimte",
+        "nl.imow-mnre1034.activiteit.OnderhoudswerkplaatsVliegtuigen",
+        "nl.imow-mnre1034.activiteit.OnderhWerkplBusTreinTramMetro",
+        "nl.imow-mnre1034.activiteit.OngewoonVoorvalMBA",
+        "nl.imow-mnre1034.activiteit.OngewoonVoorvalNatura2000",
+        "nl.imow-mnre1034.activiteit.OngVoorvalBepLokaalSpoor",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZABijMBA",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZABinnenw",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZANietNZ",
+        "nl.imow-mnre1034.activiteit.OngVoorvalLZANZ",
+        "nl.imow-mnre1034.activiteit.OngVoorvalMijnbouwinstWater",
+        "nl.imow-mnre1034.activiteit.OngVoorvalStortZee",
+        "nl.imow-mnre1034.activiteit.OngVoorvalVellenHout",
+        "nl.imow-mnre1034.activiteit.OngVoorvalWaterontAmvb",
+        "nl.imow-mnre1034.activiteit.OngVoorvalZwemBaden",
+        "nl.imow-mnre1034.activiteit.OngVoorvBepSpoorHoofdBijz",
+        "nl.imow-mnre1034.activiteit.OngVoorvFlora",
+        "nl.imow-mnre1034.activiteit.OntgrondingsactiviteitRijk",
+        "nl.imow-mnre1034.activiteit.OntgrondOpLandRegionWaterWinterb",
+        "nl.imow-mnre1034.activiteit.OntvangenAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.OpenBodemenergiesysteem",
+        "nl.imow-mnre1034.activiteit.OpInBodemBedrGevAfvalNietStortpl",
+        "nl.imow-mnre1034.activiteit.OpInBodemMest",
+        "nl.imow-mnre1034.activiteit.OpInBodemZuiveringsslib",
+        "nl.imow-mnre1034.activiteit.Oplosmiddeleninstallatie",
+        "nl.imow-mnre1034.activiteit.OppervlaktebehandelMetOplosmIPPC",
+        "nl.imow-mnre1034.activiteit.OpslaanAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.OpslaanAutowrakken",
+        "nl.imow-mnre1034.activiteit.OpslaanBedrGevAfvalVoorafgInzam",
+        "nl.imow-mnre1034.activiteit.OpslaanBrandstoffenBunkerstation",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselBovengrondseOpslag",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselOndergrondseOpslag",
+        "nl.imow-mnre1034.activiteit.OpslaanDieselTankcontAlsOpslagta",
+        "nl.imow-mnre1034.activiteit.OpslaanDrijfmestInMestbassin",
+        "nl.imow-mnre1034.activiteit.OpslaanGebruiktSubstraatmat",
+        "nl.imow-mnre1034.activiteit.OpslaanGevaarlijkeStofInVerpakk",
+        "nl.imow-mnre1034.activiteit.OpslaanGevStofNietOrgPerInVerpak",
+        "nl.imow-mnre1034.activiteit.OpslaanGoederen",
+        "nl.imow-mnre1034.activiteit.OpslaanKuilvoerVasteBijvoedermid",
+        "nl.imow-mnre1034.activiteit.OpslaanOntplofbareStoffenCiviel",
+        "nl.imow-mnre1034.activiteit.OpslaanOntplofbStofMilitaireObj",
+        "nl.imow-mnre1034.activiteit.OpslaanOrganischePeroxiden",
+        "nl.imow-mnre1034.activiteit.OpslaanOxidVerstikCryogGasOpslta",
+        "nl.imow-mnre1034.activiteit.OpslaanPropaanPropeenOpslagtanks",
+        "nl.imow-mnre1034.activiteit.OpslaanVasteMestChampDikkeFract",
+        "nl.imow-mnre1034.activiteit.OpslaanVasteMinerAnorgMeststof",
+        "nl.imow-mnre1034.activiteit.OpslaanVerwijderdAsbest",
+        "nl.imow-mnre1034.activiteit.OpslaanVloeistoffenOpslagtank",
+        "nl.imow-mnre1034.activiteit.OpslaanVuurwPyroArtikelenTheater",
+        "nl.imow-mnre1034.activiteit.OpslagGrondBagger",
+        "nl.imow-mnre1034.activiteit.OpslagHerbrGrondBagInOppwater",
+        "nl.imow-mnre1034.activiteit.OpslagHerbruikbareGrondBagger",
+        "nl.imow-mnre1034.activiteit.OpslagtankVoorGassen",
+        "nl.imow-mnre1034.activiteit.OpslagTransportbedrijf",
+        "nl.imow-mnre1034.activiteit.OpslBrandVloeisNietDieselBovengr",
+        "nl.imow-mnre1034.activiteit.OpslBrandVloeisNietDieselOndergr",
+        "nl.imow-mnre1034.activiteit.OpstellenVoertuigGevaarlStoffen",
+        "nl.imow-mnre1034.activiteit.OverigAfvalwaterKassen",
+        "nl.imow-mnre1034.activiteit.OverigBouwwerkBouwen",
+        "nl.imow-mnre1034.activiteit.OverigeVeranderingenBouwwerk",
+        "nl.imow-mnre1034.activiteit.OverigFloraFauna",
+        "nl.imow-mnre1034.activiteit.OverschrijdenLegionella",
+        "nl.imow-mnre1034.activiteit.PapierHoutTextielLeerIndustrie",
+        "nl.imow-mnre1034.activiteit.ProefdraaienVerbrandingsmotoren",
+        "nl.imow-mnre1034.activiteit.Raffinaderij",
+        "nl.imow-mnre1034.activiteit.RecyclingbedrPapierKartonTextiel",
+        "nl.imow-mnre1034.activiteit.ReinigenCoatenDiverseMaterialen",
+        "nl.imow-mnre1034.activiteit.ReinigenVerpakkingenBiolGewassen",
+        "nl.imow-mnre1034.activiteit.ReinigenVerpakkingenNietBioGewas",
+        "nl.imow-mnre1034.activiteit.ReinigenVoertuigAgrActiviteiten",
+        "nl.imow-mnre1034.activiteit.ReinigOpslagVerpakGevaarlijkStof",
+        "nl.imow-mnre1034.activiteit.ReparerenVerhurenGemotoWerktuig",
+        "nl.imow-mnre1034.activiteit.RijkmonMonument",
+        "nl.imow-mnre1034.activiteit.RijksmonArchMonument",
+        "nl.imow-mnre1034.activiteit.Rijksmonumentenactiviteit",
+        "nl.imow-mnre1034.activiteit.RubberKunsstofRecyclingbedrijf",
+        "nl.imow-mnre1034.activiteit.RubberKunststofIndustrie",
+        "nl.imow-mnre1034.activiteit.Scheepswerven",
+        "nl.imow-mnre1034.activiteit.Schietbaan",
+        "nl.imow-mnre1034.activiteit.SchoonbrandenMetalen",
+        "nl.imow-mnre1034.activiteit.SchoonmakenPleziervaartuigen",
+        "nl.imow-mnre1034.activiteit.SevesoInrichting",
+        "nl.imow-mnre1034.activiteit.ShredderAutowrak",
+        "nl.imow-mnre1034.activiteit.Sloopactiviteit",
+        "nl.imow-mnre1034.activiteit.SlopenBouwwerk",
+        "nl.imow-mnre1034.activiteit.SmeltenGietenMetalen",
+        "nl.imow-mnre1034.activiteit.SneeuwIJsbaan",
+        "nl.imow-mnre1034.activiteit.SolderenMetalen",
+        "nl.imow-mnre1034.activiteit.Soortenbescherming",
+        "nl.imow-mnre1034.activiteit.SorterenBiologischGeteeldFruit",
+        "nl.imow-mnre1034.activiteit.SorterenNietBioGeteeldFruit",
+        "nl.imow-mnre1034.activiteit.SpoelenBiologischGeteeldeGewas",
+        "nl.imow-mnre1034.activiteit.SpoelenGewassen",
+        "nl.imow-mnre1034.activiteit.SpoelenNietBioGeteeldBloemBollen",
+        "nl.imow-mnre1034.activiteit.Spoorwegemplacementen",
+        "nl.imow-mnre1034.activiteit.SportSpeeltoestelBouwen",
+        "nl.imow-mnre1034.activiteit.StikstofBijBouwSloop",
+        "nl.imow-mnre1034.activiteit.Stookinstallatie",
+        "nl.imow-mnre1034.activiteit.StortingsactiviteitOpZee",
+        "nl.imow-mnre1034.activiteit.StortplaatOfWinningsafvalvoorz",
+        "nl.imow-mnre1034.activiteit.StortZee",
+        "nl.imow-mnre1034.activiteit.StralenMetalen",
+        "nl.imow-mnre1034.activiteit.SubstraatteeltGewassenOpenLucht",
+        "nl.imow-mnre1034.activiteit.SubstTeeltGewasStellingOpenLucht",
+        "nl.imow-mnre1034.activiteit.TankenCNG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanLNG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanLPG",
+        "nl.imow-mnre1034.activiteit.TankenOpslaanWaterstof",
+        "nl.imow-mnre1034.activiteit.Tankstation",
+        "nl.imow-mnre1034.activiteit.TelenGewassenInGebouw",
+        "nl.imow-mnre1034.activiteit.TelenGewassenInOpenlucht",
+        "nl.imow-mnre1034.activiteit.TitaandioxideInstallatie",
+        "nl.imow-mnre1034.activiteit.ToepassenBouwstoffen",
+        "nl.imow-mnre1034.activiteit.ToepassenBouwstoffenInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenGrondBagger",
+        "nl.imow-mnre1034.activiteit.ToepassenGrondBaggerInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenMijnsteenLimbInOppwater",
+        "nl.imow-mnre1034.activiteit.ToepassenMijnsteenLimburg",
+        "nl.imow-mnre1034.activiteit.Traumahelikopter",
+        "nl.imow-mnre1034.activiteit.TuinmeubilairBouwen",
+        "nl.imow-mnre1034.activiteit.Veehouderij",
+        "nl.imow-mnre1034.activiteit.VeiligheidBijBouwSloop",
+        "nl.imow-mnre1034.activiteit.VellenBeherenHoutopstandAMVB",
+        "nl.imow-mnre1034.activiteit.VellenBeherenHoutopstanden",
+        "nl.imow-mnre1034.activiteit.VerbrandenAfvalstoffenIPPC",
+        "nl.imow-mnre1034.activiteit.VerbrandenAfvalstoffenNietIPPC",
+        "nl.imow-mnre1034.activiteit.VergassenVloeibaarMakenSteenkool",
+        "nl.imow-mnre1034.activiteit.VernietigenZodeGras",
+        "nl.imow-mnre1034.activiteit.VerwerkenGevaarlijkeAfvalstoffen",
+        "nl.imow-mnre1034.activiteit.VerwerkenPolyesterhars",
+        "nl.imow-mnre1034.activiteit.VerwerkenRubbercompounds",
+        "nl.imow-mnre1034.activiteit.VerwerkenThermoplastischKunstst",
+        "nl.imow-mnre1034.activiteit.VerwijderenGraffiti",
+        "nl.imow-mnre1034.activiteit.VlaggenmastBouwen",
+        "nl.imow-mnre1034.activiteit.Voedingsmiddelenindustrie",
+        "nl.imow-mnre1034.activiteit.VoorzieningOefenBrandbestrijding",
+        "nl.imow-mnre1034.activiteit.VormgevenBetonproducten",
+        "nl.imow-mnre1034.activiteit.VullenGasflessenPropaanButaan",
+        "nl.imow-mnre1034.activiteit.WasstraatWasplaats",
+        "nl.imow-mnre1034.activiteit.Wateronttrekkingsactiviteit",
+        "nl.imow-mnre1034.activiteit.WerkzaamhedenVerplaatsbMijnbouw",
+        "nl.imow-mnre1034.activiteit.Windturbine",
+        "nl.imow-mnre1034.activiteit.ZelfstandigeAfvalwaterzuivering",
+        "nl.imow-mnre1034.activiteit.Zendmasten",
+        "nl.imow-mnre1034.activiteit.Ziekenhuis",
+        "nl.imow-mnre1034.activiteit.ZonnecollectorBouwen",
+        "nl.imow-mnre1034.activiteit.ZonweringBouwen",
+        "nl.imow-mnre1034.activiteit.ZuiveringtechnischWerk",
+        "nl.imow-mnre1034.activiteit.Zwembad",
+        "nl.imow-mnre1034.activiteit.ZwemBadBadwaterbassin",
+        "nl.imow-mnre1034.activiteit.ZwembadBouwen",
+        "nl.imow-mnre1034.activiteit.ZwemBassinDesinfect",
+        "nl.imow-mnre1034.activiteit.ZwemBassinEenmalig",
+        "nl.imow-mnre1034.activiteit.ZwemOverigBassin",
+        "nl.imow-mnre1034.activiteit.ZwemZwemvijver",
+        "nl.imow-pv27.activiteit.003000000000000000000039",
+        "nl.imow-pv27.activiteit.003000000000000000000049",
+        "nl.imow-pv27.activiteit.992700000000000000000001",
+        "nl.imow-pv27.activiteit.gm0363actNH2022",
+        "nl.imow-pv27.activiteit.gm0363actNH2022geiten",
+        "nl.imow-pv27.activiteit.gm0363actNH2022windturb",
+        "nl.imow-ws0155.activiteit.0cde1ab5b9264f1f980bf33417668314",
+        "nl.imow-ws0155.activiteit.10f604ae99394c20bb1789c53bf3c35f",
+        "nl.imow-ws0155.activiteit.15ced500578546f9a4ece8d97e42478d",
+        "nl.imow-ws0155.activiteit.1d35a85d806c4724956f487700c0c77d",
+        "nl.imow-ws0155.activiteit.25d354fd5abe4c9f9580d71dda102970",
+        "nl.imow-ws0155.activiteit.2796c08bf8904c8d9e016898135997f9",
+        "nl.imow-ws0155.activiteit.2f83b490245b42a38c217111f7d599b2",
+        "nl.imow-ws0155.activiteit.2fc61457cb774735868859bd9e828e6c",
+        "nl.imow-ws0155.activiteit.362a34f444ae4e0d97169da2670e0df8",
+        "nl.imow-ws0155.activiteit.3758a34c595e4363a2fe22696116c3d1",
+        "nl.imow-ws0155.activiteit.38866f7f0b4d442c888bda0a910949a2",
+        "nl.imow-ws0155.activiteit.56d53d5d6f6a40318214f0647ac0b4d6",
+        "nl.imow-ws0155.activiteit.57f7d709c8084c0183a5da8cb42281ef",
+        "nl.imow-ws0155.activiteit.5adf1eeb39fb431cb7a3b6744f69d776",
+        "nl.imow-ws0155.activiteit.5f183929f8794dee9abdabb6b6286803",
+        "nl.imow-ws0155.activiteit.6ac54f54587048b5a7f06920e7930f6d",
+        "nl.imow-ws0155.activiteit.6db3707724f641dc99656a77e14113ed",
+        "nl.imow-ws0155.activiteit.73ba371df3e0477fb2d4001364e4a475",
+        "nl.imow-ws0155.activiteit.73bfb06e2af3491b8152519623ba9717",
+        "nl.imow-ws0155.activiteit.74ddcd5fc8044705ba34d6e3b78d01d2",
+        "nl.imow-ws0155.activiteit.78fe4e161be94f41b116939500c2a682",
+        "nl.imow-ws0155.activiteit.8322aa8ee5804cecb1a1c4810ee449f9",
+        "nl.imow-ws0155.activiteit.84119d559e17407fa9cff996d7206015",
+        "nl.imow-ws0155.activiteit.8c3436319e2342888b25bd8f61d540fa",
+        "nl.imow-ws0155.activiteit.91721cea47ad445094ec3684e5617db4",
+        "nl.imow-ws0155.activiteit.91c86b405b324ea7ae4ef986734b4bab",
+        "nl.imow-ws0155.activiteit.9206080dd4b745f2a0b71d94a8bc37b2",
+        "nl.imow-ws0155.activiteit.98f2d1cae0704bfcbf8787d1cd3c52e2",
+        "nl.imow-ws0155.activiteit.9e0d7afdace446f3ad71d107dd1bf302",
+        "nl.imow-ws0155.activiteit.9ec558a8982b49c09d0772f2e1ab50f1",
+        "nl.imow-ws0155.activiteit.a08df763a95f414a9bb38a3104737efb",
+        "nl.imow-ws0155.activiteit.a3a2bafa4b354f32999d2a545db685c7",
+        "nl.imow-ws0155.activiteit.a426d0f3aee241fe918dc4008b00df9a",
+        "nl.imow-ws0155.activiteit.a952a87e85634f09880cc609bbe7de50",
+        "nl.imow-ws0155.activiteit.a9f2b61e946f4e579f2152297d4334f2",
+        "nl.imow-ws0155.activiteit.ActInWaterschapsVerordWs",
+        "nl.imow-ws0155.activiteit.b14b09f1b4d74b14a5cd88415289e628",
+        "nl.imow-ws0155.activiteit.b236d863c344499981de756ee319644d",
+        "nl.imow-ws0155.activiteit.bb3cd68cd3544395ac3f47633478eeea",
+        "nl.imow-ws0155.activiteit.bcbb7489e0da486cabe94eef0c1f96cd",
+        "nl.imow-ws0155.activiteit.bd4cf03daf804b05884c6aba5515bac7",
+        "nl.imow-ws0155.activiteit.BepgebWtswerkBeheerWaterschap",
+        "nl.imow-ws0155.activiteit.c2f61660235446a3815d0fdd5d90bc31",
+        "nl.imow-ws0155.activiteit.c46b47fa2a0946ec94db1466fde72ff1",
+        "nl.imow-ws0155.activiteit.d92ffaaf19274783b8acdb9338a23f68",
+        "nl.imow-ws0155.activiteit.e31c42f19d9047b3a9c4ac09ae09456b",
+        "nl.imow-ws0155.activiteit.e3bbd13d372c48aaa26f842a072a5477",
+        "nl.imow-ws0155.activiteit.e9178140c14b44359d0bec03a6140da6",
+        "nl.imow-ws0155.activiteit.f69a3de4301341c891eb0e51d6b2ebd1",
+        "nl.imow-ws0155.activiteit.fd73a054fca645a0b8b9b2aec97093c5",
+        "nl.imow-ws0155.activiteit.LozenOppwaterZuivertBeheerWs",
+        "nl.imow-ws0155.activiteit.Wateronttrekkingsact"
+      ]
+    },
+    "response_size_kb": 31.16
+  },
+  {
+    "timestamp": "2025-09-18T05:53:23.782714",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/locatieidentificaties/_zoek",
+      "success": false,
+      "duration_seconds": 0.146,
+      "http_status": 400
+    },
+    "request_data": {
+      "request_id": "e8529c05",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geometrie": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                119869.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482151.0
+              ],
+              [
+                119889.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482171.0
+              ],
+              [
+                119869.0,
+                482151.0
+              ]
+            ]
+          ]
+        },
+        "spatialOperator": "intersects"
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167603.6370811
+    },
+    "response_data": {
+      "status_code": 400,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Content-Type": "application/problem+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "d2bb0938b915fa71c442a0777deede6b",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "vary": "Origin",
+        "expires": "0",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "type": "about:blank",
+        "title": "Ongeldige request body",
+        "status": 400,
+        "detail": "De post body moet gevuld zijn met of een geometrie, of een lijst van locatie identificaties",
+        "instance": "/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+        "timestamp": "2025-09-18T03:53:25.799858509Z"
+      }
+    },
+    "response_size_kb": 1.19
+  },
+  {
+    "timestamp": "2025-09-18T05:53:24.225016",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/locaties/_zoek",
+      "success": true,
+      "duration_seconds": 0.435,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "dfa98710",
+      "method": "POST",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***",
+        "Content-Crs": "EPSG:28992"
+      },
+      "payload": {
+        "geo": {
+          "geometrie": {
+            "type": "Point",
+            "coordinates": [
+              119879.0,
+              482161.0
+            ]
+          },
+          "spatialOperator": "intersects"
+        }
+      },
+      "params": null,
+      "timeout": 30,
+      "timestamp": 1758167603.789612
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:26 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "ac2ffc0bea9db969e29178af9db9667a",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "x-pagination-count": "3",
+        "x-pagination-limit": "20",
+        "vary": "Origin",
+        "expires": "0",
+        "x-pagination-page": "0",
+        "x-total-count": "43",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "_links": {
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=0&size=20"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=0&size=20"
+          },
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=1&size=20"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek?page=2&size=20"
+          }
+        },
+        "_embedded": {
+          "locaties": [
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.LND6030A?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030A",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2020-08-01",
+                "beginGeldigheid": "2020-08-01",
+                "tijdstipRegistratie": "2021-11-17T14:43:15.981086",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland inclusief territoriale wateren",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.LND6030B?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2020-08-01",
+                "beginGeldigheid": "2020-08-01",
+                "tijdstipRegistratie": "2021-11-17T14:43:15.981086",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland inclusief territoriale wateren en de exclusieve economische zone",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.ambtsgebied.202300001?geldigOp=2021-02-23&inwerkingOp=2021-02-23&beschikbaarOp=2023-03-03T14:02:09Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.ambtsgebied.202300001",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2021-02-23",
+                "beginGeldigheid": "2021-02-23",
+                "tijdstipRegistratie": "2023-03-03T14:02:09.580660",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Nederland + EEZ",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.gebied.6d3afc592x73e3ce3e6x86xc?geldigOp=2023-12-31&inwerkingOp=2023-12-31&beschikbaarOp=2023-06-27T15:26:01Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.gebied.6d3afc592x73e3ce3e6x86xc",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2023-12-31",
+                "beginGeldigheid": "2023-12-31",
+                "tijdstipRegistratie": "2023-06-27T15:26:01.579258",
+                "subType": "Gebied"
+              },
+              "noemer": "radarverstoringsgebied bouwwerken- radarstation Schiphol Tar West ",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-mnre1034.gebied.axb553be3cc98fxaeea88332?geldigOp=2023-12-31&inwerkingOp=2023-12-31&beschikbaarOp=2023-06-27T15:26:01Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.gebied.axb553be3cc98fxaeea88332",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2023-12-31",
+                "beginGeldigheid": "2023-12-31",
+                "tijdstipRegistratie": "2023-06-27T15:26:01.579258",
+                "subType": "Gebied"
+              },
+              "noemer": "radarverstoringsgebied bouwwerken- radarstation Schiphol",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.ambtsgebied.63000ee16f32496ab4c144d866489fd5?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.ambtsgebied.63000ee16f32496ab4c144d866489fd5",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Ambtsgebied"
+              },
+              "noemer": "Ambtsgebied Waterschap Amstel, Gooi en Vecht",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.110b206267184094a98ff4dac47ec1c8?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.110b206267184094a98ff4dac47ec1c8",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de hogere gronden en op hogere gronden binnen Natura-2000 gebieden en een zone van 100 meter daaromheen",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.39b03c77e988490c90d612cb469eb53f?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.39b03c77e988490c90d612cb469eb53f",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "beheergebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.4325dd87baa24a79a1ba03b14e40d178?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.4325dd87baa24a79a1ba03b14e40d178",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de kernzone en beschermingszone van een waterkerend dijklichaam, buiten de kernzone en beschermingszone van een half-verholen waterkering en buiten een waterkerende constructie",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.762ebb12854540d6889cda7d86efc038?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.762ebb12854540d6889cda7d86efc038",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "stedelijk en glastuinbouwgebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.beb5c381fc264369ac9aea921d0ba36e?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.beb5c381fc264369ac9aea921d0ba36e",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "hogere gronden buiten Natura-2000 gebieden en een zone van 100 meter daaromheen",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.c336afbbbcda45bd95b088cce3eddae6?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.c336afbbbcda45bd95b088cce3eddae6",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten een peilafwijkingengebied",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.e4652beed33d402ca2fe6e25e48a3676?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.e4652beed33d402ca2fe6e25e48a3676",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "500 meter vanuit de teen van een direct waterkerend dijklichaam",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-ws0155.gebied.f59605f12f724b74a93d23b270bb8b65?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-10-30T11:07:50Z"
+                }
+              },
+              "identificatie": "nl.imow-ws0155.gebied.f59605f12f724b74a93d23b270bb8b65",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-10-30T11:07:50.834232",
+                "subType": "Gebied"
+              },
+              "noemer": "buiten de kernzone of beschermingszone van een waterkerend dijklichaam, buiten de kernzone en beschermingszone van een half-verholen waterkering",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000588e366656?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000588e366656",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000588?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000588",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "LIB 5 zone Schiphol",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000781?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000781",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "Regionale verdringingsreeks Amstel Gooi en Vecht",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebiedengroep.003000000000000000000783?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebiedengroep.003000000000000000000783",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebiedengroep"
+              },
+              "noemer": "Datacenter clustering toegestaan",
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000781e477130?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000781e477130",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/nl.imow-pv27.gebied.003000000000000000000783e469935?geldigOp=2024-01-01&inwerkingOp=2024-01-01&beschikbaarOp=2023-11-16T13:34:23Z"
+                }
+              },
+              "identificatie": "nl.imow-pv27.gebied.003000000000000000000783e469935",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginInwerking": "2024-01-01",
+                "beginGeldigheid": "2024-01-01",
+                "tijdstipRegistratie": "2023-11-16T13:34:23.969875",
+                "subType": "Gebied"
+              },
+              "spatialOperator": "within"
+            }
+          ]
+        },
+        "page": {
+          "size": 20,
+          "totalElements": 43,
+          "totalPages": 3,
+          "number": 0
+        }
+      }
+    },
+    "response_size_kb": 13.55
+  },
+  {
+    "timestamp": "2025-09-18T05:53:28.195492",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteitengeaggregeerd/levenscyclus",
+      "success": true,
+      "duration_seconds": 3.963,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "05629432",
+      "method": "GET",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": null,
+      "params": {
+        "page": 0,
+        "size": 10
+      },
+      "timeout": 30,
+      "timestamp": 1758167604.232287
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 03:53:30 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "5b2d5ee1fc6f0586d46612a3782ee74a",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "x-pagination-count": "3547",
+        "x-pagination-limit": "10",
+        "vary": "Origin",
+        "expires": "0",
+        "x-pagination-page": "0",
+        "x-total-count": "35463",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "_links": {
+          "first": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=0&size=10&sort=vId,asc"
+          },
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=0&size=10&sort=vId,asc"
+          },
+          "next": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=1&size=10&sort=vId,asc"
+          },
+          "last": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus?page=3546&size=10&sort=vId,asc"
+          }
+        },
+        "_embedded": {
+          "activiteiten": [
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActGevolgNatuur/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActGevolgNatuur/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActGevolgNatuur/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActGevolgNatuur",
+              "naam": "Activiteit met mogelijke gevolgen voor Natura 2000-gebieden of bijzondere nationale natuurgebieden",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInOmgevingsplan/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActInOmgevingsplan",
+              "naam": "Activiteit gereguleerd in het omgevingsplan",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActInWaterschapsverordening/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActInWaterschapsverordening",
+              "naam": "Activiteit gereguleerd in de waterschapsverordening",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "naam": "Activiteit met gevolgen voor de fysieke leefomgeving",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2023-06-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInAmvb/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "naam": "Activiteit gereguleerd bij AMvB",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitInOmgevingsver",
+              "naam": "Activiteit gereguleerd in de omgevingsverordening",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitGevolgenFysiekeLeefomg",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2021-11-17",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.ActiviteitenWerelderfgoed",
+              "naam": "Activiteit die werelderfgoed betreft",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2023-06-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.BepGebActLuchthaven/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BepGebActLuchthaven/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BepGebActLuchthaven/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.BepGebActLuchthaven",
+              "naam": "Beperkingengebiedactiviteit met betrekking tot een luchthaven",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2025-03-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.BepGebActSpoorweg/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BepGebActSpoorweg/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BepGebActSpoorweg/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.BepGebActSpoorweg",
+              "naam": "Beperkingengebiedactiviteit met betrekking tot een hoofdspoorweg, lokale spoorweg of bijzondere spoorweg",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2023-06-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            },
+            {
+              "_links": {
+                "self": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk/levenscyclus"
+                },
+                "heeftJuridischeBron": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk/juridischebron?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                },
+                "heeftRegeltekst": {
+                  "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk/regelteksten?geldigOp=2020-08-01&inwerkingOp=2020-08-01&beschikbaarOp=2021-11-17T14:43:15Z"
+                }
+              },
+              "identificatie": "nl.imow-mnre1034.activiteit.BeperkgebInstalInWaterstaatswerk",
+              "naam": "Beperkingengebiedactiviteit met betrekking tot een installatie in een waterstaatswerk",
+              "bevoegdGezag": {
+                "naam": "ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+                "bestuurslaag": "ministerie",
+                "code": "mnre1034"
+              },
+              "is": "nl.imow-mnre1034.activiteit.ActiviteitInAmvb",
+              "geregistreerdMet": {
+                "versie": 1,
+                "beginGeldigheid": "2020-08-01"
+              },
+              "laatsteWijzigingOp": "2023-06-27",
+              "isGereguleerdVoor": [
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030A",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2023-12-31"
+                  }
+                },
+                {
+                  "identificatie": "nl.imow-mnre1034.ambtsgebied.LND6030B",
+                  "geregistreerdMet": {
+                    "beginGeldigheid": "2020-08-01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "page": {
+          "size": 10,
+          "totalElements": 35463,
+          "totalPages": 3547,
+          "number": 0
+        }
+      }
+    },
+    "response_size_kb": 15.29
+  }
+]

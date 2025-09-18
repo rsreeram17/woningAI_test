@@ -14,19 +14,50 @@ class DSODetailedQueryAPI(BaseAPIClient):
 
         super().__init__(detailed_config, "DSO_DetailedQuery", house_logger)
 
-    def get_activity_lifecycle(self, activity_id: str, renovation_type: str = None) -> Dict[str, Any]:
-        """Get complete lifecycle information for an activity.
+    def search_activity_identifications(self, coordinates: List[float],
+                                      spatial_operator: str = "intersects",
+                                      renovation_type: str = None) -> Dict[str, Any]:
+        """Search for activity identifications based on geographic criteria.
 
         Args:
-            activity_id: Activity identifier (e.g., 'nl.imow-gm0037.activiteit.2019000242example')
+            coordinates: [X, Y] coordinates in RD format
+            spatial_operator: 'intersects' or 'within'
             renovation_type: Current renovation type being tested
 
         Returns:
-            Dict with activity lifecycle information
+            Dict with activity identification search results
         """
-        result = self.get(
-            endpoint=f"/activiteiten/{activity_id}/levenscyclus",
-            renovation_type=renovation_type
+        if not coordinates or len(coordinates) < 2:
+            return {
+                "success": False,
+                "error": "Invalid coordinates provided",
+                "error_type": "invalid_coordinates"
+            }
+
+        # Create polygon around the point for search
+        # Using a small buffer around the point (10 meters)
+        x, y = coordinates[0], coordinates[1]
+        buffer = 10  # 10 meter buffer
+
+        payload = {
+            "geometrie": {
+                "type": "Polygon",
+                "coordinates": [[
+                    [x - buffer, y - buffer],
+                    [x + buffer, y - buffer],
+                    [x + buffer, y + buffer],
+                    [x - buffer, y + buffer],
+                    [x - buffer, y - buffer]
+                ]]
+            },
+            "spatialOperator": spatial_operator
+        }
+
+        result = self.post(
+            endpoint="/activiteitidentificaties/_zoek",
+            data=payload,
+            renovation_type=renovation_type,
+            include_crs=True  # Required for geographic searches
         )
 
         if not result['success']:
@@ -35,17 +66,23 @@ class DSODetailedQueryAPI(BaseAPIClient):
         # Process response
         response_data = result['data']
 
-        # Extract activities if found
-        activities = []
-        if '_embedded' in response_data and 'activiteiten' in response_data['_embedded']:
-            activities = response_data['_embedded']['activiteiten']
+        # The response should be a list of activity identifications
+        activity_ids = []
+        if isinstance(response_data, list):
+            activity_ids = response_data
+        elif isinstance(response_data, dict) and '_embedded' in response_data:
+            activity_ids = response_data.get('_embedded', {}).get('activiteitidentificaties', [])
 
         return {
             "success": True,
             "data": {
-                "activity_id": activity_id,
-                "activities": activities,
-                "total_found": len(activities),
+                "activity_identifications": activity_ids,
+                "total_found": len(activity_ids),
+                "search_criteria": {
+                    "coordinates": coordinates,
+                    "spatial_operator": spatial_operator,
+                    "buffer_meters": buffer
+                },
                 "raw_response": response_data,
                 "response_metadata": {
                     "duration": result['duration'],
@@ -54,90 +91,25 @@ class DSODetailedQueryAPI(BaseAPIClient):
             }
         }
 
-    def get_legal_source(self, activity_id: str, renovation_type: str = None,
-                        valid_on: str = None, in_effect_on: str = None,
-                        available_at: str = None) -> Dict[str, Any]:
-        """Get legal source information for an activity.
+    def get_aggregated_activities(self, page: int = 0, size: int = 20,
+                                renovation_type: str = None) -> Dict[str, Any]:
+        """Get aggregated activities from the system.
 
         Args:
-            activity_id: Activity identifier
-            renovation_type: Current renovation type being tested
-            valid_on: Valid on specific date (yyyy-mm-dd)
-            in_effect_on: In effect on specific date (yyyy-mm-dd)
-            available_at: Available at specific datetime (ISO 8601)
-
-        Returns:
-            Dict with legal source information
-        """
-        params = {}
-        if valid_on:
-            params['geldigOp'] = valid_on
-        if in_effect_on:
-            params['inWerkingOp'] = in_effect_on
-        if available_at:
-            params['beschikbaarOp'] = available_at
-
-        result = self.get(
-            endpoint=f"/activiteiten/{activity_id}/juridischebron",
-            params=params,
-            renovation_type=renovation_type
-        )
-
-        if not result['success']:
-            return result
-
-        # Process response
-        response_data = result['data']
-
-        # Extract legal source information
-        document_id = response_data.get('documentIdentificatie', '')
-        rule_texts = response_data.get('regelteksten', [])
-
-        return {
-            "success": True,
-            "data": {
-                "activity_id": activity_id,
-                "document_identification": document_id,
-                "rule_texts": rule_texts,
-                "total_rule_texts": len(rule_texts),
-                "raw_response": response_data,
-                "response_metadata": {
-                    "duration": result['duration'],
-                    "request_id": result['request_id']
-                }
-            }
-        }
-
-    def get_rule_texts(self, activity_id: str, renovation_type: str = None,
-                      valid_on: str = None, in_effect_on: str = None,
-                      available_at: str = None, page: int = 0, size: int = 20) -> Dict[str, Any]:
-        """Get all legal texts that mention this activity.
-
-        Args:
-            activity_id: Activity identifier
-            renovation_type: Current renovation type being tested
-            valid_on: Valid on specific date (yyyy-mm-dd)
-            in_effect_on: In effect on specific date (yyyy-mm-dd)
-            available_at: Available at specific datetime (ISO 8601)
             page: Page number (default: 0)
             size: Items per page (1-200, default: 20)
+            renovation_type: Current renovation type being tested
 
         Returns:
-            Dict with rule texts information
+            Dict with aggregated activities information
         """
         params = {
             'page': page,
             'size': size
         }
-        if valid_on:
-            params['geldigOp'] = valid_on
-        if in_effect_on:
-            params['inWerkingOp'] = in_effect_on
-        if available_at:
-            params['beschikbaarOp'] = available_at
 
         result = self.get(
-            endpoint=f"/activiteiten/{activity_id}/regelteksten",
+            endpoint="/activiteitengeaggregeerd/levenscyclus",
             params=params,
             renovation_type=renovation_type
         )
@@ -148,12 +120,12 @@ class DSODetailedQueryAPI(BaseAPIClient):
         # Process response
         response_data = result['data']
 
-        # Extract rule texts
-        rule_texts = []
-        if '_embedded' in response_data and 'regelteksten' in response_data['_embedded']:
-            rule_texts = response_data['_embedded']['regelteksten']
+        # Extract activities
+        activities = []
+        if '_embedded' in response_data and 'activiteitengeaggregeerd' in response_data['_embedded']:
+            activities = response_data['_embedded']['activiteitengeaggregeerd']
         elif isinstance(response_data, list):
-            rule_texts = response_data
+            activities = response_data
 
         # Extract pagination info
         page_info = response_data.get('page', {}) if isinstance(response_data, dict) else {}
@@ -161,9 +133,8 @@ class DSODetailedQueryAPI(BaseAPIClient):
         return {
             "success": True,
             "data": {
-                "activity_id": activity_id,
-                "rule_texts": rule_texts,
-                "total_found": len(rule_texts),
+                "activities": activities,
+                "total_found": len(activities),
                 "pagination": page_info,
                 "raw_response": response_data,
                 "response_metadata": {
@@ -244,32 +215,94 @@ class DSODetailedQueryAPI(BaseAPIClient):
             }
         }
 
-    def get_single_location(self, location_id: str, renovation_type: str = None,
-                           valid_on: str = None, in_effect_on: str = None,
-                           available_at: str = None) -> Dict[str, Any]:
+    def search_location_identifications(self, coordinates: List[float],
+                                      spatial_operator: str = "intersects",
+                                      renovation_type: str = None) -> Dict[str, Any]:
+        """Search for location identifications based on geographic criteria.
+
+        Args:
+            coordinates: [X, Y] coordinates in RD format
+            spatial_operator: 'intersects' or 'within'
+            renovation_type: Current renovation type being tested
+
+        Returns:
+            Dict with location identification search results
+        """
+        if not coordinates or len(coordinates) < 2:
+            return {
+                "success": False,
+                "error": "Invalid coordinates provided",
+                "error_type": "invalid_coordinates"
+            }
+
+        # Create polygon around the point for search
+        x, y = coordinates[0], coordinates[1]
+        buffer = 10  # 10 meter buffer
+
+        payload = {
+            "geometrie": {
+                "type": "Polygon",
+                "coordinates": [[
+                    [x - buffer, y - buffer],
+                    [x + buffer, y - buffer],
+                    [x + buffer, y + buffer],
+                    [x - buffer, y + buffer],
+                    [x - buffer, y - buffer]
+                ]]
+            },
+            "spatialOperator": spatial_operator
+        }
+
+        result = self.post(
+            endpoint="/locatieidentificaties/_zoek",
+            data=payload,
+            renovation_type=renovation_type,
+            include_crs=True  # Required for geographic searches
+        )
+
+        if not result['success']:
+            return result
+
+        # Process response
+        response_data = result['data']
+
+        # The response should be a list of location identifications
+        location_ids = []
+        if isinstance(response_data, list):
+            location_ids = response_data
+        elif isinstance(response_data, dict) and '_embedded' in response_data:
+            location_ids = response_data.get('_embedded', {}).get('locatieidentificaties', [])
+
+        return {
+            "success": True,
+            "data": {
+                "location_identifications": location_ids,
+                "total_found": len(location_ids),
+                "search_criteria": {
+                    "coordinates": coordinates,
+                    "spatial_operator": spatial_operator,
+                    "buffer_meters": buffer
+                },
+                "raw_response": response_data,
+                "response_metadata": {
+                    "duration": result['duration'],
+                    "request_id": result['request_id']
+                }
+            }
+        }
+
+    def get_single_location(self, location_id: str, renovation_type: str = None) -> Dict[str, Any]:
         """Get detailed information about a specific location.
 
         Args:
             location_id: Location identifier
             renovation_type: Current renovation type being tested
-            valid_on: Valid on specific date (yyyy-mm-dd)
-            in_effect_on: In effect on specific date (yyyy-mm-dd)
-            available_at: Available at specific datetime (ISO 8601)
 
         Returns:
             Dict with location information
         """
-        params = {}
-        if valid_on:
-            params['geldigOp'] = valid_on
-        if in_effect_on:
-            params['inWerkingOp'] = in_effect_on
-        if available_at:
-            params['beschikbaarOp'] = available_at
-
         result = self.get(
             endpoint=f"/locaties/{location_id}",
-            params=params,
             renovation_type=renovation_type
         )
 
@@ -292,112 +325,176 @@ class DSODetailedQueryAPI(BaseAPIClient):
             }
         }
 
-    def extract_activity_ids_from_functional_refs(self, functional_refs: List[str]) -> List[str]:
-        """Extract activity IDs from functional structure references.
+    def validate_coordinates_and_get_context(self, coordinates: List[float],
+                                           renovation_type: str = None) -> Dict[str, Any]:
+        """Validate coordinates and get comprehensive context information.
 
         Args:
-            functional_refs: List of functional structure reference URLs
-
-        Returns:
-            List of activity IDs that can be used with this API
-        """
-        activity_ids = []
-
-        for ref in functional_refs:
-            if not ref:
-                continue
-
-            # Try to extract activity ID from URL
-            # Expected format: https://.../.../activiteiten/{activity_id}/...
-            if '/activiteiten/' in ref:
-                parts = ref.split('/activiteiten/')
-                if len(parts) > 1:
-                    # Get the part after /activiteiten/
-                    activity_part = parts[1]
-                    # Take everything before the next slash (if any)
-                    activity_id = activity_part.split('/')[0]
-                    if activity_id and activity_id not in activity_ids:
-                        activity_ids.append(activity_id)
-            else:
-                # If it's already just an ID, use it directly
-                # Check if it looks like an activity ID (contains 'activiteit')
-                if 'activiteit' in ref:
-                    activity_ids.append(ref)
-
-        return activity_ids
-
-    def validate_and_get_activity_details(self, functional_refs: List[str],
-                                         renovation_type: str = None) -> Dict[str, Any]:
-        """Validate functional references and get detailed activity information.
-
-        Args:
-            functional_refs: List of functional structure references from search
+            coordinates: [X, Y] coordinates in RD format
             renovation_type: Current renovation type being tested
 
         Returns:
-            Dict with validation results and activity details
+            Dict with validation results and context information
         """
-        if not functional_refs:
+        if not coordinates or len(coordinates) < 2:
             return {
                 "success": False,
-                "error": "No functional structure references provided",
-                "error_type": "missing_references"
+                "error": "Invalid coordinates provided",
+                "error_type": "invalid_coordinates"
             }
 
-        print(f"🔍 Extracting activity IDs from {len(functional_refs)} functional references...")
+        print(f"🔍 Validating coordinates and getting context: [{coordinates[0]}, {coordinates[1]}]")
 
-        # Extract activity IDs
-        activity_ids = self.extract_activity_ids_from_functional_refs(functional_refs)
+        # Test 1: Search for activity identifications
+        print("  📋 Searching for activity identifications...")
+        activity_ids_result = self.search_activity_identifications(coordinates, renovation_type=renovation_type)
 
+        # Test 2: Search for location identifications
+        print("  📍 Searching for location identifications...")
+        location_ids_result = self.search_location_identifications(coordinates, renovation_type=renovation_type)
+
+        # Test 3: Search for locations
+        print("  🗺️ Searching for locations...")
+        locations_result = self.search_locations(coordinates, renovation_type=renovation_type)
+
+        # Test 4: Get sample aggregated activities
+        print("  📚 Getting sample aggregated activities...")
+        activities_result = self.get_aggregated_activities(size=10, renovation_type=renovation_type)
+
+        successful_tests = sum([
+            activity_ids_result.get('success', False),
+            location_ids_result.get('success', False),
+            locations_result.get('success', False),
+            activities_result.get('success', False)
+        ])
+
+        return {
+            "success": successful_tests > 0,
+            "data": {
+                "coordinates": coordinates,
+                "activity_identifications": activity_ids_result,
+                "location_identifications": location_ids_result,
+                "locations": locations_result,
+                "sample_activities": activities_result,
+                "test_summary": {
+                    "successful_tests": successful_tests,
+                    "total_tests": 4,
+                    "success_rate": (successful_tests / 4) * 100
+                }
+            }
+        }
+
+    def get_activity_lifecycle(self, activity_id: str, renovation_type: str = None) -> Dict[str, Any]:
+        """Get lifecycle information for a specific activity, including location relationships.
+
+        Args:
+            activity_id: Activity identifier (e.g., 'nl.imow-gm0363.activiteit.abc123')
+            renovation_type: Current renovation type being tested
+
+        Returns:
+            Dict with activity lifecycle and location relationships
+        """
+        result = self.get(
+            endpoint=f"/activiteiten/{activity_id}/levenscyclus",
+            renovation_type=renovation_type
+        )
+
+        if not result['success']:
+            return result
+
+        # Process response
+        response_data = result['data']
+
+        return {
+            "success": True,
+            "data": {
+                "activity_id": activity_id,
+                "lifecycle_info": response_data,
+                "raw_response": response_data,
+                "response_metadata": {
+                    "duration": result['duration'],
+                    "request_id": result['request_id']
+                }
+            }
+        }
+
+    def get_activity_location_mapping(self, activity_ids: List[str],
+                                    renovation_type: str = None) -> Dict[str, Any]:
+        """Get location relationships for multiple activities.
+
+        Args:
+            activity_ids: List of activity identifiers
+            renovation_type: Current renovation type being tested
+
+        Returns:
+            Dict with activity-location mapping information
+        """
         if not activity_ids:
             return {
                 "success": False,
-                "error": "Could not extract activity IDs from functional references",
-                "error_type": "invalid_references",
-                "functional_refs": functional_refs
+                "error": "No activity IDs provided",
+                "error_type": "invalid_input"
             }
 
-        print(f"✅ Found {len(activity_ids)} activity IDs")
+        print(f"🔍 Getting location relationships for {len(activity_ids)} activities...")
 
-        # Get details for each activity
-        activity_details = {}
+        activity_mappings = {}
         successful_lookups = 0
 
-        for activity_id in activity_ids:
-            print(f"  📋 Getting details for activity: {activity_id}")
+        # Test with first few activities (to avoid too many API calls)
+        test_activities = activity_ids[:5]
 
-            # Get lifecycle information
-            lifecycle_result = self.get_activity_lifecycle(activity_id, renovation_type)
+        for i, activity_id in enumerate(test_activities, 1):
+            print(f"  📋 {i}/{len(test_activities)}: {activity_id[:50]}...")
 
-            # Get legal source
-            legal_source_result = self.get_legal_source(activity_id, renovation_type)
+            lifecycle_result = self.get_activity_lifecycle(activity_id, renovation_type=renovation_type)
 
-            # Get rule texts
-            rule_texts_result = self.get_rule_texts(activity_id, renovation_type)
-
-            if lifecycle_result['success'] or legal_source_result['success'] or rule_texts_result['success']:
+            if lifecycle_result['success']:
                 successful_lookups += 1
-                activity_details[activity_id] = {
-                    "lifecycle": lifecycle_result,
-                    "legal_source": legal_source_result,
-                    "rule_texts": rule_texts_result
+                lifecycle_data = lifecycle_result['data']['lifecycle_info']
+
+                # Extract location references from lifecycle data
+                locations = []
+
+                # Handle _embedded structure
+                activities_data = []
+                if isinstance(lifecycle_data, dict) and '_embedded' in lifecycle_data:
+                    activities_data = lifecycle_data['_embedded'].get('activiteiten', [])
+                elif isinstance(lifecycle_data, list):
+                    activities_data = lifecycle_data
+                elif isinstance(lifecycle_data, dict):
+                    activities_data = [lifecycle_data]
+
+                for activity in activities_data:
+                    if 'isGereguleerdVoor' in activity:
+                        for location_ref in activity['isGereguleerdVoor']:
+                            if isinstance(location_ref, dict) and 'identificatie' in location_ref:
+                                locations.append(location_ref['identificatie'])
+                            elif isinstance(location_ref, str):
+                                locations.append(location_ref)
+
+                activity_mappings[activity_id] = {
+                    "locations": list(set(locations)),  # Remove duplicates
+                    "lifecycle_versions": len(lifecycle_data) if isinstance(lifecycle_data, list) else 1
                 }
-                print(f"    ✅ Successfully retrieved details")
             else:
-                print(f"    ❌ Failed to retrieve details")
-                activity_details[activity_id] = {
-                    "lifecycle": lifecycle_result,
-                    "legal_source": legal_source_result,
-                    "rule_texts": rule_texts_result
+                activity_mappings[activity_id] = {
+                    "error": lifecycle_result.get('error', 'Unknown error'),
+                    "locations": []
                 }
 
         return {
             "success": successful_lookups > 0,
             "data": {
-                "activity_ids": activity_ids,
-                "activity_details": activity_details,
+                "total_activities_tested": len(test_activities),
                 "successful_lookups": successful_lookups,
-                "total_attempted": len(activity_ids),
-                "functional_refs": functional_refs
+                "activity_location_mappings": activity_mappings,
+                "summary": {
+                    "activities_with_locations": len([a for a in activity_mappings.values() if a.get('locations')]),
+                    "total_unique_locations": len(set(
+                        loc for mapping in activity_mappings.values()
+                        for loc in mapping.get('locations', [])
+                    ))
+                }
             }
         }

@@ -80,140 +80,115 @@ def test_dso_detailed_query(address: str, renovation_type: str):
             print(f"   Error: {search_result.get('error')}")
             return
 
-        # Step 2: Validate and Extract Activity Details
-        print(f"\n2️⃣ VALIDATE FUNCTIONAL REFERENCES & EXTRACT ACTIVITY IDS")
+        # Step 2: Get Coordinates for Detailed Query
+        print(f"\n2️⃣ GET COORDINATES FOR DETAILED QUERY")
         print("-" * 50)
 
-        validation_result = detailed_query_client.validate_and_get_activity_details(
-            functional_refs, renovation_type=renovation_type
-        )
-
-        if validation_result['success']:
-            print("✅ SUCCESS")
-            data = validation_result['data']
-
-            print(f"📊 Validation Results:")
-            print(f"   Activity IDs extracted: {len(data['activity_ids'])}")
-            print(f"   Successful lookups: {data['successful_lookups']}")
-            print(f"   Total attempted: {data['total_attempted']}")
-
-            print(f"\n📋 Activity IDs found:")
-            for i, activity_id in enumerate(data['activity_ids'], 1):
-                print(f"   {i}. {activity_id}")
-
-            activity_details = data['activity_details']
+        # Parse address for BAG API
+        parts = address.split()
+        if len(parts) >= 2:
+            postcode = parts[0]
+            number_part = parts[1]
+            if '-' in number_part:
+                number, addition = number_part.split('-', 1)
+                address_dict = {
+                    'postcode': postcode,
+                    'huisnummer': int(number),
+                    'huisnummertoevoeging': addition
+                }
+            else:
+                address_dict = {
+                    'postcode': postcode,
+                    'huisnummer': int(number_part)
+                }
         else:
-            print("❌ FAILED")
-            print(f"   Error: {validation_result.get('error')}")
+            print("❌ Invalid address format")
             return
 
-        # Step 3: Test Individual API Methods
-        if activity_details:
-            sample_activity_id = list(activity_details.keys())[0]
+        # Import BAG client
+        from src.api_clients.bag_client import BAGAPIClient
+        bag_config = config.get_bag_config()
+        bag_client = BAGAPIClient(bag_config, house_logger=house_logger)
 
-            print(f"\n3️⃣ INDIVIDUAL API METHOD TESTS")
-            print("-" * 50)
-            print(f"Testing with activity ID: {sample_activity_id}")
+        coordinates_result = bag_client.get_address_extended(address_dict, renovation_type=renovation_type)
 
-            # Test A: Get Activity Lifecycle
-            print(f"\n🔍 A) ACTIVITY LIFECYCLE TEST")
-            print("-" * 30)
-
-            lifecycle_result = detailed_query_client.get_activity_lifecycle(
-                sample_activity_id, renovation_type=renovation_type
-            )
-
-            if lifecycle_result['success']:
+        if coordinates_result['success']:
+            coordinates = bag_client.extract_coordinates(coordinates_result)
+            if coordinates:
                 print("✅ SUCCESS")
-                data = lifecycle_result['data']
-                print(f"📊 Lifecycle Results:")
-                print(f"   Activities found: {data['total_found']}")
-                print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
-
-                if data['activities']:
-                    activity = data['activities'][0]
-                    print(f"\n📋 Sample Activity Details:")
-                    print(f"   Name: {activity.get('naam', 'Unknown')}")
-                    print(f"   Status: {activity.get('procedurestatus', 'Unknown')}")
-                    if 'bevoegdGezag' in activity:
-                        authority = activity['bevoegdGezag']
-                        print(f"   Authority: {authority.get('naam', 'Unknown')} ({authority.get('bestuurslaag', 'Unknown')})")
-                    if 'geregistreerdMet' in activity:
-                        reg = activity['geregistreerdMet']
-                        print(f"   Version: {reg.get('versie', 'Unknown')}")
-                        print(f"   Effective from: {reg.get('beginInwerking', 'Unknown')}")
+                print(f"   Coordinates: [{coordinates[0]}, {coordinates[1]}] (RD format)")
             else:
-                print("❌ FAILED")
-                print(f"   Error: {lifecycle_result.get('error')}")
+                print("❌ Could not extract coordinates")
+                return
+        else:
+            print("❌ FAILED to get coordinates")
+            print(f"   Error: {coordinates_result.get('error')}")
+            return
 
-            # Test B: Get Legal Source
-            print(f"\n🔍 B) LEGAL SOURCE TEST")
-            print("-" * 30)
-
-            legal_source_result = detailed_query_client.get_legal_source(
-                sample_activity_id, renovation_type=renovation_type
-            )
-
-            if legal_source_result['success']:
-                print("✅ SUCCESS")
-                data = legal_source_result['data']
-                print(f"📊 Legal Source Results:")
-                print(f"   Document ID: {data.get('document_identification', 'Unknown')}")
-                print(f"   Rule texts found: {data['total_rule_texts']}")
-                print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
-
-                if data['rule_texts']:
-                    rule = data['rule_texts'][0]
-                    print(f"\n📋 Sample Rule Text:")
-                    print(f"   ID: {rule.get('identificatie', 'Unknown')}")
-                    print(f"   Description: {rule.get('omschrijving', 'No description')[:100]}...")
-                    print(f"   Article: {rule.get('labelXml', '')} {rule.get('nummerXml', '')}")
-                    print(f"   Status: {rule.get('procedurestatus', 'Unknown')}")
-            else:
-                print("❌ FAILED")
-                print(f"   Error: {legal_source_result.get('error')}")
-
-            # Test C: Get Rule Texts
-            print(f"\n🔍 C) RULE TEXTS TEST")
-            print("-" * 30)
-
-            rule_texts_result = detailed_query_client.get_rule_texts(
-                sample_activity_id, renovation_type=renovation_type
-            )
-
-            if rule_texts_result['success']:
-                print("✅ SUCCESS")
-                data = rule_texts_result['data']
-                print(f"📊 Rule Texts Results:")
-                print(f"   Rule texts found: {data['total_found']}")
-                print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
-
-                if data['rule_texts']:
-                    print(f"\n📋 Rule Texts Sample (first 3):")
-                    for i, rule in enumerate(data['rule_texts'][:3], 1):
-                        print(f"   {i}. {rule.get('identificatie', 'Unknown')}")
-                        print(f"      Text: {rule.get('omschrijving', 'No description')[:80]}...")
-                        print(f"      Document: {rule.get('documentIdentificatie', 'Unknown')}")
-            else:
-                print("❌ FAILED")
-                print(f"   Error: {rule_texts_result.get('error')}")
-
-        # Step 4: Test Location Search (if we had coordinates)
-        print(f"\n4️⃣ LOCATION SEARCH TEST")
+        # Step 3: Test Detailed Query API Methods with Coordinates
+        print(f"\n3️⃣ DETAILED QUERY API TESTS")
         print("-" * 50)
 
-        # Use example coordinates (Amsterdam center) for testing
-        test_coordinates = [121000, 487000]
-        print(f"Testing with coordinates: {test_coordinates} (Amsterdam center)")
+        # Test A: Search Activity Identifications
+        print(f"\n🔍 A) ACTIVITY IDENTIFICATIONS SEARCH")
+        print("-" * 30)
 
-        location_result = detailed_query_client.search_locations(
-            test_coordinates, renovation_type=renovation_type
+        activity_ids_result = detailed_query_client.search_activity_identifications(
+            coordinates, renovation_type=renovation_type
         )
 
-        if location_result['success']:
+        if activity_ids_result['success']:
             print("✅ SUCCESS")
-            data = location_result['data']
-            print(f"📊 Location Search Results:")
+            data = activity_ids_result['data']
+            print(f"📊 Activity IDs Results:")
+            print(f"   Activity identifications found: {data['total_found']}")
+            print(f"   Search buffer: {data['search_criteria']['buffer_meters']} meters")
+            print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
+
+            if data['activity_identifications']:
+                print(f"\n📋 Sample Activity IDs (first 3):")
+                for i, activity_id in enumerate(data['activity_identifications'][:3], 1):
+                    print(f"   {i}. {activity_id}")
+        else:
+            print("❌ FAILED")
+            print(f"   Error: {activity_ids_result.get('error')}")
+
+        # Test B: Search Location Identifications
+        print(f"\n🔍 B) LOCATION IDENTIFICATIONS SEARCH")
+        print("-" * 30)
+
+        location_ids_result = detailed_query_client.search_location_identifications(
+            coordinates, renovation_type=renovation_type
+        )
+
+        if location_ids_result['success']:
+            print("✅ SUCCESS")
+            data = location_ids_result['data']
+            print(f"📊 Location IDs Results:")
+            print(f"   Location identifications found: {data['total_found']}")
+            print(f"   Search buffer: {data['search_criteria']['buffer_meters']} meters")
+            print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
+
+            if data['location_identifications']:
+                print(f"\n📋 Sample Location IDs (first 3):")
+                for i, location_id in enumerate(data['location_identifications'][:3], 1):
+                    print(f"   {i}. {location_id}")
+        else:
+            print("❌ FAILED")
+            print(f"   Error: {location_ids_result.get('error')}")
+
+        # Test C: Search Locations
+        print(f"\n🔍 C) LOCATIONS SEARCH")
+        print("-" * 30)
+
+        locations_result = detailed_query_client.search_locations(
+            coordinates, renovation_type=renovation_type
+        )
+
+        if locations_result['success']:
+            print("✅ SUCCESS")
+            data = locations_result['data']
+            print(f"📊 Locations Results:")
             print(f"   Locations found: {data['total_found']}")
             print(f"   Search operator: {data['search_criteria']['spatial_operator']}")
             print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
@@ -226,7 +201,51 @@ def test_dso_detailed_query(address: str, renovation_type: str):
                     print(f"      Spatial relation: {location.get('spatialOperator', 'Unknown')}")
         else:
             print("❌ FAILED")
-            print(f"   Error: {location_result.get('error')}")
+            print(f"   Error: {locations_result.get('error')}")
+
+        # Test D: Get Aggregated Activities
+        print(f"\n🔍 D) AGGREGATED ACTIVITIES")
+        print("-" * 30)
+
+        activities_result = detailed_query_client.get_aggregated_activities(
+            size=5, renovation_type=renovation_type
+        )
+
+        if activities_result['success']:
+            print("✅ SUCCESS")
+            data = activities_result['data']
+            print(f"📊 Aggregated Activities Results:")
+            print(f"   Activities found: {data['total_found']}")
+            print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
+
+            if data['activities']:
+                print(f"\n📋 Sample Activities (first 3):")
+                for i, activity in enumerate(data['activities'][:3], 1):
+                    print(f"   {i}. {activity.get('identificatie', 'Unknown')}")
+                    print(f"      Name: {activity.get('naam', 'Unknown')}")
+                    print(f"      Status: {activity.get('procedurestatus', 'Unknown')}")
+        else:
+            print("❌ FAILED")
+            print(f"   Error: {activities_result.get('error')}")
+
+        # Test E: Comprehensive Validation
+        print(f"\n🔍 E) COMPREHENSIVE VALIDATION")
+        print("-" * 30)
+
+        validation_result = detailed_query_client.validate_coordinates_and_get_context(
+            coordinates, renovation_type=renovation_type
+        )
+
+        if validation_result['success']:
+            print("✅ SUCCESS")
+            data = validation_result['data']
+            test_summary = data['test_summary']
+            print(f"📊 Comprehensive Validation Results:")
+            print(f"   Successful tests: {test_summary['successful_tests']}/{test_summary['total_tests']}")
+            print(f"   Success rate: {test_summary['success_rate']:.1f}%")
+        else:
+            print("❌ FAILED")
+            print(f"   Error: {validation_result.get('error')}")
 
         # Save test summary to files
         test_summary = {
@@ -235,20 +254,21 @@ def test_dso_detailed_query(address: str, renovation_type: str):
             "test_timestamp": datetime.now().isoformat(),
             "results": {
                 "search_prerequisite": search_result.get('success', False),
-                "functional_refs_extraction": len(functional_refs) > 0,
-                "activity_validation": validation_result.get('success', False),
-                "lifecycle_test": lifecycle_result.get('success', False) if 'lifecycle_result' in locals() else False,
-                "legal_source_test": legal_source_result.get('success', False) if 'legal_source_result' in locals() else False,
-                "rule_texts_test": rule_texts_result.get('success', False) if 'rule_texts_result' in locals() else False,
-                "location_search_test": location_result.get('success', False)
+                "coordinates_extraction": coordinates_result.get('success', False),
+                "activity_identifications_search": activity_ids_result.get('success', False),
+                "location_identifications_search": location_ids_result.get('success', False),
+                "locations_search": locations_result.get('success', False),
+                "aggregated_activities": activities_result.get('success', False),
+                "comprehensive_validation": validation_result.get('success', False)
             },
+            "coordinates": coordinates if coordinates_result.get('success') else [],
             "functional_references": functional_refs,
-            "activity_ids": validation_result.get('data', {}).get('activity_ids', []) if validation_result.get('success') else [],
-            "activity_details_summary": {
-                "total_activities": len(activity_details),
-                "successful_lookups": validation_result.get('data', {}).get('successful_lookups', 0) if validation_result.get('success') else 0
-            },
-            "location_search_results": location_result.get('data', {}).get('total_found', 0) if location_result.get('success') else 0
+            "detailed_query_results": {
+                "activity_identifications_found": activity_ids_result.get('data', {}).get('total_found', 0) if activity_ids_result.get('success') else 0,
+                "location_identifications_found": location_ids_result.get('data', {}).get('total_found', 0) if location_ids_result.get('success') else 0,
+                "locations_found": locations_result.get('data', {}).get('total_found', 0) if locations_result.get('success') else 0,
+                "aggregated_activities_found": activities_result.get('data', {}).get('total_found', 0) if activities_result.get('success') else 0
+            }
         }
 
         # Save to house-specific folder
@@ -260,25 +280,27 @@ def test_dso_detailed_query(address: str, renovation_type: str):
 
         # Summary
         success_count = sum([
-            test_summary['results']['functional_refs_extraction'],
-            test_summary['results']['activity_validation'],
-            test_summary['results']['lifecycle_test'],
-            test_summary['results']['legal_source_test'],
-            test_summary['results']['rule_texts_test'],
-            test_summary['results']['location_search_test']
+            test_summary['results']['search_prerequisite'],
+            test_summary['results']['coordinates_extraction'],
+            test_summary['results']['activity_identifications_search'],
+            test_summary['results']['location_identifications_search'],
+            test_summary['results']['locations_search'],
+            test_summary['results']['aggregated_activities'],
+            test_summary['results']['comprehensive_validation']
         ])
 
-        if success_count >= 4:
+        total_tests = 7
+        if success_count >= 5:
             print("✅ DSO Detailed Query API working excellently!")
-            print(f"✅ Successfully tested {success_count}/6 core functions")
+            print(f"✅ Successfully tested {success_count}/{total_tests} core functions")
             print("🚀 Ready to test DSO Interactive API with detailed legal data")
-        elif success_count >= 2:
+        elif success_count >= 3:
             print("⚠️ DSO Detailed Query API partially working")
-            print(f"⚠️ {success_count}/6 core functions succeeded")
-            print("💡 Some legal details may be missing")
+            print(f"⚠️ {success_count}/{total_tests} core functions succeeded")
+            print("💡 Some API methods may be limited")
         else:
             print("❌ DSO Detailed Query API having issues")
-            print("💡 Check activity IDs and API endpoints")
+            print("💡 Check API endpoints and coordinate handling")
 
         print(f"\n📁 Results saved to:")
         print(f"   • House folder: {house_logger.house_folder}")

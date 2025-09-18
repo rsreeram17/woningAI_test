@@ -1,0 +1,419 @@
+[
+  {
+    "timestamp": "2025-09-18T05:50:32.444110",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055024",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "BAG",
+      "endpoint": "/adressenuitgebreid",
+      "success": true,
+      "duration_seconds": 0.109,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "21076b40",
+      "method": "GET",
+      "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "X-Api-Key": "***REDACTED***",
+        "Accept-Crs": "EPSG:28992"
+      },
+      "payload": null,
+      "params": {
+        "postcode": "1082GB",
+        "huisnummer": 43,
+        "huisnummertoevoeging": "2"
+      },
+      "timeout": 30,
+      "timestamp": 1758167432.335271
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "RateLimit-Limit": "50",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "24",
+        "Kadaster-RateLimit-DayLimit": "50000",
+        "Kadaster-RateLimit-DayLimit-Remaining": "49999",
+        "Kadaster-RateLimit-DayLimit-Reset": "65366",
+        "Api-Version": "2.9.2",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Crs": "epsg:28992",
+        "Content-Security-Policy": "frame-ancestors 'none'",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-Pagination-Count": "1",
+        "X-Pagination-Limit": "20",
+        "X-Pagination-Page": "1",
+        "X-Total-Count": "1",
+        "X-Xss-Protection": "0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/hal+json",
+        "Content-Length": "591",
+        "Date": "Thu, 18 Sep 2025 03:50:33 GMT",
+        "Keep-Alive": "timeout=20",
+        "Connection": "keep-alive",
+        "Server": "unspecified"
+      },
+      "data": {
+        "_embedded": {
+          "adressen": [
+            {
+              "openbareRuimteNaam": "Overvoorde",
+              "korteNaam": "Overvoorde",
+              "huisnummer": 43,
+              "huisnummertoevoeging": "2",
+              "postcode": "1082GB",
+              "woonplaatsNaam": "Amsterdam",
+              "nummeraanduidingIdentificatie": "0363200000229916",
+              "openbareRuimteIdentificatie": "0363300000004786",
+              "woonplaatsIdentificatie": "3594",
+              "adresseerbaarObjectIdentificatie": "0363010000769832",
+              "pandIdentificaties": [
+                "0363100012070245"
+              ],
+              "adresregel5": "Overvoorde 43-2",
+              "adresregel6": "1082 GB  AMSTERDAM",
+              "typeAdresseerbaarObject": "Verblijfsobject",
+              "adresseerbaarObjectGeometrie": {
+                "punt": {
+                  "type": "Point",
+                  "coordinates": [
+                    119879.0,
+                    482161.0,
+                    0.0
+                  ]
+                }
+              },
+              "adresseerbaarObjectStatus": "Verblijfsobject in gebruik",
+              "gebruiksdoelen": [
+                "woonfunctie"
+              ],
+              "oppervlakte": 76,
+              "oorspronkelijkBouwjaar": [
+                "1962"
+              ],
+              "pandStatussen": [
+                "Pand in gebruik"
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid/0363200000229916"
+                },
+                "openbareRuimte": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/openbareruimten/0363300000004786"
+                },
+                "nummeraanduiding": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/nummeraanduidingen/0363200000229916"
+                },
+                "woonplaats": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/woonplaatsen/3594"
+                },
+                "adresseerbaarObject": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/verblijfsobjecten/0363010000769832"
+                },
+                "panden": [
+                  {
+                    "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/panden/0363100012070245"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid?postcode=1082GB&huisnummer=43&huisnummertoevoeging=2"
+          }
+        }
+      }
+    },
+    "response_size_kb": 2.69
+  },
+  {
+    "timestamp": "2025-09-18T05:51:05.240064",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055104",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "BAG",
+      "endpoint": "/adressenuitgebreid",
+      "success": true,
+      "duration_seconds": 0.083,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "a981686d",
+      "method": "GET",
+      "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "X-Api-Key": "***REDACTED***",
+        "Accept-Crs": "EPSG:28992"
+      },
+      "payload": null,
+      "params": {
+        "postcode": "1082GB",
+        "huisnummer": 43,
+        "huisnummertoevoeging": "2"
+      },
+      "timeout": 30,
+      "timestamp": 1758167465.156647
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "RateLimit-Limit": "50",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "24",
+        "Kadaster-RateLimit-DayLimit": "50000",
+        "Kadaster-RateLimit-DayLimit-Remaining": "49998",
+        "Kadaster-RateLimit-DayLimit-Reset": "65333",
+        "Api-Version": "2.9.2",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Crs": "epsg:28992",
+        "Content-Security-Policy": "frame-ancestors 'none'",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-Pagination-Count": "1",
+        "X-Pagination-Limit": "20",
+        "X-Pagination-Page": "1",
+        "X-Total-Count": "1",
+        "X-Xss-Protection": "0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/hal+json",
+        "Content-Length": "591",
+        "Date": "Thu, 18 Sep 2025 03:51:06 GMT",
+        "Keep-Alive": "timeout=20",
+        "Connection": "keep-alive",
+        "Server": "unspecified"
+      },
+      "data": {
+        "_embedded": {
+          "adressen": [
+            {
+              "openbareRuimteNaam": "Overvoorde",
+              "korteNaam": "Overvoorde",
+              "huisnummer": 43,
+              "huisnummertoevoeging": "2",
+              "postcode": "1082GB",
+              "woonplaatsNaam": "Amsterdam",
+              "nummeraanduidingIdentificatie": "0363200000229916",
+              "openbareRuimteIdentificatie": "0363300000004786",
+              "woonplaatsIdentificatie": "3594",
+              "adresseerbaarObjectIdentificatie": "0363010000769832",
+              "pandIdentificaties": [
+                "0363100012070245"
+              ],
+              "adresregel5": "Overvoorde 43-2",
+              "adresregel6": "1082 GB  AMSTERDAM",
+              "typeAdresseerbaarObject": "Verblijfsobject",
+              "adresseerbaarObjectGeometrie": {
+                "punt": {
+                  "type": "Point",
+                  "coordinates": [
+                    119879.0,
+                    482161.0,
+                    0.0
+                  ]
+                }
+              },
+              "adresseerbaarObjectStatus": "Verblijfsobject in gebruik",
+              "gebruiksdoelen": [
+                "woonfunctie"
+              ],
+              "oppervlakte": 76,
+              "oorspronkelijkBouwjaar": [
+                "1962"
+              ],
+              "pandStatussen": [
+                "Pand in gebruik"
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid/0363200000229916"
+                },
+                "openbareRuimte": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/openbareruimten/0363300000004786"
+                },
+                "nummeraanduiding": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/nummeraanduidingen/0363200000229916"
+                },
+                "woonplaats": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/woonplaatsen/3594"
+                },
+                "adresseerbaarObject": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/verblijfsobjecten/0363010000769832"
+                },
+                "panden": [
+                  {
+                    "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/panden/0363100012070245"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid?postcode=1082GB&huisnummer=43&huisnummertoevoeging=2"
+          }
+        }
+      }
+    },
+    "response_size_kb": 2.69
+  },
+  {
+    "timestamp": "2025-09-18T05:53:18.219084",
+    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "BAG",
+      "endpoint": "/adressenuitgebreid",
+      "success": true,
+      "duration_seconds": 0.205,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "6b5576c7",
+      "method": "GET",
+      "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "X-Api-Key": "***REDACTED***",
+        "Accept-Crs": "EPSG:28992"
+      },
+      "payload": null,
+      "params": {
+        "postcode": "1082GB",
+        "huisnummer": 43,
+        "huisnummertoevoeging": "2"
+      },
+      "timeout": 30,
+      "timestamp": 1758167598.013709
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "RateLimit-Limit": "50",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "24",
+        "Kadaster-RateLimit-DayLimit": "50000",
+        "Kadaster-RateLimit-DayLimit-Remaining": "49997",
+        "Kadaster-RateLimit-DayLimit-Reset": "65200",
+        "Api-Version": "2.9.2",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Crs": "epsg:28992",
+        "Content-Security-Policy": "frame-ancestors 'none'",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-Pagination-Count": "1",
+        "X-Pagination-Limit": "20",
+        "X-Pagination-Page": "1",
+        "X-Total-Count": "1",
+        "X-Xss-Protection": "0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/hal+json",
+        "Content-Length": "591",
+        "Date": "Thu, 18 Sep 2025 03:53:19 GMT",
+        "Keep-Alive": "timeout=20",
+        "Connection": "keep-alive",
+        "Server": "unspecified"
+      },
+      "data": {
+        "_embedded": {
+          "adressen": [
+            {
+              "openbareRuimteNaam": "Overvoorde",
+              "korteNaam": "Overvoorde",
+              "huisnummer": 43,
+              "huisnummertoevoeging": "2",
+              "postcode": "1082GB",
+              "woonplaatsNaam": "Amsterdam",
+              "nummeraanduidingIdentificatie": "0363200000229916",
+              "openbareRuimteIdentificatie": "0363300000004786",
+              "woonplaatsIdentificatie": "3594",
+              "adresseerbaarObjectIdentificatie": "0363010000769832",
+              "pandIdentificaties": [
+                "0363100012070245"
+              ],
+              "adresregel5": "Overvoorde 43-2",
+              "adresregel6": "1082 GB  AMSTERDAM",
+              "typeAdresseerbaarObject": "Verblijfsobject",
+              "adresseerbaarObjectGeometrie": {
+                "punt": {
+                  "type": "Point",
+                  "coordinates": [
+                    119879.0,
+                    482161.0,
+                    0.0
+                  ]
+                }
+              },
+              "adresseerbaarObjectStatus": "Verblijfsobject in gebruik",
+              "gebruiksdoelen": [
+                "woonfunctie"
+              ],
+              "oppervlakte": 76,
+              "oorspronkelijkBouwjaar": [
+                "1962"
+              ],
+              "pandStatussen": [
+                "Pand in gebruik"
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid/0363200000229916"
+                },
+                "openbareRuimte": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/openbareruimten/0363300000004786"
+                },
+                "nummeraanduiding": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/nummeraanduidingen/0363200000229916"
+                },
+                "woonplaats": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/woonplaatsen/3594"
+                },
+                "adresseerbaarObject": {
+                  "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/verblijfsobjecten/0363010000769832"
+                },
+                "panden": [
+                  {
+                    "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/panden/0363100012070245"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid?postcode=1082GB&huisnummer=43&huisnummertoevoeging=2"
+          }
+        }
+      }
+    },
+    "response_size_kb": 2.69
+  }
+]
