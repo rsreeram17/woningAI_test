@@ -5121,3 +5121,7238 @@
 ```
 
 ---
+
+## DSO_Search API Call - 11:02:31
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.239s
+
+### Request Summary:
+```json
+{
+  "request_id": "490b5233",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186151.409791
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:02:31
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.19s
+
+### Request Summary:
+```json
+{
+  "request_id": "c89257b4",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758186151.658182
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:32
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.552s
+
+### Request Summary:
+```json
+{
+  "request_id": "5f04eb7a",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186151.8504078
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:32
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.287s
+
+### Request Summary:
+```json
+{
+  "request_id": "fe4a5ab0",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186152.4114828
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.642s
+
+### Request Summary:
+```json
+{
+  "request_id": "91bb25b1",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186152.706762
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:41
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 8.099s
+
+### Request Summary:
+```json
+{
+  "request_id": "6f7ec0bb",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758186153.352028
+}
+```
+
+### Response Summary:
+- **Size:** 8.43 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:58
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 16.571s
+
+### Request Summary:
+```json
+{
+  "request_id": "a92ab984",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186161.459407
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:02:58
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.14s
+
+### Request Summary:
+```json
+{
+  "request_id": "7433e6a0",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186178.040108
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:03:14
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 16.271s
+
+### Request Summary:
+```json
+{
+  "request_id": "13a0260f",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758186178.186356
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:03:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.236s
+
+### Request Summary:
+```json
+{
+  "request_id": "5c207dbe",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 10
+  },
+  "timeout": 30,
+  "timestamp": 1758186194.4678788
+}
+```
+
+### Response Summary:
+- **Size:** 15.29 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:03:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron`
+**Status:** ✅ SUCCESS
+**Duration:** 0.152s
+
+### Request Summary:
+```json
+{
+  "request_id": "aa16c0a7",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {},
+  "timeout": 30,
+  "timestamp": 1758186198.709284
+}
+```
+
+### Response Summary:
+- **Size:** 15.96 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:03:19
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_110231
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten`
+**Status:** ✅ SUCCESS
+**Duration:** 0.274s
+
+### Request Summary:
+```json
+{
+  "request_id": "0f590db0",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758186198.872222
+}
+```
+
+### Response Summary:
+- **Size:** 16.27 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:18:05
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.379s
+
+### Request Summary:
+```json
+{
+  "request_id": "4cd61444",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187084.881231
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:18:05
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.102s
+
+### Request Summary:
+```json
+{
+  "request_id": "b8572778",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758187085.270842
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:06
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.715s
+
+### Request Summary:
+```json
+{
+  "request_id": "18a648de",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187085.376489
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:06
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.157s
+
+### Request Summary:
+```json
+{
+  "request_id": "4d452d6e",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187086.104911
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:06
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.611s
+
+### Request Summary:
+```json
+{
+  "request_id": "109150eb",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187086.270168
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 5.458s
+
+### Request Summary:
+```json
+{
+  "request_id": "9b93e3e9",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758187086.89545
+}
+```
+
+### Response Summary:
+- **Size:** 8.43 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.518s
+
+### Request Summary:
+```json
+{
+  "request_id": "9347b5bd",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187092.3626208
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:13
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.177s
+
+### Request Summary:
+```json
+{
+  "request_id": "621f91b4",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187092.897248
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:13
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.518s
+
+### Request Summary:
+```json
+{
+  "request_id": "2bbe6c77",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187093.0834718
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.174s
+
+### Request Summary:
+```json
+{
+  "request_id": "f02fcf4c",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 10
+  },
+  "timeout": 30,
+  "timestamp": 1758187093.6164742
+}
+```
+
+### Response Summary:
+- **Size:** 15.29 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron`
+**Status:** ✅ SUCCESS
+**Duration:** 0.187s
+
+### Request Summary:
+```json
+{
+  "request_id": "781f7fb1",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {},
+  "timeout": 30,
+  "timestamp": 1758187097.805665
+}
+```
+
+### Response Summary:
+- **Size:** 15.96 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:18:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111804
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten`
+**Status:** ✅ SUCCESS
+**Duration:** 0.274s
+
+### Request Summary:
+```json
+{
+  "request_id": "eca6d561",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758187098.008609
+}
+```
+
+### Response Summary:
+- **Size:** 16.27 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:18:31
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_111830
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.183s
+
+### Request Summary:
+```json
+{
+  "request_id": "88b13ab3",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "uitbouw",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187110.90466
+}
+```
+
+### Response Summary:
+- **Size:** 1.42 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:23:24
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.105s
+
+### Request Summary:
+```json
+{
+  "request_id": "7356de69",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187404.3646028
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:23:24
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.083s
+
+### Request Summary:
+```json
+{
+  "request_id": "9c8a2bba",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758187404.474803
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.472s
+
+### Request Summary:
+```json
+{
+  "request_id": "3ee745a3",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187404.56027
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.146s
+
+### Request Summary:
+```json
+{
+  "request_id": "54e55536",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187405.0477161
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.675s
+
+### Request Summary:
+```json
+{
+  "request_id": "5c3aebd0",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187405.208735
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:29
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.061s
+
+### Request Summary:
+```json
+{
+  "request_id": "0c3cd6e8",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758187405.901226
+}
+```
+
+### Response Summary:
+- **Size:** 8.43 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:30
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.628s
+
+### Request Summary:
+```json
+{
+  "request_id": "46db0266",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187409.973836
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:30
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.16s
+
+### Request Summary:
+```json
+{
+  "request_id": "220be36f",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187410.616998
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:31
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.556s
+
+### Request Summary:
+```json
+{
+  "request_id": "34f53667",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758187410.795962
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:35
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.168s
+
+### Request Summary:
+```json
+{
+  "request_id": "fd270d2d",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 10
+  },
+  "timeout": 30,
+  "timestamp": 1758187411.374874
+}
+```
+
+### Response Summary:
+- **Size:** 15.29 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:36
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron`
+**Status:** ✅ SUCCESS
+**Duration:** 0.552s
+
+### Request Summary:
+```json
+{
+  "request_id": "ff29536c",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {},
+  "timeout": 30,
+  "timestamp": 1758187415.560996
+}
+```
+
+### Response Summary:
+- **Size:** 15.96 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:23:36
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_112324
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten`
+**Status:** ✅ SUCCESS
+**Duration:** 0.25s
+
+### Request Summary:
+```json
+{
+  "request_id": "709fe9ee",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758187416.1307971
+}
+```
+
+### Response Summary:
+- **Size:** 16.27 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:39:03
+
+**House:** 1082GB 43-2 | **Session:** BAG_API_Test_20250918_113903
+**Endpoint:** `/adressen`
+**Status:** ✅ SUCCESS
+**Duration:** 0.171s
+
+### Request Summary:
+```json
+{
+  "request_id": "3833011a",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressen",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758188343.658182
+}
+```
+
+### Response Summary:
+- **Size:** 2.32 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:39:03
+
+**House:** 1082GB 43-2 | **Session:** BAG_API_Test_20250918_113903
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.081s
+
+### Request Summary:
+```json
+{
+  "request_id": "4562556d",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758188343.8311198
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:39:03
+
+**House:** 1082GB 43-2 | **Session:** BAG_API_Test_20250918_113903
+**Endpoint:** `/adressen`
+**Status:** ✅ SUCCESS
+**Duration:** 0.072s
+
+### Request Summary:
+```json
+{
+  "request_id": "883087e1",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressen",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758188343.913762
+}
+```
+
+### Response Summary:
+- **Size:** 2.32 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:39:04
+
+**House:** 1082GB 43-2 | **Session:** BAG_API_Test_20250918_113903
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.086s
+
+### Request Summary:
+```json
+{
+  "request_id": "268c0ba7",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758188343.9874518
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:39:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_113934
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 5.377s
+
+### Request Summary:
+```json
+{
+  "request_id": "378cc49a",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188374.697932
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:39:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_113934
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.231s
+
+### Request Summary:
+```json
+{
+  "request_id": "97baf4e7",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188380.079189
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:39:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_113934
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.166s
+
+### Request Summary:
+```json
+{
+  "request_id": "70f130b3",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakraam",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188380.314223
+}
+```
+
+### Response Summary:
+- **Size:** 12.62 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:39:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_113934
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.083s
+
+### Request Summary:
+```json
+{
+  "request_id": "d41d6b03",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dormer window",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188380.484587
+}
+```
+
+### Response Summary:
+- **Size:** 1.42 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:39:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_Search_Test_20250918_113934
+**Endpoint:** `/activiteiten/_suggereer`
+**Status:** ✅ SUCCESS
+**Duration:** 0.074s
+
+### Request Summary:
+```json
+{
+  "request_id": "2dd2b0d7",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_suggereer",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakk"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188380.571999
+}
+```
+
+### Response Summary:
+- **Size:** 0.88 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:40:27
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.119s
+
+### Request Summary:
+```json
+{
+  "request_id": "b6bfa63b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188427.822109
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:40:28
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.094s
+
+### Request Summary:
+```json
+{
+  "request_id": "596c3b1a",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758188427.9439092
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:28
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.638s
+
+### Request Summary:
+```json
+{
+  "request_id": "8b359bf0",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188428.0410712
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:28
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.202s
+
+### Request Summary:
+```json
+{
+  "request_id": "e0a83cb2",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188428.6822999
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:29
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.631s
+
+### Request Summary:
+```json
+{
+  "request_id": "cd431951",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188428.888407
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:34
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.693s
+
+### Request Summary:
+```json
+{
+  "request_id": "525c89e1",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758188429.5236108
+}
+```
+
+### Response Summary:
+- **Size:** 8.43 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:34
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteitidentificaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.609s
+
+### Request Summary:
+```json
+{
+  "request_id": "81f9afc3",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188434.2218518
+}
+```
+
+### Response Summary:
+- **Size:** 31.16 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:35
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/locatieidentificaties/_zoek`
+**Status:** ❌ FAILED
+**Duration:** 0.253s
+
+### Request Summary:
+```json
+{
+  "request_id": "3cbe3baf",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geometrie": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            119869.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482151.0
+          ],
+          [
+            119889.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482171.0
+          ],
+          [
+            119869.0,
+            482151.0
+          ]
+        ]
+      ]
+    },
+    "spatialOperator": "intersects"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188434.836304
+}
+```
+
+### Response Summary:
+- **Size:** 1.19 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:35
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/locaties/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.555s
+
+### Request Summary:
+```json
+{
+  "request_id": "5b0a7d0e",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "geo": {
+      "geometrie": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      },
+      "spatialOperator": "intersects"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758188435.0943072
+}
+```
+
+### Response Summary:
+- **Size:** 13.55 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:40
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteitengeaggregeerd/levenscyclus`
+**Status:** ✅ SUCCESS
+**Duration:** 4.411s
+
+### Request Summary:
+```json
+{
+  "request_id": "278ee44c",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 10
+  },
+  "timeout": 30,
+  "timestamp": 1758188435.655782
+}
+```
+
+### Response Summary:
+- **Size:** 15.29 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron`
+**Status:** ✅ SUCCESS
+**Duration:** 8.346s
+
+### Request Summary:
+```json
+{
+  "request_id": "8ac40c35",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {},
+  "timeout": 30,
+  "timestamp": 1758188440.0756428
+}
+```
+
+### Response Summary:
+- **Size:** 15.96 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_DetailedQuery API Call - 11:40:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_DetailedQuery_Test_20250918_114027
+**Endpoint:** `/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten`
+**Status:** ✅ SUCCESS
+**Duration:** 0.185s
+
+### Request Summary:
+```json
+{
+  "request_id": "520c6caf",
+  "method": "GET",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": null,
+  "params": {
+    "page": 0,
+    "size": 5
+  },
+  "timeout": 30,
+  "timestamp": 1758188448.432108
+}
+```
+
+### Response Summary:
+- **Size:** 16.27 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:50:52
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115052
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.115s
+
+### Request Summary:
+```json
+{
+  "request_id": "a8ee6907",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758189052.286814
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:50:52
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115052
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.228s
+
+### Request Summary:
+```json
+{
+  "request_id": "75356b35",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dso_interactive_test",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189052.404673
+}
+```
+
+### Response Summary:
+- **Size:** 1.42 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## BAG API Call - 11:50:59
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.078s
+
+### Request Summary:
+```json
+{
+  "request_id": "5c570f64",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758189059.060819
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 7.942s
+
+### Request Summary:
+```json
+{
+  "request_id": "de7f9fb9",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189059.139989
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.185s
+
+### Request Summary:
+```json
+{
+  "request_id": "41a1bd09",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.088573
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.089s
+
+### Request Summary:
+```json
+{
+  "request_id": "b3e02620",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.274173
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.078s
+
+### Request Summary:
+```json
+{
+  "request_id": "5f258923",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.364701
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.08s
+
+### Request Summary:
+```json
+{
+  "request_id": "459224e5",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.4458199
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.088s
+
+### Request Summary:
+```json
+{
+  "request_id": "fa4feb82",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.528279
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 11:51:07
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_115059
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.173s
+
+### Request Summary:
+```json
+{
+  "request_id": "a543a03e",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbareregelsuitvoerenservices/v2/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758189067.619576
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## BAG API Call - 12:15:32
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.098s
+
+### Request Summary:
+```json
+{
+  "request_id": "1deb6285",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758190532.782628
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.258s
+
+### Request Summary:
+```json
+{
+  "request_id": "c85049c7",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190532.882976
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.078s
+
+### Request Summary:
+```json
+{
+  "request_id": "6a5ceb3a",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.148428
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.081s
+
+### Request Summary:
+```json
+{
+  "request_id": "d130949b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.229111
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.143s
+
+### Request Summary:
+```json
+{
+  "request_id": "6804c62c",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.311748
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.081s
+
+### Request Summary:
+```json
+{
+  "request_id": "2590a32b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.459189
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.178s
+
+### Request Summary:
+```json
+{
+  "request_id": "ad02e42d",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.543018
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:33
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121532
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.091s
+
+### Request Summary:
+```json
+{
+  "request_id": "fb0df0ab",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v2/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190533.726739
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## BAG API Call - 12:15:55
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.085s
+
+### Request Summary:
+```json
+{
+  "request_id": "5f6ef596",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758190555.492418
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:15:55
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.198s
+
+### Request Summary:
+```json
+{
+  "request_id": "e9f4e748",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190555.579268
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:55
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.078s
+
+### Request Summary:
+```json
+{
+  "request_id": "47e57fe3",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190555.7889411
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:55
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.105s
+
+### Request Summary:
+```json
+{
+  "request_id": "f48ab156",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190555.873441
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:56
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.089s
+
+### Request Summary:
+```json
+{
+  "request_id": "2eae9b8a",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190555.983474
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:56
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.15s
+
+### Request Summary:
+```json
+{
+  "request_id": "8ee602a9",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190556.077352
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:56
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.085s
+
+### Request Summary:
+```json
+{
+  "request_id": "d54ed66b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190556.234307
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:15:56
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121555
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.09s
+
+### Request Summary:
+```json
+{
+  "request_id": "8210258d",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190556.3247302
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## BAG API Call - 12:16:11
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.089s
+
+### Request Summary:
+```json
+{
+  "request_id": "1783beaa",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758190571.7210932
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:16:11
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.157s
+
+### Request Summary:
+```json
+{
+  "request_id": "ecb99a18",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190571.811861
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.074s
+
+### Request Summary:
+```json
+{
+  "request_id": "46aaf22b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190571.97161
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.091s
+
+### Request Summary:
+```json
+{
+  "request_id": "a52d43ac",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190572.047093
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.075s
+
+### Request Summary:
+```json
+{
+  "request_id": "8fbe90bc",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190572.1390011
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.082s
+
+### Request Summary:
+```json
+{
+  "request_id": "dc06909f",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190572.215565
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.155s
+
+### Request Summary:
+```json
+{
+  "request_id": "a16629e6",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190572.298979
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:16:12
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_121611
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.08s
+
+### Request Summary:
+```json
+{
+  "request_id": "e6de8c6b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/uitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758190572.4555469
+}
+```
+
+### Response Summary:
+- **Size:** 0.82 KB
+- **HTTP Status:** 404
+
+### Key Response Data:
+```json
+{
+  "status_code": 404
+}
+```
+
+---
+
+## BAG API Call - 12:34:24
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.085s
+
+### Request Summary:
+```json
+{
+  "request_id": "41b517a1",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758191664.67628
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.293s
+
+### Request Summary:
+```json
+{
+  "request_id": "524f8114",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191664.7636821
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.217s
+
+### Request Summary:
+```json
+{
+  "request_id": "2c00a556",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.0653079
+}
+```
+
+### Response Summary:
+- **Size:** 1.6 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.175s
+
+### Request Summary:
+```json
+{
+  "request_id": "f0c08d54",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.291872
+}
+```
+
+### Response Summary:
+- **Size:** 1.58 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.184s
+
+### Request Summary:
+```json
+{
+  "request_id": "562ca9f4",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.4725919
+}
+```
+
+### Response Summary:
+- **Size:** 1.6 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.086s
+
+### Request Summary:
+```json
+{
+  "request_id": "2ac78c10",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.667226
+}
+```
+
+### Response Summary:
+- **Size:** 1.6 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.106s
+
+### Request Summary:
+```json
+{
+  "request_id": "aca95ff6",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.761446
+}
+```
+
+### Response Summary:
+- **Size:** 1.58 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:34:25
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123424
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.098s
+
+### Request Summary:
+```json
+{
+  "request_id": "f8727a02",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191665.8769312
+}
+```
+
+### Response Summary:
+- **Size:** 1.6 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## BAG API Call - 12:35:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.095s
+
+### Request Summary:
+```json
+{
+  "request_id": "511a15be",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758191716.992036
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:35:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.115s
+
+### Request Summary:
+```json
+{
+  "request_id": "2f0ce1f6",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191717.089617
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.32s
+
+### Request Summary:
+```json
+{
+  "request_id": "f2818a38",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191717.211363
+}
+```
+
+### Response Summary:
+- **Size:** 1.17 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:17
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.363s
+
+### Request Summary:
+```json
+{
+  "request_id": "24d13a94",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191717.5435252
+}
+```
+
+### Response Summary:
+- **Size:** 61.85 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.157s
+
+### Request Summary:
+```json
+{
+  "request_id": "a0d5c05e",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191717.9243221
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.101s
+
+### Request Summary:
+```json
+{
+  "request_id": "f26c183b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191718.096394
+}
+```
+
+### Response Summary:
+- **Size:** 1.01 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.327s
+
+### Request Summary:
+```json
+{
+  "request_id": "7120367b",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191718.2071931
+}
+```
+
+### Response Summary:
+- **Size:** 61.23 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:35:18
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_123516
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.088s
+
+### Request Summary:
+```json
+{
+  "request_id": "89b245e9",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758191718.5564852
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## BAG API Call - 12:53:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.103s
+
+### Request Summary:
+```json
+{
+  "request_id": "230d025b",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758192828.242094
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:53:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.237s
+
+### Request Summary:
+```json
+{
+  "request_id": "dc74a020",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192828.349557
+}
+```
+
+### Response Summary:
+- **Size:** 10.9 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.395s
+
+### Request Summary:
+```json
+{
+  "request_id": "16ab30fa",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192828.596718
+}
+```
+
+### Response Summary:
+- **Size:** 1.17 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:49
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.401s
+
+### Request Summary:
+```json
+{
+  "request_id": "4b69e141",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001002564440000/id/concept/IndieningsvereistenVergunningnl.imow-gm0363.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192829.008061
+}
+```
+
+### Response Summary:
+- **Size:** 61.85 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:49
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.204s
+
+### Request Summary:
+```json
+{
+  "request_id": "1905e5f7",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/Conclusienl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192829.4294221
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:49
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.107s
+
+### Request Summary:
+```json
+{
+  "request_id": "3fb97351",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192829.652103
+}
+```
+
+### Response Summary:
+- **Size:** 1.01 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:50
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.378s
+
+### Request Summary:
+```json
+{
+  "request_id": "18256dfa",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192829.781426
+}
+```
+
+### Response Summary:
+- **Size:** 61.23 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:53:50
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125348
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.09s
+
+### Request Summary:
+```json
+{
+  "request_id": "e01d4949",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192830.18719
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## BAG API Call - 12:54:50
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.069s
+
+### Request Summary:
+```json
+{
+  "request_id": "1b3d1665",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758192890.22771
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:54:50
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.263s
+
+### Request Summary:
+```json
+{
+  "request_id": "189479ef",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "Dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192890.299411
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:50
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.128s
+
+### Request Summary:
+```json
+{
+  "request_id": "52f5b103",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192890.5751638
+}
+```
+
+### Response Summary:
+- **Size:** 1.17 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:51
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.307s
+
+### Request Summary:
+```json
+{
+  "request_id": "5fb4428c",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192890.72302
+}
+```
+
+### Response Summary:
+- **Size:** 61.79 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:51
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.081s
+
+### Request Summary:
+```json
+{
+  "request_id": "4afbea96",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192891.054955
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:51
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.09s
+
+### Request Summary:
+```json
+{
+  "request_id": "2b8417b2",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192891.155023
+}
+```
+
+### Response Summary:
+- **Size:** 1.01 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:51
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.302s
+
+### Request Summary:
+```json
+{
+  "request_id": "b7dc8f69",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192891.268619
+}
+```
+
+### Response Summary:
+- **Size:** 61.23 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:54:51
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125450
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.088s
+
+### Request Summary:
+```json
+{
+  "request_id": "819128ac",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192891.595201
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## BAG API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/adressenuitgebreid`
+**Status:** ✅ SUCCESS
+**Duration:** 0.173s
+
+### Request Summary:
+```json
+{
+  "request_id": "c21d755b",
+  "method": "GET",
+  "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "X-Api-Key": "***REDACTED***",
+    "Accept-Crs": "EPSG:28992"
+  },
+  "payload": null,
+  "params": {
+    "postcode": "1082GB",
+    "huisnummer": 43,
+    "huisnummertoevoeging": "2"
+  },
+  "timeout": 30,
+  "timestamp": 1758192946.9019442
+}
+```
+
+### Response Summary:
+- **Size:** 2.69 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Search API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/activiteiten/_zoek`
+**Status:** ✅ SUCCESS
+**Duration:** 0.085s
+
+### Request Summary:
+```json
+{
+  "request_id": "d0f171e0",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/zoekinterface/v2/activiteiten/_zoek",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***"
+  },
+  "payload": {
+    "zoekterm": "dakkapel",
+    "sortering": "besteMatch"
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.081033
+}
+```
+
+### Response Summary:
+- **Size:** 10.93 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.078s
+
+### Request Summary:
+```json
+{
+  "request_id": "99da2a53",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.1781352
+}
+```
+
+### Response Summary:
+- **Size:** 1.17 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.351s
+
+### Request Summary:
+```json
+{
+  "request_id": "93769dfc",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001202789000/id/concept/IndieningsvereistenVergunningnl.imow-gm0222.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.25807
+}
+```
+
+### Response Summary:
+- **Size:** 61.79 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.098s
+
+### Request Summary:
+```json
+{
+  "request_id": "a0af8233",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/Conclusienl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.619107
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:47
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/conclusie/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.097s
+
+### Request Summary:
+```json
+{
+  "request_id": "628d49e5",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/conclusie/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.7221801
+}
+```
+
+### Response Summary:
+- **Size:** 1.01 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/indieningsvereisten/_bepaal`
+**Status:** ✅ SUCCESS
+**Duration:** 0.303s
+
+### Request Summary:
+```json
+{
+  "request_id": "bc655bdf",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/indieningsvereisten/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/IndieningsvereistenVergunningnl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      },
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001479179000/id/concept/IndieningsvereistenVergunningnl.imow-gm0268.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    },
+    "rolaanduiding": {
+      "rol": "INITIATIEFNEMER"
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192947.822169
+}
+```
+
+### Response Summary:
+- **Size:** 61.23 KB
+- **HTTP Status:** 200
+
+### Key Response Data:
+```json
+{
+  "status_code": 200
+}
+```
+
+---
+
+## DSO_Interactive API Call - 12:55:48
+
+**House:** 1082GB 43-2 | **Session:** DSO_Interactive_Test_20250918_125546
+**Endpoint:** `/maatregelen/_bepaal`
+**Status:** ❌ FAILED
+**Duration:** 0.076s
+
+### Request Summary:
+```json
+{
+  "request_id": "86f0db5c",
+  "method": "POST",
+  "url": "https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3/maatregelen/_bepaal",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Dutch-Renovation-Tester/1.0",
+    "x-api-key": "***REDACTED***",
+    "Content-Crs": "EPSG:28992"
+  },
+  "payload": {
+    "datum": "18-09-2025",
+    "functioneleStructuurRefs": [
+      {
+        "functioneleStructuurRef": "http://toepasbare-regels.omgevingswet.overheid.nl/00000001001326004000/id/concept/Conclusienl.imow-gm0777.activiteit.Dakkapel",
+        "antwoorden": []
+      }
+    ],
+    "_geo": {
+      "intersects": {
+        "type": "Point",
+        "coordinates": [
+          119879.0,
+          482161.0
+        ]
+      }
+    }
+  },
+  "params": null,
+  "timeout": 30,
+  "timestamp": 1758192948.138779
+}
+```
+
+### Response Summary:
+- **Size:** 1.56 KB
+- **HTTP Status:** 400
+
+### Key Response Data:
+```json
+{
+  "status_code": 400
+}
+```
+
+---

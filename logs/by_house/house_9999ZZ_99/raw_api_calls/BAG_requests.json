@@ -1,0 +1,75 @@
+[
+  {
+    "timestamp": "2025-09-18T11:18:36.695487",
+    "session_id": "DSO_DetailedQuery_Test_20250918_111836",
+    "house_id": "9999ZZ_99",
+    "house_address": "9999ZZ 99",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "BAG",
+      "endpoint": "/adressenuitgebreid",
+      "success": true,
+      "duration_seconds": 0.079,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "c7d69266",
+      "method": "GET",
+      "url": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "X-Api-Key": "***REDACTED***",
+        "Accept-Crs": "EPSG:28992"
+      },
+      "payload": null,
+      "params": {
+        "postcode": "9999ZZ",
+        "huisnummer": 99
+      },
+      "timeout": 30,
+      "timestamp": 1758187116.616509
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "RateLimit-Limit": "50",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "24",
+        "Kadaster-RateLimit-DayLimit": "50000",
+        "Kadaster-RateLimit-DayLimit-Remaining": "49994",
+        "Kadaster-RateLimit-DayLimit-Reset": "45684",
+        "Api-Version": "2.9.2",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Crs": "epsg:28992",
+        "Content-Security-Policy": "frame-ancestors 'none'",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-Pagination-Count": "0",
+        "X-Pagination-Limit": "20",
+        "X-Pagination-Page": "1",
+        "X-Total-Count": "0",
+        "X-Xss-Protection": "0",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/hal+json",
+        "Content-Length": "134",
+        "Date": "Thu, 18 Sep 2025 09:18:36 GMT",
+        "Keep-Alive": "timeout=20",
+        "Connection": "keep-alive",
+        "Server": "unspecified"
+      },
+      "data": {
+        "_links": {
+          "self": {
+            "href": "https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/adressenuitgebreid?postcode=9999ZZ&huisnummer=99"
+          }
+        }
+      }
+    },
+    "response_size_kb": 1.14
+  }
+]

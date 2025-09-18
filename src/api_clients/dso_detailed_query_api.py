@@ -498,3 +498,122 @@ class DSODetailedQueryAPI(BaseAPIClient):
                 }
             }
         }
+
+    def get_activity_legal_source(self, activity_id: str,
+                                geldig_op: str = None,
+                                in_werking_op: str = None,
+                                beschikbaar_op: str = None,
+                                renovation_type: str = None) -> Dict[str, Any]:
+        """Get the original legal source where an activity is first defined.
+
+        Args:
+            activity_id: Activity identifier (e.g., 'nl.imow-gm0363.activiteit.Dakkapel')
+            geldig_op: Valid on specific date (yyyy-mm-dd)
+            in_werking_op: In effect on specific date (yyyy-mm-dd)
+            beschikbaar_op: Available at specific datetime (ISO 8601)
+            renovation_type: Current renovation type being tested
+
+        Returns:
+            Dict with legal source information
+        """
+        params = {}
+        if geldig_op:
+            params['geldigOp'] = geldig_op
+        if in_werking_op:
+            params['inWerkingOp'] = in_werking_op
+        if beschikbaar_op:
+            params['beschikbaarOp'] = beschikbaar_op
+
+        result = self.get(
+            endpoint=f"/activiteiten/{activity_id}/juridischebron",
+            params=params,
+            renovation_type=renovation_type
+        )
+
+        if not result['success']:
+            return result
+
+        # Process response
+        response_data = result['data']
+
+        return {
+            "success": True,
+            "data": {
+                "activity_id": activity_id,
+                "legal_source": response_data,
+                "raw_response": response_data,
+                "response_metadata": {
+                    "duration": result['duration'],
+                    "request_id": result['request_id']
+                }
+            }
+        }
+
+    def get_activity_rule_texts(self, activity_id: str,
+                              geldig_op: str = None,
+                              in_werking_op: str = None,
+                              beschikbaar_op: str = None,
+                              page: int = 0,
+                              size: int = 20,
+                              renovation_type: str = None) -> Dict[str, Any]:
+        """Get all legal texts that mention this activity.
+
+        Args:
+            activity_id: Activity identifier (e.g., 'nl.imow-gm0363.activiteit.Dakkapel')
+            geldig_op: Valid on specific date (yyyy-mm-dd)
+            in_werking_op: In effect on specific date (yyyy-mm-dd)
+            beschikbaar_op: Available at specific datetime (ISO 8601)
+            page: Page number (default: 0)
+            size: Items per page (1-200, default: 20)
+            renovation_type: Current renovation type being tested
+
+        Returns:
+            Dict with rule texts information
+        """
+        params = {
+            'page': page,
+            'size': size
+        }
+        if geldig_op:
+            params['geldigOp'] = geldig_op
+        if in_werking_op:
+            params['inWerkingOp'] = in_werking_op
+        if beschikbaar_op:
+            params['beschikbaarOp'] = beschikbaar_op
+
+        result = self.get(
+            endpoint=f"/activiteiten/{activity_id}/regelteksten",
+            params=params,
+            renovation_type=renovation_type
+        )
+
+        if not result['success']:
+            return result
+
+        # Process response
+        response_data = result['data']
+
+        # Extract rule texts
+        rule_texts = []
+        if '_embedded' in response_data and 'regelteksten' in response_data['_embedded']:
+            rule_texts = response_data['_embedded']['regelteksten']
+        elif isinstance(response_data, list):
+            rule_texts = response_data
+
+        # Extract pagination info
+        page_info = response_data.get('page', {}) if isinstance(response_data, dict) else {}
+
+        return {
+            "success": True,
+            "data": {
+                "activity_id": activity_id,
+                "rule_texts": rule_texts,
+                "total_found": len(rule_texts),
+                "pagination": page_info,
+                "raw_response": response_data,
+                "response_metadata": {
+                    "duration": result['duration'],
+                    "request_id": result['request_id']
+                }
+            }
+        }

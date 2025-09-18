@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2025-09-18T05:53:18.743821",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:28.679659",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -9,11 +9,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/activiteitidentificaties/_zoek",
       "success": true,
-      "duration_seconds": 0.521,
+      "duration_seconds": 0.638,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "5f8ff920",
+      "request_id": "8b359bf0",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
       "headers": {
@@ -54,12 +54,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167598.222552
+      "timestamp": 1758188428.0410712
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:20 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:28 GMT",
         "Content-Type": "application/json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -67,7 +67,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "d9e82721d3e4d8648787388ea8ab4882",
+        "x-dso-instance": "c327adebc4117eb49a287d5e03606d55",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -650,8 +650,8 @@
     "response_size_kb": 31.16
   },
   {
-    "timestamp": "2025-09-18T05:53:18.905570",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:28.884537",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -659,11 +659,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/locatieidentificaties/_zoek",
       "success": false,
-      "duration_seconds": 0.159,
+      "duration_seconds": 0.202,
       "http_status": 400
     },
     "request_data": {
-      "request_id": "c80449d0",
+      "request_id": "e0a83cb2",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
       "headers": {
@@ -704,12 +704,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167598.7462862
+      "timestamp": 1758188428.6822999
     },
     "response_data": {
       "status_code": 400,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:20 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:28 GMT",
         "Content-Type": "application/problem+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -717,7 +717,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "02238b6731174cea6cc8fc3cb141538d",
+        "x-dso-instance": "c8c46820f7e7dc2cfa95d4954f87be12",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -736,14 +736,14 @@
         "status": 400,
         "detail": "De post body moet gevuld zijn met of een geometrie, of een lijst van locatie identificaties",
         "instance": "/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
-        "timestamp": "2025-09-18T03:53:20.922505554Z"
+        "timestamp": "2025-09-18T09:40:28.982327696Z"
       }
     },
     "response_size_kb": 1.19
   },
   {
-    "timestamp": "2025-09-18T05:53:19.369867",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:29.519352",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -751,11 +751,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/locaties/_zoek",
       "success": true,
-      "duration_seconds": 0.461,
+      "duration_seconds": 0.631,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "cff501a4",
+      "request_id": "cd431951",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
       "headers": {
@@ -778,12 +778,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167598.9091341
+      "timestamp": 1758188428.888407
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:21 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:29 GMT",
         "Content-Type": "application/hal+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -791,7 +791,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "81b0d5346569f652547484a89fae88b7",
+        "x-dso-instance": "c68da61d34b8b48f19f23f8ed502ddd8",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -1175,8 +1175,8 @@
     "response_size_kb": 13.55
   },
   {
-    "timestamp": "2025-09-18T05:53:23.193546",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:34.216960",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -1184,11 +1184,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/activiteitengeaggregeerd/levenscyclus",
       "success": true,
-      "duration_seconds": 3.82,
+      "duration_seconds": 4.693,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "fb3e0efc",
+      "request_id": "525c89e1",
       "method": "GET",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
       "headers": {
@@ -1202,12 +1202,12 @@
         "size": 5
       },
       "timeout": 30,
-      "timestamp": 1758167599.373751
+      "timestamp": 1758188429.5236108
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:34 GMT",
         "Content-Type": "application/hal+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -1215,7 +1215,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "GET",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "199c2a630a2cdb3e091dd2ef37bcfa8e",
+        "x-dso-instance": "4ea3b3ae5dc6ccfb8337c647ecddcd32",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -1431,8 +1431,8 @@
     "response_size_kb": 8.43
   },
   {
-    "timestamp": "2025-09-18T05:53:23.630298",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:34.831348",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -1440,11 +1440,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/activiteitidentificaties/_zoek",
       "success": true,
-      "duration_seconds": 0.431,
+      "duration_seconds": 0.609,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "503ff379",
+      "request_id": "81f9afc3",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitidentificaties/_zoek",
       "headers": {
@@ -1485,12 +1485,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167603.1991181
+      "timestamp": 1758188434.2218518
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:34 GMT",
         "Content-Type": "application/json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -1498,7 +1498,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "06bbb958ff1a2731c8ef25b58bdc8d36",
+        "x-dso-instance": "03a9bfcf4da6e2c5223230da8ca1c714",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -2081,8 +2081,8 @@
     "response_size_kb": 31.16
   },
   {
-    "timestamp": "2025-09-18T05:53:23.782714",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:35.089737",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -2090,11 +2090,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/locatieidentificaties/_zoek",
       "success": false,
-      "duration_seconds": 0.146,
+      "duration_seconds": 0.253,
       "http_status": 400
     },
     "request_data": {
-      "request_id": "e8529c05",
+      "request_id": "3cbe3baf",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
       "headers": {
@@ -2135,12 +2135,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167603.6370811
+      "timestamp": 1758188434.836304
     },
     "response_data": {
       "status_code": 400,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:25 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:35 GMT",
         "Content-Type": "application/problem+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -2148,7 +2148,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "d2bb0938b915fa71c442a0777deede6b",
+        "x-dso-instance": "949341381372fa30938e05314dae6f47",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -2167,14 +2167,14 @@
         "status": 400,
         "detail": "De post body moet gevuld zijn met of een geometrie, of een lijst van locatie identificaties",
         "instance": "/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locatieidentificaties/_zoek",
-        "timestamp": "2025-09-18T03:53:25.799858509Z"
+        "timestamp": "2025-09-18T09:40:35.188680281Z"
       }
     },
     "response_size_kb": 1.19
   },
   {
-    "timestamp": "2025-09-18T05:53:24.225016",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:35.649484",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -2182,11 +2182,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/locaties/_zoek",
       "success": true,
-      "duration_seconds": 0.435,
+      "duration_seconds": 0.555,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "dfa98710",
+      "request_id": "5b0a7d0e",
       "method": "POST",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/locaties/_zoek",
       "headers": {
@@ -2209,12 +2209,12 @@
       },
       "params": null,
       "timeout": 30,
-      "timestamp": 1758167603.789612
+      "timestamp": 1758188435.0943072
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:26 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:35 GMT",
         "Content-Type": "application/hal+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -2222,7 +2222,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "POST",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "ac2ffc0bea9db969e29178af9db9667a",
+        "x-dso-instance": "3c7e1280c52326716095960b7fbb052b",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -2606,8 +2606,8 @@
     "response_size_kb": 13.55
   },
   {
-    "timestamp": "2025-09-18T05:53:28.195492",
-    "session_id": "DSO_DetailedQuery_Test_20250918_055315",
+    "timestamp": "2025-09-18T11:40:40.066941",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
     "house_id": "1082GB_43-2",
     "house_address": "1082GB 43-2",
     "renovation_type": "dakkapel",
@@ -2615,11 +2615,11 @@
       "api_name": "DSO_DetailedQuery",
       "endpoint": "/activiteitengeaggregeerd/levenscyclus",
       "success": true,
-      "duration_seconds": 3.963,
+      "duration_seconds": 4.411,
       "http_status": 200
     },
     "request_data": {
-      "request_id": "05629432",
+      "request_id": "278ee44c",
       "method": "GET",
       "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteitengeaggregeerd/levenscyclus",
       "headers": {
@@ -2633,12 +2633,12 @@
         "size": 10
       },
       "timeout": 30,
-      "timestamp": 1758167604.232287
+      "timestamp": 1758188435.655782
     },
     "response_data": {
       "status_code": 200,
       "headers": {
-        "Date": "Thu, 18 Sep 2025 03:53:30 GMT",
+        "Date": "Thu, 18 Sep 2025 09:40:40 GMT",
         "Content-Type": "application/hal+json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -2646,7 +2646,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "GET",
         "x-content-type-options": "nosniff",
-        "x-dso-instance": "5b2d5ee1fc6f0586d46612a3782ee74a",
+        "x-dso-instance": "4b282ff1f38ef4b61bd90e4e64f6c274",
         "pragma": "no-cache",
         "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
         "access-control-expose-headers": "API-Version",
@@ -3036,5 +3036,158 @@
       }
     },
     "response_size_kb": 15.29
+  },
+  {
+    "timestamp": "2025-09-18T11:40:48.423439",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+      "success": true,
+      "duration_seconds": 8.346,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "8ac40c35",
+      "method": "GET",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/juridischebron",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": null,
+      "params": {},
+      "timeout": 30,
+      "timestamp": 1758188440.0756428
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 09:40:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "9d7b80f75ad15da470750edf8e99d2c6",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "vary": "Origin",
+        "expires": "0",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "documentIdentificatie": "/akn/nl/act/gm0363/2020/omgevingsplan",
+        "regelteksten": [
+          {
+            "identificatie": "nl.imow-gm0363.regeltekst.ae4987b5ae384cdba9229c2610b2ef07",
+            "wId": "gm0363_86a3fa8931484dc5a810ed97678303a8__para_1",
+            "omschrijving": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Inhoud xmlns=\"https://standaarden.overheid.nl/stop/imop/tekst/\"><Al>Het verbod, bedoeld in artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.2__art_4.7\">4.7</IntRef>, geldt niet voor een <IntRef ref=\"cmp_I__content_o_1__list_o_1__item_o_112\">omgevingsplanactiviteit bouwwerken</IntRef> als die activiteit betrekking heeft op:</Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a\"><LiNummer>a.</LiNummer><Al>een bijbehorend bouwwerk of een uitbreiding daarvan, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>op de grond staand; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>gelegen in achtererfgebied; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>op een afstand van meer dan 1 m vanaf openbaar toegankelijk gebied; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>niet hoger dan 5 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_5\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_5\"><LiNummer>5.</LiNummer><Al>de ligging van een verblijfsgebied, bij meer dan een bouwlaag, alleen op de eerste bouwlaag; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_6\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_6\"><LiNummer>6.</LiNummer><Al>niet voorzien van een dakterras, balkon of andere niet op de grond gelegen buitenruimte; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b\"><LiNummer>b.</LiNummer><Al>een bouwwerk voor recreatief nachtverblijf, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>op de grond staand; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>niet hoger dan 5 m; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>de oppervlakte niet meer dan 70 m<sup>2</sup>; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c\"><LiNummer>c.</LiNummer><Al>een dakkapel in het voordakvlak of een naar openbaar toegankelijk gebied gekeerd zijdakvlak, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>regels over het uiterlijk en de plaatsing van bouwwerken als bedoeld in artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.4__subsec_4.2.4.3__art_4.24\">4.24</IntRef> zijn, gelet op artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.4__subsec_4.2.4.3__art_4.26\">4.26</IntRef>, niet van toepassing; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>voorzien van een plat dak; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>gemeten vanaf de voet van de dakkapel niet hoger dan 1,75 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>onderzijde meer dan 0,5 m en minder dan 1 m boven de dakvoet; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_5\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_5\"><LiNummer>5.</LiNummer><Al>bovenzijde meer dan 0,5 m onder de daknok; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_6\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_6\"><LiNummer>6.</LiNummer><Al>zijkanten meer dan 0,5 m van de zijkanten van het dakvlak; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d\"><LiNummer>d.</LiNummer><Al>een sport- of speeltoestel anders dan voor alleen particulier gebruik, als wordt voldaan aan de volgende eisen:</Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>niet hoger dan 4 m; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>alleen functionerend met behulp van de zwaartekracht of de fysieke kracht van de mens; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_e\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_e\"><LiNummer>e.</LiNummer><Al>een zwembad, bubbelbad of soortgelijke voorziening of een vijver op het gebouwerf bij een woning of woongebouw, als deze niet van een overkapping is voorzien; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f\"><LiNummer>f.</LiNummer><Al>een erf- of perceelafscheiding, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>hoger dan 1 m maar niet hoger dan 2 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>op een erf of perceel waarop al een gebouw staat waarmee de afscheiding in functionele relatie staat; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>achter de lijn die langs de voorkant van dat gebouw evenwijdig loopt met het aangrenzend openbaar toegankelijk gebied; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g\"><LiNummer>g.</LiNummer><Al>een bouwwerk, geen gebouw zijnde, in achtererfgebied voor agrarische bedrijfsvoering, voor zover het gaat om: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>een silo; of </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>een ander bouwwerk niet hoger dan 2 m; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_h\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_h\"><LiNummer>h.</LiNummer><Al>een buisleiding anders dan een buisleiding waarop artikel 2.29, onder p, aanhef en onder 4°, van het <IntRef ref=\"cmp_I__content_o_1__list_o_1__item_o_19\">Besluit bouwwerken leefomgeving</IntRef> van toepassing is; of</Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i\"><LiNummer>i.</LiNummer><Al>een te veranderen bouwwerk, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>geen uitbreiding van de bebouwde oppervlakte; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>geen uitbreiding van het bouwvolume; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>geen toename van de bouwhoogte; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>geen bouwwerk als bedoeld in artikel 2.29, onder b tot en met r, van het Besluit bouwwerken leefomgeving dat niet voldoet aan de voor dat bouwwerk in die onderdelen gestelde eisen;</Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_j\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_j\"><LiNummer>j.</LiNummer><Al>een tuinhuis, kas of berging ter plaatse van de aanduiding ‘gebruiksdoel: volkstuinpark’;</Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_k\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_k\"><LiNummer>k.</LiNummer><Al>gewoon onderhoud in, aan of op een gemeentelijk monument, voorbeschermd gemeentelijk monument, provinciaal monument, voorbeschermd provinciaal monument, rijksmonument of voorbeschermd rijksmonument, voor zover detaillering, profilering en vormgeving van het bouwwerk niet worden gewijzigd. </Al></Li></Lijst></Inhoud>",
+            "nummer": "1.",
+            "nummerXml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Nummer xmlns=\"https://standaarden.overheid.nl/stop/imop/tekst/\">1.</Nummer>",
+            "documentIdentificatie": "/akn/nl/act/gm0363/2020/omgevingsplan"
+          }
+        ]
+      }
+    },
+    "response_size_kb": 15.96
+  },
+  {
+    "timestamp": "2025-09-18T11:40:48.616942",
+    "session_id": "DSO_DetailedQuery_Test_20250918_114027",
+    "house_id": "1082GB_43-2",
+    "house_address": "1082GB 43-2",
+    "renovation_type": "dakkapel",
+    "api_details": {
+      "api_name": "DSO_DetailedQuery",
+      "endpoint": "/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+      "success": true,
+      "duration_seconds": 0.185,
+      "http_status": 200
+    },
+    "request_data": {
+      "request_id": "520c6caf",
+      "method": "GET",
+      "url": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Dutch-Renovation-Tester/1.0",
+        "x-api-key": "***REDACTED***"
+      },
+      "payload": null,
+      "params": {
+        "page": 0,
+        "size": 5
+      },
+      "timeout": 30,
+      "timestamp": 1758188448.432108
+    },
+    "response_data": {
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 18 Sep 2025 09:40:48 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "api-version": "7.4.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-content-type-options": "nosniff",
+        "x-dso-instance": "d5d77829cc07b832c040b5a36c1937a0",
+        "pragma": "no-cache",
+        "access-control-allow-headers": "authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,x-api-key,Content-CRS,Accept-CRS,Authorization",
+        "access-control-expose-headers": "API-Version",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-xss-protection": "0",
+        "x-pagination-count": "1",
+        "x-pagination-limit": "5",
+        "vary": "Origin",
+        "expires": "0",
+        "x-pagination-page": "0",
+        "x-total-count": "1",
+        "cache-control": "no-store, max-age=0",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-frame-options": "DENY",
+        "x-envoy-decorator-operation": "apigw_with_payload"
+      },
+      "data": {
+        "_links": {
+          "self": {
+            "href": "https://service.omgevingswet.overheid.nl/publiek/omgevingsdocumenten/api/toepasbaaropvragen/v7/activiteiten/nl.imow-gm0363.activiteit.Dakkapel/regelteksten?page=0&size=5"
+          }
+        },
+        "_embedded": {
+          "regelteksten": [
+            {
+              "identificatie": "nl.imow-gm0363.regeltekst.ae4987b5ae384cdba9229c2610b2ef07",
+              "wId": "gm0363_86a3fa8931484dc5a810ed97678303a8__para_1",
+              "omschrijving": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Inhoud xmlns=\"https://standaarden.overheid.nl/stop/imop/tekst/\"><Al>Het verbod, bedoeld in artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.2__art_4.7\">4.7</IntRef>, geldt niet voor een <IntRef ref=\"cmp_I__content_o_1__list_o_1__item_o_112\">omgevingsplanactiviteit bouwwerken</IntRef> als die activiteit betrekking heeft op:</Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a\"><LiNummer>a.</LiNummer><Al>een bijbehorend bouwwerk of een uitbreiding daarvan, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>op de grond staand; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>gelegen in achtererfgebied; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>op een afstand van meer dan 1 m vanaf openbaar toegankelijk gebied; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>niet hoger dan 5 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_5\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_5\"><LiNummer>5.</LiNummer><Al>de ligging van een verblijfsgebied, bij meer dan een bouwlaag, alleen op de eerste bouwlaag; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_6\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_a__list_o_1__item_6\"><LiNummer>6.</LiNummer><Al>niet voorzien van een dakterras, balkon of andere niet op de grond gelegen buitenruimte; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b\"><LiNummer>b.</LiNummer><Al>een bouwwerk voor recreatief nachtverblijf, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>op de grond staand; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>niet hoger dan 5 m; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_b__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>de oppervlakte niet meer dan 70 m<sup>2</sup>; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c\"><LiNummer>c.</LiNummer><Al>een dakkapel in het voordakvlak of een naar openbaar toegankelijk gebied gekeerd zijdakvlak, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>regels over het uiterlijk en de plaatsing van bouwwerken als bedoeld in artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.4__subsec_4.2.4.3__art_4.24\">4.24</IntRef> zijn, gelet op artikel <IntRef ref=\"chp_4__subchp_4.2__subsec_4.2.4__subsec_4.2.4.3__art_4.26\">4.26</IntRef>, niet van toepassing; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>voorzien van een plat dak; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>gemeten vanaf de voet van de dakkapel niet hoger dan 1,75 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>onderzijde meer dan 0,5 m en minder dan 1 m boven de dakvoet; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_5\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_5\"><LiNummer>5.</LiNummer><Al>bovenzijde meer dan 0,5 m onder de daknok; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_6\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_c__list_o_1__item_6\"><LiNummer>6.</LiNummer><Al>zijkanten meer dan 0,5 m van de zijkanten van het dakvlak; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d\"><LiNummer>d.</LiNummer><Al>een sport- of speeltoestel anders dan voor alleen particulier gebruik, als wordt voldaan aan de volgende eisen:</Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>niet hoger dan 4 m; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_d__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>alleen functionerend met behulp van de zwaartekracht of de fysieke kracht van de mens; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_e\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_e\"><LiNummer>e.</LiNummer><Al>een zwembad, bubbelbad of soortgelijke voorziening of een vijver op het gebouwerf bij een woning of woongebouw, als deze niet van een overkapping is voorzien; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f\"><LiNummer>f.</LiNummer><Al>een erf- of perceelafscheiding, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>hoger dan 1 m maar niet hoger dan 2 m; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>op een erf of perceel waarop al een gebouw staat waarmee de afscheiding in functionele relatie staat; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_f__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>achter de lijn die langs de voorkant van dat gebouw evenwijdig loopt met het aangrenzend openbaar toegankelijk gebied; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g\"><LiNummer>g.</LiNummer><Al>een bouwwerk, geen gebouw zijnde, in achtererfgebied voor agrarische bedrijfsvoering, voor zover het gaat om: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>een silo; of </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_g__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>een ander bouwwerk niet hoger dan 2 m; </Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_h\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_h\"><LiNummer>h.</LiNummer><Al>een buisleiding anders dan een buisleiding waarop artikel 2.29, onder p, aanhef en onder 4°, van het <IntRef ref=\"cmp_I__content_o_1__list_o_1__item_o_19\">Besluit bouwwerken leefomgeving</IntRef> van toepassing is; of</Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i\"><LiNummer>i.</LiNummer><Al>een te veranderen bouwwerk, als wordt voldaan aan de volgende eisen: </Al><Lijst type=\"expliciet\" wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1\"><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_1\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_1\"><LiNummer>1.</LiNummer><Al>geen uitbreiding van de bebouwde oppervlakte; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_2\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_2\"><LiNummer>2.</LiNummer><Al>geen uitbreiding van het bouwvolume; </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_3\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_3\"><LiNummer>3.</LiNummer><Al>geen toename van de bouwhoogte; en </Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_4\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_i__list_o_1__item_4\"><LiNummer>4.</LiNummer><Al>geen bouwwerk als bedoeld in artikel 2.29, onder b tot en met r, van het Besluit bouwwerken leefomgeving dat niet voldoet aan de voor dat bouwwerk in die onderdelen gestelde eisen;</Al></Li></Lijst></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_j\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_j\"><LiNummer>j.</LiNummer><Al>een tuinhuis, kas of berging ter plaatse van de aanduiding ‘gebruiksdoel: volkstuinpark’;</Al></Li><Li wId=\"gm0363_86a3fa8931484dc5a810ed97678303a8__chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_k\" eId=\"chp_4__subchp_4.2__subsec_4.2.3__art_4.12__para_1__list_o_1__item_k\"><LiNummer>k.</LiNummer><Al>gewoon onderhoud in, aan of op een gemeentelijk monument, voorbeschermd gemeentelijk monument, provinciaal monument, voorbeschermd provinciaal monument, rijksmonument of voorbeschermd rijksmonument, voor zover detaillering, profilering en vormgeving van het bouwwerk niet worden gewijzigd. </Al></Li></Lijst></Inhoud>",
+              "nummer": "1.",
+              "nummerXml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Nummer xmlns=\"https://standaarden.overheid.nl/stop/imop/tekst/\">1.</Nummer>",
+              "documentIdentificatie": "/akn/nl/act/gm0363/2020/omgevingsplan"
+            }
+          ]
+        },
+        "page": {
+          "size": 5,
+          "totalElements": 1,
+          "totalPages": 1,
+          "number": 0
+        }
+      }
+    },
+    "response_size_kb": 16.27
   }
 ]

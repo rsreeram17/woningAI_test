@@ -4,8 +4,8 @@
 - **House:** 1082GB 43-2
 - **House ID:** 1082GB_43-2
 - **Renovation Type:** dso_detailed_query_test
-- **Test Date:** 2025-09-18 05:53
-- **Session ID:** DSO_DetailedQuery_Test_20250918_055315
+- **Test Date:** 2025-09-18 11:40
+- **Session ID:** DSO_DetailedQuery_Test_20250918_114027
 - **Overall Success:** ❌ FAILED
 - **Steps Completed:** 0/0
 

@@ -8,10 +8,10 @@ class DSOInteractiveAPI(BaseAPIClient):
 
     def __init__(self, config: Dict[str, Any], house_logger=None):
         """Initialize DSO Interactive Services API client."""
-        # Set specific endpoint for interactive API
-        # NOTE: Based on testing, the working URL structure is different from documentation
+        # Set correct endpoint for interactive API based on official documentation
+        # Base URL: https://service.omgevingswet.overheid.nl/publiek/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3
         interactive_config = config.copy()
-        interactive_config['base_url'] = f"{config['base_url']}/toepasbareregelsuitvoerenservices/v2"
+        interactive_config['base_url'] = f"{config['base_url']}/toepasbare-regels/api/toepasbareregelsuitvoerenservices/v3"
 
         super().__init__(interactive_config, "DSO_Interactive", house_logger)
 
@@ -43,12 +43,27 @@ class DSOInteractiveAPI(BaseAPIClient):
                 "error_type": "invalid_coordinates"
             }
 
+        # Filter for Conclusie (permit conclusion) type references only
+        conclusie_refs = [ref for ref in functional_structure_refs if "/Conclusie" in ref]
+
+        if not conclusie_refs:
+            return {
+                "success": False,
+                "error": "No Conclusie-type functional structure references found",
+                "error_type": "missing_conclusie_refs"
+            }
+
+        # Current date in DD-MM-YYYY format as required by API
+        from datetime import datetime
+        current_date = datetime.now().strftime("%d-%m-%Y")
+
         payload = {
+            "datum": current_date,
             "functioneleStructuurRefs": [
                 {
                     "functioneleStructuurRef": ref,
                     "antwoorden": answers or []
-                } for ref in functional_structure_refs
+                } for ref in conclusie_refs
             ],
             "_geo": {
                 "intersects": {
@@ -110,12 +125,27 @@ class DSOInteractiveAPI(BaseAPIClient):
                 "error_type": "missing_references"
             }
 
+        # Filter for IndieningsvereistenVergunning type references only
+        indieningsvereisten_refs = [ref for ref in functional_structure_refs if "/IndieningsvereistenVergunning" in ref]
+
+        if not indieningsvereisten_refs:
+            return {
+                "success": False,
+                "error": "No IndieningsvereistenVergunning-type functional structure references found",
+                "error_type": "missing_indieningsvereisten_refs"
+            }
+
+        # Current date in DD-MM-YYYY format as required by API
+        from datetime import datetime
+        current_date = datetime.now().strftime("%d-%m-%Y")
+
         payload = {
+            "datum": current_date,
             "functioneleStructuurRefs": [
                 {
                     "functioneleStructuurRef": ref,
                     "antwoorden": answers or []
-                } for ref in functional_structure_refs
+                } for ref in indieningsvereisten_refs
             ],
             "_geo": {
                 "intersects": {
@@ -172,12 +202,41 @@ class DSOInteractiveAPI(BaseAPIClient):
         Returns:
             Dict with compliance measures
         """
+        if not functional_structure_refs:
+            return {
+                "success": False,
+                "error": "No functional structure references provided",
+                "error_type": "missing_references"
+            }
+
+        # Filter for MAATREGELEN type references
+        # Based on error message, we need references with typering 'MAATREGELEN'
+        # These might be different from the /Conclusie and /IndieningsvereistenVergunning patterns
+        maatregelen_refs = [ref for ref in functional_structure_refs if "/Maatregelen" in ref or "MAATREGELEN" in ref]
+
+        if not maatregelen_refs:
+            # If no specific MAATREGELEN refs found, try using Conclusie refs as fallback
+            # since the API might accept them for measures determination
+            maatregelen_refs = [ref for ref in functional_structure_refs if "/Conclusie" in ref]
+
+        if not maatregelen_refs:
+            return {
+                "success": False,
+                "error": "No MAATREGELEN-type functional structure references found",
+                "error_type": "missing_maatregelen_refs"
+            }
+
+        # Current date in DD-MM-YYYY format as required by API
+        from datetime import datetime
+        current_date = datetime.now().strftime("%d-%m-%Y")
+
         payload = {
+            "datum": current_date,
             "functioneleStructuurRefs": [
                 {
                     "functioneleStructuurRef": ref,
                     "antwoorden": answers or []
-                } for ref in functional_structure_refs
+                } for ref in maatregelen_refs
             ],
             "_geo": {
                 "intersects": {

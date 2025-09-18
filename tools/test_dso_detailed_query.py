@@ -247,6 +247,112 @@ def test_dso_detailed_query(address: str, renovation_type: str):
             print("❌ FAILED")
             print(f"   Error: {validation_result.get('error')}")
 
+        # Test F: Legal Source and Rule Texts
+        print(f"\n🔍 F) LEGAL SOURCE AND RULE TEXTS")
+        print("-" * 30)
+
+        # Initialize result variables
+        legal_source_result = {}
+        rule_texts_result = {}
+
+        # Find a specific activity to test with
+        test_activity_id = None
+        if activity_ids_result.get('success') and activity_ids_result.get('data', {}).get('activity_identifications'):
+            # Look for Amsterdam dakkapel activity specifically
+            activity_ids = activity_ids_result['data']['activity_identifications']
+            for aid in activity_ids:
+                if 'gm0363' in aid and 'Dakkapel' in aid:
+                    test_activity_id = aid
+                    break
+
+            # If no dakkapel found, use first activity
+            if not test_activity_id:
+                test_activity_id = activity_ids[0]
+
+        if test_activity_id:
+            print(f"📋 Testing with activity: {test_activity_id}")
+
+            # Test F1: Legal Source
+            print(f"\n📖 F1) Legal Source")
+            print("-" * 20)
+
+            legal_source_result = detailed_query_client.get_activity_legal_source(
+                test_activity_id, renovation_type=renovation_type
+            )
+
+            if legal_source_result['success']:
+                print("✅ SUCCESS")
+                data = legal_source_result['data']
+                print(f"📊 Legal Source Results:")
+                print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
+
+                legal_source = data['legal_source']
+                if isinstance(legal_source, dict):
+                    if 'documentIdentificatie' in legal_source:
+                        print(f"   Document: {legal_source['documentIdentificatie']}")
+
+                    if 'regelteksten' in legal_source:
+                        regelteksten = legal_source['regelteksten']
+                        print(f"   Rule texts in source: {len(regelteksten)}")
+
+                        if regelteksten:
+                            first_rule = regelteksten[0]
+                            print(f"   Sample rule ID: {first_rule.get('identificatie', 'Unknown')}")
+                else:
+                    print(f"   Raw response received")
+            else:
+                print("❌ FAILED")
+                print(f"   Error: {legal_source_result.get('error')}")
+
+            # Test F2: Rule Texts
+            print(f"\n📖 F2) Rule Texts")
+            print("-" * 20)
+
+            rule_texts_result = detailed_query_client.get_activity_rule_texts(
+                test_activity_id, size=5, renovation_type=renovation_type
+            )
+
+            if rule_texts_result['success']:
+                print("✅ SUCCESS")
+                data = rule_texts_result['data']
+                print(f"📊 Rule Texts Results:")
+                print(f"   Rule texts found: {data['total_found']}")
+                print(f"   Response time: {data['response_metadata']['duration']:.2f}s")
+
+                rule_texts = data['rule_texts']
+                if rule_texts and len(rule_texts) > 0:
+                    print(f"\n📋 Sample Rule Texts (first 2):")
+                    for i, rule in enumerate(rule_texts[:2], 1):
+                        print(f"   {i}. {rule.get('identificatie', 'Unknown')}")
+                        print(f"      Article: {rule.get('labelXml', 'Unknown')} {rule.get('nummerXml', '')}")
+                        print(f"      Title: {rule.get('opschrift', 'No title')}")
+
+                        # Show description preview (clean XML)
+                        description = rule.get('omschrijving', 'No description')
+                        if description and len(description) > 100:
+                            # Remove XML tags for preview
+                            import re
+                            clean_desc = re.sub(r'<[^>]+>', '', description)
+                            if len(clean_desc) > 80:
+                                clean_desc = clean_desc[:80] + "..."
+                            print(f"      Content: {clean_desc}")
+                else:
+                    print("   No rule texts found")
+
+                # Show pagination info
+                pagination = data.get('pagination', {})
+                if pagination and pagination.get('totalElements'):
+                    print(f"\n📄 Pagination:")
+                    print(f"   Total elements: {pagination.get('totalElements', 'Unknown')}")
+                    print(f"   Pages: {pagination.get('totalPages', 'Unknown')}")
+            else:
+                print("❌ FAILED")
+                print(f"   Error: {rule_texts_result.get('error')}")
+        else:
+            print("⚠️ No activity IDs available for legal source and rule texts testing")
+            legal_source_result = {"success": False, "error": "No activity IDs available"}
+            rule_texts_result = {"success": False, "error": "No activity IDs available"}
+
         # Save test summary to files
         test_summary = {
             "address": address,
@@ -259,7 +365,9 @@ def test_dso_detailed_query(address: str, renovation_type: str):
                 "location_identifications_search": location_ids_result.get('success', False),
                 "locations_search": locations_result.get('success', False),
                 "aggregated_activities": activities_result.get('success', False),
-                "comprehensive_validation": validation_result.get('success', False)
+                "comprehensive_validation": validation_result.get('success', False),
+                "legal_source_lookup": legal_source_result.get('success', False),
+                "rule_texts_lookup": rule_texts_result.get('success', False)
             },
             "coordinates": coordinates if coordinates_result.get('success') else [],
             "functional_references": functional_refs,
@@ -286,10 +394,12 @@ def test_dso_detailed_query(address: str, renovation_type: str):
             test_summary['results']['location_identifications_search'],
             test_summary['results']['locations_search'],
             test_summary['results']['aggregated_activities'],
-            test_summary['results']['comprehensive_validation']
+            test_summary['results']['comprehensive_validation'],
+            test_summary['results']['legal_source_lookup'],
+            test_summary['results']['rule_texts_lookup']
         ])
 
-        total_tests = 7
+        total_tests = 9
         if success_count >= 5:
             print("✅ DSO Detailed Query API working excellently!")
             print(f"✅ Successfully tested {success_count}/{total_tests} core functions")

@@ -279,7 +279,7 @@ def test_dso_interactive(address: str, renovation_type: str):
                 "compliance_measures": compliance_result.get('success', False),
                 "complete_flow": flow_result.get('success', False)
             },
-            "coordinates": coordinates_result.get('coordinates', []) if coordinates_result.get('success') else [],
+            "coordinates": coordinates if coordinates else [],
             "functional_references": functional_refs,
             "permit_analysis": permit_result.get('data', {}).get('permit_analysis', {}) if permit_result.get('success') else {},
             "filing_analysis": filing_result.get('data', {}).get('filing_analysis', {}) if filing_result.get('success') else {},

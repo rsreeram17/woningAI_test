@@ -1,11 +1,11 @@
-# Dso_Search_Test Test Results - House 1082GB_43-2
+# Dso_Interactive_Test Test Results - House 1082GB_43-2
 
 ## Test Summary
 - **House:** 1082GB 43-2
 - **House ID:** 1082GB_43-2
-- **Renovation Type:** dso_search_test
-- **Test Date:** 2025-09-18 11:39
-- **Session ID:** DSO_Search_Test_20250918_113934
+- **Renovation Type:** dso_interactive_test
+- **Test Date:** 2025-09-18 12:55
+- **Session ID:** DSO_Interactive_Test_20250918_125546
 - **Overall Success:** ❌ FAILED
 - **Steps Completed:** 0/0
 

@@ -9,6 +9,8 @@ apis:
   dso:
     production_url: "https://service.omgevingswet.overheid.nl/publiek"
     preproduction_url: "https://service.pre.omgevingswet.overheid.nl/publiek"
+    # Use preproduction for interactive services testing
+    base_url: "https://service.pre.omgevingswet.overheid.nl/publiek"
     timeout: 30
     rate_limit:
       requests_per_second: 50
